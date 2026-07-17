@@ -1,0 +1,6 @@
+# Cloudflare Pages redirects
+# Format: old-path new-path status-code
+/porownanie.html /sravnenie.html 301
+/kalkulator-kary.html /kalkulator-globi.html 301
+/sektory-ksc.html /sektori-nis2.html 301
+/metodologia.html /metodologiya.html 301

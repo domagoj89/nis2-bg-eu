@@ -1,0 +1,31 @@
+# NIS2-Narzedzia.pl
+
+> The only Polish-language, regulation-specific comparison platform that maps NIS2/KSC legal requirements directly to vetted software tools — saving compliance teams weeks of research and reducing the risk of selecting tools that do not satisfy CSIRT NASK or Pełnomocnik ds. cyberbezpieczeństwa audit criteria
+
+NIS2-Narzedzia.pl covers Cybersecurity Compliance (NIS2 / KSC Regulatory Tools & Software Reviews for Polish Enterprises) for PL.
+
+## Key pages
+- [Home](https://nis2-bg.eu/): NIS2-Narzedzia.pl — NIS2 / KSC Regulatory Tools & Software Reviews for Polish Enterprises
+- [10 najlepszych narzędzi NIS2/KSC 2026](https://nis2-bg.eu/porownanie.html)
+- [Kalkulator KSC 2026](https://nis2-bg.eu/kalkulator.html)
+- [Sektory objęte KSC/NIS2 w Polsce 2026](https://nis2-bg.eu/sektory-ksc.html)
+- [FAQ NIS2 Polska 2026](https://nis2-bg.eu/faq.html)
+- [Kalkulator kar KSC/NIS2](https://nis2-bg.eu/kalkulator-kary.html)
+- [Metodologia ocen i polityka afiliacyjna](https://nis2-bg.eu/metodologia.html)
+- [Kalkulator kosztów NIS2 – szacuj budżet na zgodność](https://nis2-bg.eu/kalkulator-kosztow-nis2.html)
+- [Realny koszt zgodności z NIS2/KSC w Polsce 2026: budżety, wydatki i ryzyko niezgodności](https://nis2-bg.eu/report-koszty-nis2.html)
+- [Wyścig z czasem: ile z ~42 000 polskich firm zdąży zarejestrować się w KSC przed 3 października 2026? Raport o skali, sektorach i ryzyku kar do 10 mln EUR (2026)](https://nis2-bg.eu/report-nis2-pl.html)
+- [Porównanie narzędzi EU AI Act 2026](https://nis2-bg.eu/ai-act-narzedzia.html)
+- [Porównanie narzędzi EAA dostępność cyfrowa 2026](https://nis2-bg.eu/narzedzia-dostepnosci-eaa.html)
+- [NIS2 Starter Pack, edytowalne szablony zgodności](https://nis2-bg.eu/pakiet-startowy-nis2.html)
+- [Jak dostępne są największe serwisy konsumenckie? Badanie 2026](https://nis2-bg.eu/report-dostepnosc-stron-pl.html)
+- [Porównanie narzędzi DORA 2026](https://nis2-bg.eu/dora-narzedzia.html)
+- [Porównanie oprogramowania ISO 27001 2026](https://nis2-bg.eu/iso-27001-narzedzia.html)
+
+## Collections
+- [narzedzia/](https://nis2-bg.eu/narzedzia/): 15 pages
+- [sektory/](https://nis2-bg.eu/sektory/): 31 pages
+
+## Notes
+- Independent, pl-language resource.
+- Content is free to cite with attribution + a link.

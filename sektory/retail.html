@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-32QHQRGVRH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-32QHQRGVRH');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KSC/NIS2 dla sieci handlowych i e-commerce w Polsce 2026</title>
+  <meta name="description" content="Przewodnik compliance KSC/NIS2 dla dużych sieci handlowych i operatorów e-commerce. Wymagania bezpieczeństwa danych, POS, płatności i raportowania incydentów do 2026 r.">
+  <link rel="canonical" href="https://nis2-bg.eu/sektory/retail.html">
+  <meta property="og:title" content="KSC/NIS2 dla sieci handlowych i e-commerce w Polsce 2026">
+  <meta property="og:description" content="Przewodnik compliance KSC/NIS2 dla dużych sieci handlowych i operatorów e-commerce. Wymagania bezpieczeństwa danych, POS, płatności i raportowania incydentów do 2026 r.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://nis2-bg.eu/sektory/retail.html">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:site_name" content="NIS2-Narzedzia.pl">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="KSC/NIS2 dla sieci handlowych i e-commerce w Polsce 2026">
+  <meta name="twitter:description" content="Przewodnik compliance KSC/NIS2 dla dużych sieci handlowych i operatorów e-commerce. Wymagania bezpieczeństwa danych, POS, płatności i raportowania incydentów do 2026 r.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Strona główna",
+      "item": "https://nis2-bg.eu/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Sektory",
+      "item": "https://nis2-bg.eu/sektory/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "KSC/NIS2 dla dużych sieci handlowych i operatorów e-commerce w Polsce — wymagania 2026",
+      "item": "https://nis2-bg.eu/sektory/retail.html"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Czy nasz starszy terminal POS musi być wymieniony, aby spełnić KSC/NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jeśli terminal został wdrożony przed 2019 r. i nie posiada certyfikacji PCI-DSS 3.2.1, zalecamy wymianę do 31 grudnia 2026 r. Tymczasowo można wdrożyć tokenizację (np. poprzez bramkę płatności) lub zwiększyć monitorowanie sieci, jednak modernizacja jest obligatoryjna dla pełnego compliance. Sprawdzenie statusu PCI-DSS każdego terminala powinno być częścią audytu przygotowawczego."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jakie dane z programu lojalnościowego możemy przechowywać i jak długo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "KSC/NIS2 wymaga przechowywania danych tylko tak długo, jak jest to uzasadnione biznesowo — zazwyczaj 3 lata od ostatniej aktywności klienta. Dane o kartach kredytowych należy usunąć natychmiast po transakcji (PCI-DSS), a historię zakupów można przechowywać wyłącznie dla celów marketingu i analizy. Baza lojalnościowa z danymi 10+ letnimi stanowi niskie ryzyko operacyjne — zalecamy przeprowadzenie audytu retencji i usunięcie historycznych danych."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jakie są kary za niespełnienie KSC/NIS2 jako podmiot ważny?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Prezes UKNF może nałożyć karę administracyjną do 1,5 mln EUR (lub 3% przychodu brutto) za brak implementacji wymaganych środków bezpieczeństwa oraz do 5 mln EUR (lub 10% przychodu brutto) za nieudostępnienie danych audytorowi. Dodatkowo, naruszenia w systemach płatności mogą prowadzić do kar wydawanych przez procesorów płatności (utraty certyfikacji PCI-DSS). Deadline zgodności to 31 grudnia 2026 r. dla podmiotów ważnych."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">NIS2<span>Bg</span>.eu</a>
+      <ul class="nav__links">
+        <li><a href="../sravnenie.html">Porównanie narzędzi</a></li>
+        <li><a href="../kalkulator.html">Kalkulator KSC</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+      </ul>
+      <a href="../kalkulator.html" class="nav__cta">Sprawdź czy podlegasz →</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="padding-top:1.5rem;">
+  <div class="breadcrumb">
+    <a href="../index.html">Strona główna</a><span>›</span>
+    <a href="index.html">Sektory</a><span>›</span>
+    KSC/NIS2 dla dużych sieci handlowych i operatorów e-commerce w Polsce — wymagania 2026
+  </div>
+</div>
+
+<!-- HERO -->
+<div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
+  <div class="container--narrow">
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Załącznik II — Podmiot ważny</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">KSC/NIS2 dla dużych sieci handlowych i operatorów e-commerce w Polsce — wymagania 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Niniejszy przewodnik adresuje kierowników bezpieczeństwa informacyjnego, compliance officers oraz właścicieli platform e-commerce, którzy muszą spełnić wymogi Ustawy o Krajowym Systemie Cyberbezpieczeństwa jako podmioty ważne. Dowiesz się, jakie konkretne działania wdrożyć w infrastrukturze płatności, zarządzaniu danymi klientów oraz kontroli dostępu dostawców.</p>
+  </div>
+</div>
+
+<!-- WHO QUALIFIES -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Compliance obejmuje sieci handlowe z przychodami powyżej 500 mln EUR rocznie lub operatorów e-commerce przetwarzających dane ponad 1 mln klientów rocznie, jeśli znacznie przyczyniają się do funkcjonowania rynku detalicznego w Polsce. W praktyce dotyczy to największych operatorów (Auchan, Carrefour, Media Markt, Allegro, Amazon.pl i podobnych), które obsługują systemy płatności i przechowują dane osobowe na masową skalę.</p>
+  </div>
+</div>
+
+<!-- OBLIGATIONS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Kluczowe obowiązki NIS2 dla tego sektora</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Bezpieczeństwo infrastruktury POS i przetwarzania płatności</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Muszą Państwo zapewnić szyfowanie danych karty płatniczej w całym łańcuchu POS-Gateway-Procesor oraz wdrożyć tokenizację. KSC/NIS2 wymaga zgodności zarówno z wymogami NIS2 dotyczącymi szyfrowania, jak i z PCI-DSS 3.2.1+. Obowiązuje kwartalna ocena podatności systemu płatności oraz izolacja sieci POS od sieci ogólnodostępnej (DMZ).</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Notyfikacja naruszeń danych klientów i raportowanie incydentów</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Naruszenie bezpieczeństwa danych klientów (np. wycieku bazy lojalności) musi być zgłoszone Prezesowi UKNF w ciągu 72 godzin od odkrycia, a klientom w ciągu 30 dni. KSC/NIS2 wymaga również raportowania zakłóceń w świadczeniu usług (np. niedostępność e-sklepu powyżej 2 godzin) do CERT Polska. Wymagana jest procedura triage'u incydentów z określonymi progami eskalacji.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Bezpieczeństwo łańcucha dostaw — kontrola dostępu dostawców logistycznych i magazynowych</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Dostawcy logistyki (DPD, GLS, InPost) i operatorzy magazynów mają dostęp do systemów inwentaryzacji i danych klientów. KSC/NIS2 wymaga umów bezpieczeństwa z minimum: auditem bezpieczeństwa dostawcy przed przydzieleniem dostępu, ograniczeniem uprawnień do minimum niezbędnego oraz monitorowaniem dostępu w logach. Co najmniej raz rocznie przeprowadzić ocenę bezpieczeństwa łańcucha dostaw.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Zarządzanie danymi programów lojalnościowych i retencja danych</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Bazy danych klientów loyalty programs (Carrefour Club, Allegro Smart) zawierają dane behawiorowe, historię zakupów i karty kredytowe. KSC/NIS2 wymaga określenia terminu przechowywania (maksymalnie do 3 lat po ostatniej aktywności klienta), automatycznego usuwania danych nieaktywnych, szyfrowania haseł i tokenów sesji. Kontrola dostępu do baz lojalnościowych musi być limitowana do zespołu CRM i nie może dotyczyć ogólnych administratorów IT.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Zarządzanie ryzykiem bezpieczeństwa i ciągłość działalności</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">KSC/NIS2 wymaga opracowania plan ciągłości działalności dla krytycznych systemów (POS, e-sklep, płatności) z RTO max 24h i RPO max 4h. Obowiązkowe są testy failover systemu płatności co najmniej dwa razy rocznie i procedury awaryjne obsługi offline-owej transakcji. Muszą Państwo prowadzić rejestr ryzyka cyberbezpieczeństwa z co najmniej kwartalną aktualizacją ryzyka związanego z podatności systemów edge'owych (np. smartfony kasjerów) oraz ryzykami z nowych kanałów sprzedaży (mobile payment, BNPL).</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TYPICAL GAPS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Typowe luki compliance w tym sektorze</h2>
+  <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
+    
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Starsze terminale POS (ponad 5 lat) nie posiadają certyfikacji PCI-DSS 3.2.1 i nie wspierają szyfrowania end-to-end — wymagane jest wdrożenie tokenizacji lub modernizacja infrastruktury przed deadline 31 grudnia 2026 r.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Bazy danych programów lojalnościowych przechowują dane klientów przez 10+ lat po ostatniej transakcji bez uzasadnienia biznesowego — niezbędne jest przeprowadzenie audytu retencji danych i wdrożenie polityki automatycznego usunięcia danych przestarzałych.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Dostawcy logistyki (np. InPost, GLS) posiadają nieograniczony dostęp do systemów inwentaryzacji bez segmentacji sieci ani monitorowania — wymaga wprowadzenia MFA, VPN z limitowanym IP oraz logowania dostępu dostawcy w SIEM.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Brak procedur raportowania incydentów do CERT Polska dla zakłóceń w e-handlu — wymagane jest opracowanie SOP z progami eskalacji (np. niedostępność platformy >2h = raport) i wyznaczenie koordynatora incydentów.
+    </li>
+  </ul>
+</div>
+
+<!-- TOOLS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Rekomendowane narzędzia dla tego sektora</h2>
+  <div style="display:grid;gap:1rem;">
+    
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Reglyze</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">reglyze.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../instrumenti/reglyze.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">ISMS.online</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">isms.online</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../instrumenti/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">NordLayer</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">nordlayer.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../instrumenti/nordlayer.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem;" itemscope itemtype="https://schema.org/FAQPage">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Często zadawane pytania</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Czy nasz starszy terminal POS musi być wymieniony, aby spełnić KSC/NIS2?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Jeśli terminal został wdrożony przed 2019 r. i nie posiada certyfikacji PCI-DSS 3.2.1, zalecamy wymianę do 31 grudnia 2026 r. Tymczasowo można wdrożyć tokenizację (np. poprzez bramkę płatności) lub zwiększyć monitorowanie sieci, jednak modernizacja jest obligatoryjna dla pełnego compliance. Sprawdzenie statusu PCI-DSS każdego terminala powinno być częścią audytu przygotowawczego.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jakie dane z programu lojalnościowego możemy przechowywać i jak długo?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">KSC/NIS2 wymaga przechowywania danych tylko tak długo, jak jest to uzasadnione biznesowo — zazwyczaj 3 lata od ostatniej aktywności klienta. Dane o kartach kredytowych należy usunąć natychmiast po transakcji (PCI-DSS), a historię zakupów można przechowywać wyłącznie dla celów marketingu i analizy. Baza lojalnościowa z danymi 10+ letnimi stanowi niskie ryzyko operacyjne — zalecamy przeprowadzenie audytu retencji i usunięcie historycznych danych.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jakie są kary za niespełnienie KSC/NIS2 jako podmiot ważny?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Prezes UKNF może nałożyć karę administracyjną do 1,5 mln EUR (lub 3% przychodu brutto) za brak implementacji wymaganych środków bezpieczeństwa oraz do 5 mln EUR (lub 10% przychodu brutto) za nieudostępnienie danych audytorowi. Dodatkowo, naruszenia w systemach płatności mogą prowadzić do kar wydawanych przez procesorów płatności (utraty certyfikacji PCI-DSS). Deadline zgodności to 31 grudnia 2026 r. dla podmiotów ważnych.</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div style="background:var(--navy);padding:3rem 1.25rem;text-align:center;margin-top:2rem;">
+  <div class="container--narrow">
+    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Sprawdź wymagania dla swojej organizacji</h2>
+    <p style="color:rgba(255,255,255,.75);margin:0 0 1.5rem;font-size:.95rem;">
+      KSC/NIS2 · Polska · 2026
+    </p>
+    <a href="../kalkulator.html" style="display:inline-block;background:#16a34a;color:#fff;padding:.85rem 2.25rem;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;">
+      Uruchom kalkulator →
+    </a>
+  </div>
+</div>
+
+
+<nav class="related-sectors" aria-label="Powiązane sektory" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Powiązane sektory</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="sme-general.html">NIS2 dla średnich firm w Polsce</a></li><li style="margin:0"><a href="software-saas.html">NIS2 dla firm SaaS B2B w Polsce</a></li><li style="margin:0"><a href="telecoms.html">KSC/NIS2 dla operatorów telekomunikacyjnych i ISP</a></li><li style="margin:0"><a href="telemedicine.html">NIS2 dla platform telemedycyny w Polsce</a></li><li style="margin:0"><a href="transport.html">KSC/NIS2 dla operatorów transportu</a></li><li style="margin:0"><a href="waste-management.html">NIS2 dla operatorów odpadów w Polsce</a></li></ul></nav>
+<footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
+  <div class="container">
+    <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
+      © 2026 NIS2-Narzedzia.pl · KSC/NIS2 · UKNF/CERT Polska
+      <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
+      <br><a href="../index.html" style="color:var(--gray-400);">Strona główna</a> ·
+      <a href="index.html" style="color:var(--gray-400);">Sektory</a> ·
+      <a href="../sravnenie.html" style="color:var(--gray-400);">Porównanie narzędzi</a>
+    </p>
+  </div>
+</footer>
+
+  <script src="/js/tg-cta.js" defer></script>
+</body>
+</html>

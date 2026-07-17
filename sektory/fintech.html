@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-32QHQRGVRH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-32QHQRGVRH');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KSC/NIS2 dla Fintech — Wymagania Compliance 2026 w Polsce</title>
+  <meta name="description" content="Kompleksowy przewodnik KSC/NIS2 dla fintechów, procesorów płatności i platform pożyczkowych. Poznaj obowiązki dla podmiotów ważnych, testy bezpieczeństwa API i raportowanie incydentów.">
+  <link rel="canonical" href="https://nis2-bg.eu/sektory/fintech.html">
+  <meta property="og:title" content="KSC/NIS2 dla Fintech — Wymagania Compliance 2026 w Polsce">
+  <meta property="og:description" content="Kompleksowy przewodnik KSC/NIS2 dla fintechów, procesorów płatności i platform pożyczkowych. Poznaj obowiązki dla podmiotów ważnych, testy bezpieczeństwa API i raportowanie incydentów.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://nis2-bg.eu/sektory/fintech.html">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:site_name" content="NIS2-Narzedzia.pl">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="KSC/NIS2 dla Fintech — Wymagania Compliance 2026 w Polsce">
+  <meta name="twitter:description" content="Kompleksowy przewodnik KSC/NIS2 dla fintechów, procesorów płatności i platform pożyczkowych. Poznaj obowiązki dla podmiotów ważnych, testy bezpieczeństwa API i raportowanie incydentów.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Strona główna",
+      "item": "https://nis2-bg.eu/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Sektory",
+      "item": "https://nis2-bg.eu/sektory/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "KSC/NIS2 dla Fintech w Polsce — Obowiązki Podmiotów Ważnych 2026",
+      "item": "https://nis2-bg.eu/sektory/fintech.html"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Czy neobank z 250 000 użytkowników musi stosować pełne wymogi NIS2 Załącznika II?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tak, jeśli neobank świadczy usługi płatnicze w Polsce i przekracza progi użytkowników lub wolumenu transakcji określone przez UKNF, jest klasyfikowany jako podmiot ważny. Obowiązuje pełna dokumentacja zarządzania ryzykiem ICT, testy bezpieczeństwa API co najmniej raz rocznie i raportowanie incydentów do UKNF w ciągu 72 godzin."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jakie konkretne wymogi dla API bankowych nakazuje KSC/NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "API musi być poddane testom penetracyjnym przed każdym wdrożeniem w produkcji (lub co najmniej raz rocznie dla zmian mniejszych), z dokumentacją zgodności z OWASP API Security Top 10. Wymagane są również: uwierzytelnianie wielopoziomowe (MFA) dla dostępu administratorskiego, szyfrowanie TLS 1.2 minimum, rate limiting, i logowanie wszystkich operacji na koncie klienta."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jakie kary grożą za niedotrzymanie terminu raportowania incydentów do UKNF?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Opóźnione lub niecałkowite powiadomienie o incydencie zakłócającym przetwarzanie płatności stanowi naruszenie KSC/NIS2 i może skutkować karą do 50 000 PLN dla osób fizycznych i do 1 000 000 PLN dla osób prawnych. Dodatkowo UKNF może wydać zalecenie wdrożenia popraw w określonym terminie pod groźbą sankcji administracyjnych."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">NIS2<span>Bg</span>.eu</a>
+      <ul class="nav__links">
+        <li><a href="../sravnenie.html">Porównanie narzędzi</a></li>
+        <li><a href="../kalkulator.html">Kalkulator KSC</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+      </ul>
+      <a href="../kalkulator.html" class="nav__cta">Sprawdź czy podlegasz →</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="padding-top:1.5rem;">
+  <div class="breadcrumb">
+    <a href="../index.html">Strona główna</a><span>›</span>
+    <a href="index.html">Sektory</a><span>›</span>
+    KSC/NIS2 dla Fintech w Polsce — Obowiązki Podmiotów Ważnych 2026
+  </div>
+</div>
+
+<!-- HERO -->
+<div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
+  <div class="container--narrow">
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Załącznik II — Podmiot Ważny</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">KSC/NIS2 dla Fintech w Polsce — Obowiązki Podmiotów Ważnych 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Przewodnik adresowany do zespołów compliance, security i operacji fintech'ów oraz neobankingów. Dowiesz się, jakie konkretne wymagania dotyczą zarządzania ryzykiem ICT, testowania bezpieczeństwa API oraz raportowania incydentów zakłócających przetwarzanie płatności.</p>
+  </div>
+</div>
+
+<!-- WHO QUALIFIES -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Wymóg dotyczy firm fintech'owych, procesorów płatności, neobanków i platform pożyczkowych, które obsługują ponad 350 000 użytkowników albo przetwarzają płatności o wartości przekraczającej określone progi (zgodnie z kategoryzacją UKNF). Obowiązek ciąży na każdej organizacji świadczącej usługi płatnicze lub kredytowe w Polsce, niezależnie od siedziby, jeśli obsługuje polskich użytkowników.</p>
+  </div>
+</div>
+
+<!-- OBLIGATIONS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Kluczowe obowiązki NIS2 dla tego sektora</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Zarządzanie ryzykiem ICT proporcjonalne do skali i krytyczności usług</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Każda instytucja fintech musi wdrożyć formalny system zarządzania ryzykiem ICT, obejmujący ocenę podatności, testy penetracyjne API i aplikacji mobilnych co najmniej raz w roku, oraz mapowanie zależności od dostawców chmurowych. Ryzyko musi być dokumentowane w harmonogramie i powiązane z SLA dostawców. Dla dużych procesorów płatności wymagane są testy bezpieczeństwa po każdej zmianie kodu w systemach krytycznych.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Testowanie bezpieczeństwa API i aplikacji mobilnych</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Fintech'i muszą poddawać wszystkie API przetwarzające dane finansowe lub uwierzytelniające użytkowników formalnym testom bezpieczeństwa (pentestom) przed wdrożeniem w produkcji. Aplikacje mobilne wymagają weryfikacji OWASP Mobile Top 10. Wyniki testów muszą być dokumentowane i przechowywane przez minimum 3 lata dla celów audytu UKNF.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Ochrona danych klientów zgodna z NIS2, PSD2 i GDPR</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Platform'y muszą zaimplementować szyfrowanie end-to-end dla danych wrażliwych (numery kart, PIN'y, dane logowania) i niezniszczalność logów audytu. Procedury muszą pokrywać zarówno wymogi GDPR (prawo dostępu i usunięcia), jak i NIS2 (integralność danych). Dostawcy zewnętrzni (chmura, analityka) wymagają umów z klauzulami bezpieczeństwa ICT i zgłaszania incydentów w ciągu 24 godzin.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Raportowanie incydentów zakłócających przetwarzanie płatności</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Każdy incydent, który uniemożliwia obsługę płatności przez ponad 30 minut, musi być zgłoszony do UKNF i CERT Polska w ciągu 72 godzin od wykrycia. Raport musi zawierać: opis zagrożenia, liczbę zakłóconych transakcji, wpływ na klientów oraz wdrożone środki zaradcze. Fintech'i muszą utrzymywać plan odzyskiwania w nagłych wypadkach (disaster recovery plan) z RTO ≤ 4 godziny i RPO ≤ 1 godzina.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Dokumentacja wymogów bezpieczeństwa dla dostawców i integratorów</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Wszystkie umowy z dostawcami chmury, bramkami płatniczymi i integratorami muszą zawierać formalnie opisane wymogi ICT: standards szyfrowania, procedury backup'u, audyty bezpieczeństwa, granice geograficzne przetwarzania danych. Každy dostawca musi mieć plan ciągłości biznesu i procedurę powiadomienia w przypadku incydentu. Fintech'i muszą przeprowadzać coroczne przeglądy umów i walidować compliance dostawców.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TYPICAL GAPS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Typowe luki compliance w tym sektorze</h2>
+  <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
+    
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>API bezpieczeństwo nie jest oceniane formalnie po każdym wydaniu — wdrażanie testów bezpieczeństwa w CI/CD pipeline i dokumentowanie wyników dla każdego release'u
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Brak udokumentowanych wymagań bezpieczeństwa dla dostawców chmury — stwórz standardową klauzulę ICT w umowach opisującą szyfrowanie, audyty i terminy powiadomienia o incydentach
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Procedury incidentowe pokrywają GDPR, ale pomijają progi raportowania NIS2 (30 minut przerwy w płatnościach) — rozdziel ścieżkę GDPR od NIS2 i przypisz osobę odpowiedzialną za powiadomienie UKNF
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Brak testów disaster recovery dla krytycznych systemów płatności — zaplanuj coroczne ćwiczenia odzyskiwania z kopii zapasowych na testowym środowisku i dokumentuj czasy RTO/RPO
+    </li>
+  </ul>
+</div>
+
+<!-- TOOLS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Rekomendowane narzędzia dla tego sektora</h2>
+  <div style="display:grid;gap:1rem;">
+    
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Secfix</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../instrumenti/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Reglyze</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">reglyze.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../instrumenti/reglyze.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Sprinto</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">sprinto.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../instrumenti/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem;" itemscope itemtype="https://schema.org/FAQPage">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Często zadawane pytania</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Czy neobank z 250 000 użytkowników musi stosować pełne wymogi NIS2 Załącznika II?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Tak, jeśli neobank świadczy usługi płatnicze w Polsce i przekracza progi użytkowników lub wolumenu transakcji określone przez UKNF, jest klasyfikowany jako podmiot ważny. Obowiązuje pełna dokumentacja zarządzania ryzykiem ICT, testy bezpieczeństwa API co najmniej raz rocznie i raportowanie incydentów do UKNF w ciągu 72 godzin.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jakie konkretne wymogi dla API bankowych nakazuje KSC/NIS2?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">API musi być poddane testom penetracyjnym przed każdym wdrożeniem w produkcji (lub co najmniej raz rocznie dla zmian mniejszych), z dokumentacją zgodności z OWASP API Security Top 10. Wymagane są również: uwierzytelnianie wielopoziomowe (MFA) dla dostępu administratorskiego, szyfrowanie TLS 1.2 minimum, rate limiting, i logowanie wszystkich operacji na koncie klienta.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jakie kary grożą za niedotrzymanie terminu raportowania incydentów do UKNF?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Opóźnione lub niecałkowite powiadomienie o incydencie zakłócającym przetwarzanie płatności stanowi naruszenie KSC/NIS2 i może skutkować karą do 50 000 PLN dla osób fizycznych i do 1 000 000 PLN dla osób prawnych. Dodatkowo UKNF może wydać zalecenie wdrożenia popraw w określonym terminie pod groźbą sankcji administracyjnych.</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div style="background:var(--navy);padding:3rem 1.25rem;text-align:center;margin-top:2rem;">
+  <div class="container--narrow">
+    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Sprawdź wymagania dla swojej organizacji</h2>
+    <p style="color:rgba(255,255,255,.75);margin:0 0 1.5rem;font-size:.95rem;">
+      KSC/NIS2 · Polska · 2026
+    </p>
+    <a href="../kalkulator.html" style="display:inline-block;background:#16a34a;color:#fff;padding:.85rem 2.25rem;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;">
+      Uruchom kalkulator →
+    </a>
+  </div>
+</div>
+
+
+<nav class="related-sectors" aria-label="Powiązane sektory" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Powiązane sektory</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="food.html">KSC/NIS2 dla przetwórców żywności</a></li><li style="margin:0"><a href="hospitals.html">NIS2 dla szpitali w Polsce 2026</a></li><li style="margin:0"><a href="hr-payroll.html">KSC/NIS2 dla dostawców oprogramowania HR i usług płacowych w Polsce</a></li><li style="margin:0"><a href="index.html">Sektory objęte NIS2 w Polsce 2026</a></li><li style="margin:0"><a href="insurance.html">KSC/NIS2 dla ubezpieczycieli w Polsce</a></li><li style="margin:0"><a href="it-outsourcing.html">KSC/NIS2 dla firm IT outsourcingu i integratorów systemów w Polsce 2026</a></li></ul></nav>
+<footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
+  <div class="container">
+    <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
+      © 2026 NIS2-Narzedzia.pl · KSC/NIS2 · UKNF/CERT Polska
+      <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
+      <br><a href="../index.html" style="color:var(--gray-400);">Strona główna</a> ·
+      <a href="index.html" style="color:var(--gray-400);">Sektory</a> ·
+      <a href="../sravnenie.html" style="color:var(--gray-400);">Porównanie narzędzi</a>
+    </p>
+  </div>
+</footer>
+
+  <script src="/js/tg-cta.js" defer></script>
+</body>
+</html>

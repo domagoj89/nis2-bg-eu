@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-32QHQRGVRH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-32QHQRGVRH');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIS2 dla firm SaaS B2B w Polsce — Wymagania 2026</title>
+  <meta name="description" content="Przewodnik NIS2 dla vendorów oprogramowania i platform cyfrowych w Polsce. Poznaj obowiązki podmiotu ważnego, terminy compliance i narzędzia.">
+  <link rel="canonical" href="https://nis2-bg.eu/sektory/software-saas.html">
+  <meta property="og:title" content="NIS2 dla firm SaaS B2B w Polsce — Wymagania 2026">
+  <meta property="og:description" content="Przewodnik NIS2 dla vendorów oprogramowania i platform cyfrowych w Polsce. Poznaj obowiązki podmiotu ważnego, terminy compliance i narzędzia.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://nis2-bg.eu/sektory/software-saas.html">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:site_name" content="NIS2-Narzedzia.pl">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="NIS2 dla firm SaaS B2B w Polsce — Wymagania 2026">
+  <meta name="twitter:description" content="Przewodnik NIS2 dla vendorów oprogramowania i platform cyfrowych w Polsce. Poznaj obowiązki podmiotu ważnego, terminy compliance i narzędzia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Strona główna",
+      "item": "https://nis2-bg.eu/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Sektory",
+      "item": "https://nis2-bg.eu/sektory/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "NIS2 dla firm SaaS B2B i operatorów platform cyfrowych w Polsce — wymagania 2026",
+      "item": "https://nis2-bg.eu/sektory/software-saas.html"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Czy jako dostawca SaaS jestem obowiązany posiadać formalną politykę ujawniania podatności, jeśli mam mały zespół bezpieczeństwa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tak, KSC/NIS2 wymagają polityki ujawniania podatności niezależnie od wielkości zespołu. Polityka musi być opublikowana na stronie www (np. w security.txt lub na stronie privacy), zawierać email kontaktowy do zespołu bezpieczeństwa i oczekiwane czasy odpowiedzi. Brak formalnej polityki to wyraźna niezgodność podczas audytu CERT Polska."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jak często powinienem wykonywać testy penetracyjne, aby spełnić wymogi NIS2 dla firm SaaS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Minimum jeden raz rocznie dla całej aplikacji, ale CERT Polska oczekuje testów частичных (focused) dla nowych funkcji i integracji przed wdrożeniem. Jeśli dodajesz nowe API lub zmeniasz architekturę, powinieneś wykonać test penetracyjny w ciągu 30 dni od wdrożenia. Raport musi wskazywać status remediacjii wszystkich podatności."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jakie kary grożą za niezgodność z KSC/NIS2 do 2026 roku, jeśli jestem podmiotem ważnym?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "UKNF może nałożyć kary do 10 mln EUR lub 2% rocznego obrotu (w zależności od tego, która kwota jest wyższa) za naruszenie obowiązków NIS2. Dodatkowo możliwe są kary za naruszenia RODO (do 20 mln EUR) jeśli incydent bezpieczeństwa doprowadzi do wycieku danych klientów. Deadline pełnej compliance to 30 grudnia 2026 roku."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">NIS2<span>Bg</span>.eu</a>
+      <ul class="nav__links">
+        <li><a href="../sravnenie.html">Porównanie narzędzi</a></li>
+        <li><a href="../kalkulator.html">Kalkulator KSC</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+      </ul>
+      <a href="../kalkulator.html" class="nav__cta">Sprawdź czy podlegasz →</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="padding-top:1.5rem;">
+  <div class="breadcrumb">
+    <a href="../index.html">Strona główna</a><span>›</span>
+    <a href="index.html">Sektory</a><span>›</span>
+    NIS2 dla firm SaaS B2B i operatorów platform cyfrowych w Polsce — wymagania 2026
+  </div>
+</div>
+
+<!-- HERO -->
+<div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
+  <div class="container--narrow">
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Załącznik II — podmiot ważny</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 dla firm SaaS B2B i operatorów platform cyfrowych w Polsce — wymagania 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Niniejszy przewodnik adresuje szefów ds. bezpieczeństwa, compliance officerow i liderów technicznych w polskich firmach SaaS obsługujących klientów korporacyjnych. Dowiesz się, jakie konkretne obowiązki nakłada na Panią/Pana regulacja NIS2 oraz jak zbudować program compliance w ciągu 2026 roku.</p>
+  </div>
+</div>
+
+<!-- WHO QUALIFIES -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Firmy SaaS, vendorzy oprogramowania i operatorzy platform cyfrowych zaliczają się do podmiotów ważnych NIS2, jeśli świadczą usługi dla przedsiębiorstw z UE, niezależnie od liczby pracowników. Obowiązek dotyczy wszystkich firm sprzedających SaaS, oprogramowanie na licencję lub usługi platform rozliczeniowych dla klientów B2B. Polska regulacja transponuje te wymogi w KSC/NIS2 z możliwością nadzoru przez UKNF i CERT Polska.</p>
+  </div>
+</div>
+
+<!-- OBLIGATIONS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Kluczowe obowiązki NIS2 dla tego sektora</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Dokumentacja bezpiecznego cyklu życia oprogramowania (SSDLC)</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Pani/Pana firma musi udokumentować wszystkie etapy rozwoju oprogramowania — od planowania wymagań bezpieczeństwa, przez code review, do testów bezpieczeństwa przed wdrożeniem. Dokumentacja powinna zawierać role odpowiadające za bezpieczeństwo, Standard i procesy zatwierdzania zmian, oraz archiwa audytów. CERT Polska oczekuje dostępu do tej dokumentacji podczas inspekcji.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Política ujawniania podatności i SLA zarządzania poprawkami</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Musisz posiadać formalną politykę informacji o podatnościach dla klientów i badaczy bezpieczeństwa, zawierającą kanały zgłaszania (np. security@twojafirma.pl) i czas odpowiedzi. Polityka powinna określać SLA dla łat krytycznych (max 14 dni), wysokich (max 30 dni) i średnich (max 90 dni). Brak formalnej polityki to typowa luka w audytach NIS2.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Bezpieczeństwo danych klientów i obowiązek zawiadomienia o naruszeniach</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Jako dostawca SaaS jesteś odpowiedzialny za ochronę danych klientów zgodnie z RODO i KSC/NIS2. Musisz zawiadomić klientów o naruszeniu danych w ciągu 72 godzin, a UKNF w ciągu 72 godzin od potwierdzenia incydentu. Opracuj procedury detekcji incydentów, logowania dostępu i kopii zapasowych z regularnym testowaniem przywracania danych.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Bezpieczeństwo łańcucha dostaw — skanowanie zależności open-source</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Pani/Pana aplikacja zawiera zależności open-source, które mogą zawierać podatności. Musisz wdrożyć automatyczne skanowanie bibliotek w CI/CD (np. narzędziami jak Snyk, OWASP Dependency-Check), śledzić licencje i harmonogram aktualizacji. Raport z skanowania powinien być dostępny dla audytorów CERT Polska.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Regularne testy penetracyjne obejmujące nowe funkcjonalności</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Wymagane są testy penetracyjne co najmniej raz w roku, wykonane przez niezależnych ekspertów (penetration testers z certyfikatami OSCP, CEH). Każde nowe API, integracja lub zmiana architektoniczna wymaga oddzielnego testu przed wdrożeniem w production. Raport musi zawierać status remediacji wszystkich znalezionych podatności.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TYPICAL GAPS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Typowe luki compliance w tym sektorze</h2>
+  <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
+    
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Brak formalnej, opublikowanej polityki ujawniania podatności — firmy mają procesy, ale nie są udokumentowane publicznie lub w compliance documentation.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Automatyczne skanowanie zależności open-source nie jest zintegrowane z CI/CD — aktualizacje bibliotek odbywają się ad hoc, bez śledzenia SBOM (Software Bill of Materials).
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Testy penetracyjne odbywają się raz rocznie bez pokrycia nowych featur lub API — radarami penetracyjnymi nie obejmują zmian wdrożonych w ostatnich kwartałach.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Brak formalnego procesu security review dla integracji third-party — dodatkowe API i narzędzia logowania (np. analytics, payment gateways) nie są weryfikowane pod kątem bezpieczeństwa.
+    </li>
+  </ul>
+</div>
+
+<!-- TOOLS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Rekomendowane narzędzia dla tego sektora</h2>
+  <div style="display:grid;gap:1rem;">
+    
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Sprinto</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">sprinto.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../instrumenti/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Secfix</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../instrumenti/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Drata</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">drata.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../instrumenti/drata.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem;" itemscope itemtype="https://schema.org/FAQPage">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Często zadawane pytania</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Czy jako dostawca SaaS jestem obowiązany posiadać formalną politykę ujawniania podatności, jeśli mam mały zespół bezpieczeństwa?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Tak, KSC/NIS2 wymagają polityki ujawniania podatności niezależnie od wielkości zespołu. Polityka musi być opublikowana na stronie www (np. w security.txt lub na stronie privacy), zawierać email kontaktowy do zespołu bezpieczeństwa i oczekiwane czasy odpowiedzi. Brak formalnej polityki to wyraźna niezgodność podczas audytu CERT Polska.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jak często powinienem wykonywać testy penetracyjne, aby spełnić wymogi NIS2 dla firm SaaS?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Minimum jeden raz rocznie dla całej aplikacji, ale CERT Polska oczekuje testów частичных (focused) dla nowych funkcji i integracji przed wdrożeniem. Jeśli dodajesz nowe API lub zmeniasz architekturę, powinieneś wykonać test penetracyjny w ciągu 30 dni od wdrożenia. Raport musi wskazywać status remediacjii wszystkich podatności.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jakie kary grożą za niezgodność z KSC/NIS2 do 2026 roku, jeśli jestem podmiotem ważnym?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">UKNF może nałożyć kary do 10 mln EUR lub 2% rocznego obrotu (w zależności od tego, która kwota jest wyższa) za naruszenie obowiązków NIS2. Dodatkowo możliwe są kary za naruszenia RODO (do 20 mln EUR) jeśli incydent bezpieczeństwa doprowadzi do wycieku danych klientów. Deadline pełnej compliance to 30 grudnia 2026 roku.</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div style="background:var(--navy);padding:3rem 1.25rem;text-align:center;margin-top:2rem;">
+  <div class="container--narrow">
+    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Sprawdź wymagania dla swojej organizacji</h2>
+    <p style="color:rgba(255,255,255,.75);margin:0 0 1.5rem;font-size:.95rem;">
+      KSC/NIS2 · Polska · 2026
+    </p>
+    <a href="../kalkulator.html" style="display:inline-block;background:#16a34a;color:#fff;padding:.85rem 2.25rem;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;">
+      Uruchom kalkulator →
+    </a>
+  </div>
+</div>
+
+
+<nav class="related-sectors" aria-label="Powiązane sektory" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Powiązane sektory</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="telecoms.html">KSC/NIS2 dla operatorów telekomunikacyjnych i ISP</a></li><li style="margin:0"><a href="telemedicine.html">NIS2 dla platform telemedycyny w Polsce</a></li><li style="margin:0"><a href="transport.html">KSC/NIS2 dla operatorów transportu</a></li><li style="margin:0"><a href="waste-management.html">NIS2 dla operatorów odpadów w Polsce</a></li><li style="margin:0"><a href="water.html">NIS2 dla operatorów wodociągów w Polsce</a></li><li style="margin:0"><a href="accountants.html">KSC/NIS2 dla biur rachunkowych i audytorów w Polsce 2026</a></li></ul></nav>
+<footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
+  <div class="container">
+    <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
+      © 2026 NIS2-Narzedzia.pl · KSC/NIS2 · UKNF/CERT Polska
+      <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
+      <br><a href="../index.html" style="color:var(--gray-400);">Strona główna</a> ·
+      <a href="index.html" style="color:var(--gray-400);">Sektory</a> ·
+      <a href="../sravnenie.html" style="color:var(--gray-400);">Porównanie narzędzi</a>
+    </p>
+  </div>
+</footer>
+
+  <script src="/js/tg-cta.js" defer></script>
+</body>
+</html>

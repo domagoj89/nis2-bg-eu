@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-32QHQRGVRH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-32QHQRGVRH');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIS2 dla dostawców usług chmury w Polsce — wymagania 2026</title>
+  <meta name="description" content="Przewodnik compliance dla IaaS, PaaS, SaaS. Poznaj obowiązki powiadamiania o incydentach, baseline bezpieczeństwa i odpowiedzialność dzieloną. Termin: grudzień 2024.">
+  <link rel="canonical" href="https://nis2-bg.eu/sektory/cloud-providers.html">
+  <meta property="og:title" content="NIS2 dla dostawców usług chmury w Polsce — wymagania 2026">
+  <meta property="og:description" content="Przewodnik compliance dla IaaS, PaaS, SaaS. Poznaj obowiązki powiadamiania o incydentach, baseline bezpieczeństwa i odpowiedzialność dzieloną. Termin: grudzień 2024.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://nis2-bg.eu/sektory/cloud-providers.html">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:site_name" content="NIS2-Narzedzia.pl">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="NIS2 dla dostawców usług chmury w Polsce — wymagania 2026">
+  <meta name="twitter:description" content="Przewodnik compliance dla IaaS, PaaS, SaaS. Poznaj obowiązki powiadamiania o incydentach, baseline bezpieczeństwa i odpowiedzialność dzieloną. Termin: grudzień 2024.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Strona główna",
+      "item": "https://nis2-bg.eu/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Sektory",
+      "item": "https://nis2-bg.eu/sektory/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "NIS2 dla dostawców usług chmury w Polsce — obowiązki dla podmiotów kluczowych",
+      "item": "https://nis2-bg.eu/sektory/cloud-providers.html"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Czy dostawca SaaS oferujący narzędzia dla sektora finansowego musi spełniać wymogi NIS2 od razu, czy czeka do 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Polska implementacja KSC/NIS2 wchodzi w życie z twardym terminem compliance do 17 grudnia 2024 roku dla podmiotów z Załącznika I. Jeśli Pani lub Pan obsługuje klientów z sektora finansowego, regulacyjny termin wynosi grudzień 2024, a nie 2026. Jeśli nie jesteście jeszcze w compliance, należy natychmiast uruchomić projekt oceny luk i remediation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Czy konieczne jest posiadanie certyfikatu SOC 2 Type II przed powiadomieniam o incydentach w CERT Polska?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SOC 2 Type II lub ISO 27001 są wymagane jako baseline dla udowodnienia baseline bezpieczeństwa infrastruktury, ale powiadomienie o incydentach do CERT Polska wymaga spełnienia niezależnie od statusu certyfikacji. Jeśli incydent zachodzi przed uzyskaniem certyfikatu, nadal obowiązuje 72-godzinny obowiązek powiadomienia, a brak certyfikacji będzie odnotowany jako luka w compliance podczas inspekcji."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jakie kary grożą za brak powiadomienia klienta o incydentach w ciągu 24 godzin?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Polska UKNF może nałożyć kary administracyjne do 10 milionów złotych lub 2% rocznego przychodu globalnego za naruszenie obowiązków incydentowych (Art. 73 KSC). Ponadto, brak powiadomienia klienta w ciągu 24 godzin traktowany jest jako naruszenie umowy SLA i może prowadzić do kar umownych. CERT Polska dokumentuje każde opóźnienie i włącza je do rocznych raportów audytowych dla podmiotów kluczowych."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">NIS2<span>Bg</span>.eu</a>
+      <ul class="nav__links">
+        <li><a href="../sravnenie.html">Porównanie narzędzi</a></li>
+        <li><a href="../kalkulator.html">Kalkulator KSC</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+      </ul>
+      <a href="../kalkulator.html" class="nav__cta">Sprawdź czy podlegasz →</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="padding-top:1.5rem;">
+  <div class="breadcrumb">
+    <a href="../index.html">Strona główna</a><span>›</span>
+    <a href="index.html">Sektory</a><span>›</span>
+    NIS2 dla dostawców usług chmury w Polsce — obowiązki dla podmiotów kluczowych
+  </div>
+</div>
+
+<!-- HERO -->
+<div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
+  <div class="container--narrow">
+    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Załącznik I — podmiot kluczowy</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 dla dostawców usług chmury w Polsce — obowiązki dla podmiotów kluczowych</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Niniejszy przewodnik skierowany jest do dyrektorów bezpieczeństwa i zespołów compliance dostawców chmury IaaS, PaaS i SaaS oferujących usługi dużej bazie klientów EU. Otrzyma Pani lub Pan konkretne wymagania dotyczące infrastruktury wielodostępnej, powiadamiania o incydentach i dokumentacji modelu wspólnej odpowiedzialności.</p>
+  </div>
+</div>
+
+<!-- WHO QUALIFIES -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Dostawcy usług chmury (IaaS, PaaS, SaaS) operujący infrastrukturą wielodostępną o zasięgu europejskim muszą spełnić wymogi NIS2 jeśli oferują usługi klientom zidentyfikowanym jako podmioty kluczowe lub mają znaczący udział w rynku unijnym. Polska UKNF i CERT Polska będą nadzorować compliance dla podmiotów, których usługi wpływają na dostępność usług cyfrowych dla instytucji finansowych, transportu, energetyki i administracji publicznej.</p>
+  </div>
+</div>
+
+<!-- OBLIGATIONS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Kluczowe obowiązki NIS2 dla tego sektora</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Baseline bezpieczeństwa dla infrastruktury wielodostępnej</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Pani lub Pana organizacja musi wdrożyć i dokumentować architekturę bezpieczeństwa zapewniającą izolację danych i procesów poszczególnych klientów. Wymaga to certyfikacji SOC 2 Type II lub ISO 27001 oraz audytu co najmniej raz w roku na zgodność z bazowymi kontrolami NIST CSF dla usług wielodostępnych. Dokumentacja musi zawierać threat modeling dla scenariuszy kompromitacji przegród między dzierżawcami.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Powiadamianie o incydentach w ciągu 24 godzin</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Każdy incydent bezpieczeństwa wpływający na usługę musi być zaklasyfikowany zgodnie z kryteriami NIS2 (nie z ogólnymi politykami bezpieczeństwa) i zgłoszony Pani lub Pana klientom korporacyjnym w ciągu 24 godzin od wykrycia. CERT Polska musi być powiadomiony w ciągu 72 godzin. Wymaga to dedykowanego SLA dla powiadomień NIS2, niezależnego od ogólnego procesu zarządzania incydentami.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Dokumentacja modelu wspólnej odpowiedzialności dla klientów enterprise</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Pani lub Pan zobowiązany jest dostarczać każdemu klientowi enterprise (szczególnie tym zidentyfikowanym jako podmioty kluczowe) szczegółową mapę odpowiedzialności wskazującą, które kontrole bezpieczeństwa są zarządzane przez dostawcę, a które przez klienta. Dokument musi pokrywać incydenty, response time, penetration testing, patch management i monitorowanie zagrożeń. Aktualizacja wymagana przy każdej zmianie warunków usługi.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Lokalizacja i rezydencja danych dla klientów z UE</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Dla klientów z EU Pani lub Pan musi oferować opcję przechowywania danych wyłącznie na serwerach zlokalizowanych w Unii Europejskiej. Wymaga to dokumentacji infrastruktury wskazującej fizyczną lokalizację datacentrów i referencji do umów z operatorami infrastruktury. Klient musi mieć możliwość weryfikacji rezydencji danych poprzez dostęp do dashboardu lub raportu co najmniej kwartalnie.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Bezpieczeństwo łańcucha dostaw dla operatorów infrastruktury</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Pani lub Pan musi przeprowadzić audyt bezpieczeństwa dostawców infrastruktury (hostingi, datacentry, providery łączy sieciowych) i dokumentować ich zgodność z wymogami bezpieczeństwa. Wymaga to umów SLA zawierających klauzule dotyczące notyfikacji incydentów, prawa do audytów bezpieczeństwa i wymagań dotyczących incident response. Co najmniej raz w roku należy przeprowadzić assessment ryzyka dla kluczowych dostawców.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TYPICAL GAPS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Typowe luki compliance w tym sektorze</h2>
+  <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
+    
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Brak formalnej klasyfikacji incydentów specyficznej dla NIS2 — wiele organizacji traktuje zgłoszenia NIS2 jako podzbór standardowych incydentów bezpieczeństwa, zamiast utrzymać oddzielne procesy z właściwymi SLA (24h/72h) dla powiadomień regulacyjnych.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>SLA powiadomień klientów nie są wyrównane z wymaganiami NIS2 — umowy zawierają ogólne zobowiązania do 'szybkiego powiadomienia' zamiast konkretnych 24-godzinnych terminów dla incydentów klasyfikowanych jako NIS2-znaczące.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Niewystarczająca dokumentacja modelu wspólnej odpowiedzialności dla klientów enterprise — mapy odpowiedzialności nie zawierają konkretnych kontrolek, timeline response, lub jasnego podziału między zarządzaniem dostawcy a obowiązkami klienta w scenariuszach incydentów.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Brak formalnego procesu monitorowania i audytu dostawców infrastruktury pod kątem compliance — relacje z operatorami datacentrów i providerami łączy nie obejmują obowiązków wynikających z NIS2, co tworzy luki w łańcuchu dostaw bezpieczeństwa.
+    </li>
+  </ul>
+</div>
+
+<!-- TOOLS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Rekomendowane narzędzia dla tego sektora</h2>
+  <div style="display:grid;gap:1rem;">
+    
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Vanta</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">vanta.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../instrumenti/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Drata</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">drata.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../instrumenti/drata.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Sprinto</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">sprinto.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../instrumenti/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem;" itemscope itemtype="https://schema.org/FAQPage">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Często zadawane pytania</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Czy dostawca SaaS oferujący narzędzia dla sektora finansowego musi spełniać wymogi NIS2 od razu, czy czeka do 2026?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Polska implementacja KSC/NIS2 wchodzi w życie z twardym terminem compliance do 17 grudnia 2024 roku dla podmiotów z Załącznika I. Jeśli Pani lub Pan obsługuje klientów z sektora finansowego, regulacyjny termin wynosi grudzień 2024, a nie 2026. Jeśli nie jesteście jeszcze w compliance, należy natychmiast uruchomić projekt oceny luk i remediation.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Czy konieczne jest posiadanie certyfikatu SOC 2 Type II przed powiadomieniam o incydentach w CERT Polska?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">SOC 2 Type II lub ISO 27001 są wymagane jako baseline dla udowodnienia baseline bezpieczeństwa infrastruktury, ale powiadomienie o incydentach do CERT Polska wymaga spełnienia niezależnie od statusu certyfikacji. Jeśli incydent zachodzi przed uzyskaniem certyfikatu, nadal obowiązuje 72-godzinny obowiązek powiadomienia, a brak certyfikacji będzie odnotowany jako luka w compliance podczas inspekcji.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jakie kary grożą za brak powiadomienia klienta o incydentach w ciągu 24 godzin?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Polska UKNF może nałożyć kary administracyjne do 10 milionów złotych lub 2% rocznego przychodu globalnego za naruszenie obowiązków incydentowych (Art. 73 KSC). Ponadto, brak powiadomienia klienta w ciągu 24 godzin traktowany jest jako naruszenie umowy SLA i może prowadzić do kar umownych. CERT Polska dokumentuje każde opóźnienie i włącza je do rocznych raportów audytowych dla podmiotów kluczowych.</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div style="background:var(--navy);padding:3rem 1.25rem;text-align:center;margin-top:2rem;">
+  <div class="container--narrow">
+    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Sprawdź wymagania dla swojej organizacji</h2>
+    <p style="color:rgba(255,255,255,.75);margin:0 0 1.5rem;font-size:.95rem;">
+      KSC/NIS2 · Polska · 2026
+    </p>
+    <a href="../kalkulator.html" style="display:inline-block;background:#16a34a;color:#fff;padding:.85rem 2.25rem;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;">
+      Uruchom kalkulator →
+    </a>
+  </div>
+</div>
+
+
+<nav class="related-sectors" aria-label="Powiązane sektory" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Powiązane sektory</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="construction.html">KSC/NIS2 dla dużych firm budowlanych w Polsce</a></li><li style="margin:0"><a href="cybersecurity-firms.html">NIS2 dla dostawców cyberbezpieczeństwa w Polsce</a></li><li style="margin:0"><a href="dental-clinics.html">NIS2 dla klinik dentystycznych w Polsce</a></li><li style="margin:0"><a href="education.html">KSC/NIS2 dla uczelni i szkół w Polsce</a></li><li style="margin:0"><a href="energy.html">NIS2 dla operatorów energetyki, gazu i ciepła w Polsce</a></li><li style="margin:0"><a href="fintech.html">KSC/NIS2 dla Fintech</a></li></ul></nav>
+<footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
+  <div class="container">
+    <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
+      © 2026 NIS2-Narzedzia.pl · KSC/NIS2 · UKNF/CERT Polska
+      <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
+      <br><a href="../index.html" style="color:var(--gray-400);">Strona główna</a> ·
+      <a href="index.html" style="color:var(--gray-400);">Sektory</a> ·
+      <a href="../sravnenie.html" style="color:var(--gray-400);">Porównanie narzędzi</a>
+    </p>
+  </div>
+</footer>
+
+  <script src="/js/tg-cta.js" defer></script>
+</body>
+</html>
