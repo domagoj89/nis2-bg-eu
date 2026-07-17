@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="bg">
 <head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-32QHQRGVRH"></script>
@@ -11,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 dla operatorów energetyki, gazu i ciepła w Polsce — wymagania 2026</title>
-  <meta name="description" content="Przewodnik compliance KSC/NIS2 dla przedsiębiorstw energetycznych. Bezpieczeństwo systemów SCADA, raportowanie incydentów, ochrona łańcucha dostaw. Deadline 2026.">
+  <title>NIS2 за електроенергийни оператори в България — изисквания 2026</title>
+  <meta name="description" content="Ръководство за съответствие на NIS2 за операторите на мрежи, производители и доставчици в България. Задължения за OT/SCADA сигурност и инцидентни докладвания до 2026 г.">
   <link rel="canonical" href="https://nis2-bg.eu/sektory/energy.html">
-  <meta property="og:title" content="NIS2 dla operatorów energetyki, gazu i ciepła w Polsce — wymagania 2026">
-  <meta property="og:description" content="Przewodnik compliance KSC/NIS2 dla przedsiębiorstw energetycznych. Bezpieczeństwo systemów SCADA, raportowanie incydentów, ochrona łańcucha dostaw. Deadline 2026.">
+  <meta property="og:title" content="NIS2 за електроенергийни оператори в България — изисквания 2026">
+  <meta property="og:description" content="Ръководство за съответствие на NIS2 за операторите на мрежи, производители и доставчици в България. Задължения за OT/SCADA сигурност и инцидентни докладвания до 2026 г.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-bg.eu/sektory/energy.html">
-  <meta property="og:locale" content="pl_PL">
-  <meta property="og:site_name" content="NIS2-Narzedzia.pl">
+  <meta property="og:locale" content="bg_BG">
+  <meta property="og:site_name" content="NIS2-BG.eu">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 dla operatorów energetyki, gazu i ciepła w Polsce — wymagania 2026">
-  <meta name="twitter:description" content="Przewodnik compliance KSC/NIS2 dla przedsiębiorstw energetycznych. Bezpieczeństwo systemów SCADA, raportowanie incydentów, ochrona łańcucha dostaw. Deadline 2026.">
+  <meta name="twitter:title" content="NIS2 за електроенергийни оператори в България — изисквания 2026">
+  <meta name="twitter:description" content="Ръководство за съответствие на NIS2 за операторите на мрежи, производители и доставчици в България. Задължения за OT/SCADA сигурност и инцидентни докладвания до 2026 г.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -34,19 +34,19 @@
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "Strona główna",
+      "name": "Начало",
       "item": "https://nis2-bg.eu/"
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Sektory",
+      "name": "Сектори",
       "item": "https://nis2-bg.eu/sektory/"
     },
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 dla generatorów energii, operatorów sieci, dystrybutorów gazu i ciepła w Polsce — wymagania na 2026 rok",
+      "name": "NIS2 за производители на електроенергия, операторите на мрежи и доставчици на газ в България",
       "item": "https://nis2-bg.eu/sektory/energy.html"
     }
   ]
@@ -59,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Czy nasza elektrownia o mocy poniżej 50 MW musi spełniać wymagania Załącznika I KSC/NIS2?",
+      "name": "Кои SCADA протоколи са налични за употреба под NIS2?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Jeżeli elektrownia jest zanotowana jako operator infrastruktury krytycznej przez UKNF, wymogi obowiązują bez względu na moc. UKNF publikuje listę podmiotów kluczowych — sprawdzenie statusu jest pierwszym krokiem. Duże elektrownie przesyłowe prawie zawsze są klasyfikowane jako podmioty kluczowe."
+        "text": "Вече не могат да се използват незащитени версии на Modbus, DNP3 или Profibus над обществените мрежи или за отдалечени връзки. Трябва да превключите към защитени варианти като Modbus TCP с TLS, DNP3 with Secure Authentication, или стандартни VPN тунели с AES-256 криптирование. Всички нови инсталации трябва да поддържат криптирана комуникация от ден първи."
       }
     },
     {
       "@type": "Question",
-      "name": "Jakie konkretne protokoły dostępu zdalnego do SCADA są dozwolone pod KSC/NIS2?",
+      "name": "Какъв е процесът за докладване на инцидент, който засяга мрежен отрез в няколко региона?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Wymagane są szyfrowane protokoły: SSH dla linii poleceń, HTTPS dla interfejsów webowych, TLS dla komunikacji przemysłowej (Modbus/TCP). Zabrania się Telnet, FTP, nieszyfrowanego HTTP i protokołów starszych niż 10 lat. Każde połączenie musi być poprzedzone wieloskładnikową autentykacją."
+        "text": "Трябва да докладвате на Министерството на електронното управление в срок от 72 часа с подробен отчет на техническия обхват, засегнатите системи, датата на откритие и реакцията. Ако инцидентът засяга друга държава членка на ЕС, трябва да уведомите и нейния орган за киберсигурност чрез механизма на ЕУ за сигнализиране. В докладът трябва да включите кратки выводи и план за предотвратяване в бъдеще; невинаги е задължително да докладвате на медиите, но трябва да предсказате потреблителите, ако е налице риск от прекъсване на доставката."
       }
     },
     {
       "@type": "Question",
-      "name": "Jakie są kary za niedotrzymanie deadline'm 18 października 2026?",
+      "name": "Какви са наказанията за неспазване на NIS2 и кога вашите органи ще проверяват съответствието?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "UKNF może nałożyć kary pieniężne do 5 milionów złotych lub 5% rocznego przychodu (w zależności, która kwota jest większa) za każdą kategorię niezgodności. Dodatkowo, brak raportowania incydentów o zasięgu transgranicznym grozi karami do 10 milionów złotych. Od deadline'm zaczyna obowiązywać pełny reżim audytów compliance."
+        "text": "Наказанията варират до 10 млн. евро или до 4% от глобалния годишен оборот на компанията, в зависимост от това кой е по-голям. Проверките на съответствието вероятно ще започнат през 2025 г. и ще бъдат проведени от Министерството на електронното управление и от надзорните органи (НЕВР, БЕХ) в следващите години. Препоръчва се незабавното действие по инвентаризация на активите, сегментирането и внедряване на мониторинг, предвид очаквано събрана приоритизация на електроенергийния сектор."
       }
     }
   ]
@@ -90,44 +90,44 @@
 <nav class="nav">
   <div class="container">
     <div class="nav__inner">
-      <a href="../index.html" class="nav__logo">NIS2<span>Bg</span>.eu</a>
+      <a href="../index.html" class="nav__logo">NIS2<span>BG</span>.eu</a>
       <ul class="nav__links">
-        <li><a href="../sravnenie.html">Porównanie narzędzi</a></li>
-        <li><a href="../kalkulator.html">Kalkulator KSC</a></li>
+        <li><a href="../sravnenie.html">Сравнение на инструменти</a></li>
+        <li><a href="../kalkulator.html">Калкулатор NIS2</a></li>
         <li><a href="../faq.html">FAQ</a></li>
       </ul>
-      <a href="../kalkulator.html" class="nav__cta">Sprawdź czy podlegasz →</a>
+      <a href="../kalkulator.html" class="nav__cta">Проверете дали сте задължени →</a>
     </div>
   </div>
 </nav>
 
 <div class="container" style="padding-top:1.5rem;">
   <div class="breadcrumb">
-    <a href="../index.html">Strona główna</a><span>›</span>
-    <a href="index.html">Sektory</a><span>›</span>
-    NIS2 dla generatorów energii, operatorów sieci, dystrybutorów gazu i ciepła w Polsce — wymagania na 2026 rok
+    <a href="../index.html">Начало</a><span>›</span>
+    <a href="index.html">Сектори</a><span>›</span>
+    NIS2 за производители на електроенергия, операторите на мрежи и доставчици на газ в България
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Załącznik I — podmiot kluczowy</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 dla generatorów energii, operatorów sieci, dystrybutorów gazu i ciepła w Polsce — wymagania na 2026 rok</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Niniejszy przewodnik adresuje przedsiębiorstwa sektora energetyki, gazu i ciepła zarejestrowane jako podmioty kluczowe (Załącznik I). Dowiedzie się Pani/Pan konkretnych wymagań dotyczących segmentacji systemów OT, raportowania incydentów o zasięgu transgranicznym oraz ochrony łańcucha dostaw dla sprzętu sieciowego.</p>
+    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Приложение I — ключов оператор</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 за производители на електроенергия, операторите на мрежи и доставчици на газ в България</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ako управляват критична инфраструктура в България и работите със SCADA системи или управлявате окончателни потребители, трябва да съответствате на строгите киберсигурни задължения на NIS2 до октомври 2026 г. Това ръководство обяснява конкретните изисквания за защита на операционни технологии и процедури за докладване на инциденти.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Obowiązek compliance KSC/NIS2 dotyczy wszystkich operatorów infrastruktury krytycznej w sektorze energii, gazu i ciepła zarejestrowanych przez UKNF jako podmioty kluczowe, niezależnie od rozmiaru zatrudnienia. W praktyce oznacza to głównych operatorów przesyłu i dystrybucji, producentów energii, operatorów sieci ciepłowniczych oraz dostawców paliw o znaczeniu systemowym. Każda z tych kategorii musi wdrożyć wymogi do 18 października 2026 roku.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Електроенергийни генератори с капацитет над 100 MW, оператори на преносни и разпределителни мрежи независимо от размер, операторите на газораспределителни мрежи и окончателните доставчици на газ, оператори на топлофикационни мрежи, както и всички доставчици на течни горива със съществена роля в националната енергийна инфраструктура трябва да съответствват на Приложение I на NIS2.</p>
   </div>
 </div>
 
 <!-- OBLIGATIONS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Kluczowe obowiązki NIS2 dla tego sektora</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Ключови задължения по NIS2 за този сектор</h2>
   <div style="border-top:1px solid var(--gray-100);">
     
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -135,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Segmentacja i zabezpieczenie systemów OT/ICS/SCADA</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Systemy sterowania procesami fizycznymi (SCADA, PLC, HMI) muszą być odizolowane od sieci biurowych za pośrednictwem demilitaryzowanej strefy (DMZ) i zapory sieciowej. Zabrania się bezpośredniego dostępu z sieci IT do systemów OT bez warstwy pośredniej. Rejestrowanie i monitorowanie wszystkich połączeń pomiędzy strefą OT a siecią korporacyjną jest obowiązkowe.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Защита и сегментиране на SCADA и OT системи</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Всички индустриални управляващи системи, включително SCADA и PLC устройства, трябва да работят на отделна, физически или логически сегментирана мрежа, отделена от административната IT мрежа. Телнет, незашифрирани FTP и други застарели протоколи са забранени; всички отдалечени достъпи трябва да използват криптирани канали (SSH, HTTPS) с многофакторна аутентификация. Всяка промяна на конфигурацията, всеки вход и излаз трябва да бъдат регистрирани с пълна проследимост за аудит.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -144,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Raportowanie incydentów z potencjalnym wpływem transgranicznym</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Incydenty bezpieczeństwa dotyczące systemów wytwarzania, przesyłu i dystrybucji energii, gazu lub ciepła z podejrzeniem wpływu na ciągłość dostaw poza terytorium Polski muszą być zgłoszone CERT Polska w ciągu 24 godzin od wykrycia. Obowiązkowe są szczegółowe opisy wpływu na sieć, liczby dotkniętych użytkowników oraz oszacowanego czasu przywrócenia usługi.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Инцидентно докладване за нарушения на електроснабдяването със трансгранично въздействие</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">При киберинцидент, който заплашва или прави невозможно управлението на електроснабдяването или газоснабдяването на национално или регионално ниво, трябва да докладвате на Министерството на електронното управление и на надзорния орган (НЕВР или БЕХ) в срок до 72 часа. Докладът трябва да съдържа техническо описание на атаката, засегнатите системи, времето на отговор и мерките за смекчаване; трансграничните инциденти трябва да бъдат координирани с държави членки на ЕС.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -153,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Bezpieczeństwo łańcucha dostaw — dostawcy sprzętu i oprogramowania</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Umowy z dostawcami sprzętu sieciowego, firmware'u i oprogramowania sterującego muszą zawierać klauzule bezpieczeństwa wymagające: audytów kodu, certyfikatów bezpieczeństwa, procedur aktualizacji, rozpatrywania podatności oraz czasowych limitów dostępu zdalnego dla pracowników dostawcy. Dostawcy muszą udokumentować swoje procesy bezpieczeństwa i wyrazić zgodę na kontrole.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Управление на веригата на доставки — контрол върху доставчици на хардуер и фърмуер</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Трябва да изведете пълен инвентар на всички критични компоненти (маршрутизатори, защитни стени, снимачи, фирмуерни модули) и доставчиците им. За всеки доставчик трябва да имате договор, който налага задължения за киберсигурност, включително забрана на скрити задни врати, задължение за своевременни пачове и процедури за безопасно управление на отдалечения достъп. Всеки отдалечен достъп на техник от доставчика трябва да бъде предварително одобрен, регистриран с точно време на сесията и закрит след завършване.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -162,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Fizyczne bezpieczeństwo podstacji i pomieszczeń serwerowych z monitoringiem cybernetycznym</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Podstacje, pompy ciepła oraz centralne punkty dystrybucji wymagają: kontroli dostępu fizycznego (karty magnetyczne, biometria), monitorowania kamerkowego, logowania wejść i wyjść personelu oraz alarmu o każdej próbie nieautoryzowanego wejścia. Systemy SCADA muszą monitorować anomalie w parametrach fizycznych (temperatura, wilgotność, zasilanie).</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Физическа сигурност интегрирана с киберсигурност на подстанциите</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Критични подстанции трябва да имат многослойна защита: физически достъп контролиран чрез биометрия или смарт карти, видеонаблюдение с регистриране на 90 дни минимум, и киберсигурност мониторинг на управляващите системи в реално време. Всеки вход в контролна зона трябва да бъде синхронизиран със система за управление на достъпа, която регистрира лица, врата и час; киберконтроли трябва да мониторят за подозрителни команди или попълзувания на конфигурацията на SCADA.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -171,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Zarządzanie dostępem zdalnym do systemów sterujących</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Każde połączenie zdalne z systemami SCADA wymaga: wieloskładnikowego uwierzytelnienia, szyfrowania (SSH/TLS zamiast Telnet/FTP), jednorazowych tokenów dostępu o ograniczonym czasie ważności, logowania wszystkich czynności oraz automatycznego wylogowania po 30 minutach bezczynności. Dostawcy mogą otrzymać dostęp zdalny wyłącznie na czas trwania pracy serwisowej i muszą być monitowani w czasie rzeczywistym.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Способност за идентификация на активи и картиране на мрежата в реално време</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Всеки оператор на мрежа трябва да поддържа наличност на всички OT устройства, софтуер и версии на фърмуер в цялото своето портфолио на инсталациите. Трябва да имате автоматичен мониторинг, който регулярно сканира за нови устройства, незаконни промени или отстранени компоненти; картирането трябва да се актуализира най-малко седмично. Инвентарът трябва да включва информация за уязвимостта от всеки компонент и приоритизирани планове за ремониране или подмяна.</p>
       </div>
     </div>
   </div>
@@ -180,27 +180,27 @@
 
 <!-- TYPICAL GAPS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Typowe luki compliance w tym sektorze</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Типични пропуски в съответствието в този сектор</h2>
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Systemy SCADA podłączone do sieci korporacyjnej bez segmentacji — wszystkie urządzenia OT mają dostęp do poczty i Internetu, co umożliwia propagację malware'u na systemy sterujące.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>SCADA системи, които работят на плоски, неразделени мрежи със достъп от офисни работни станции, позволяват прилики внутрешни атаки и растяват повърхностната атака експоненциално.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Protokoły nieszyfrowane (Telnet, FTP, HTTP) do zdalnego dostępu do sterowników PLC — dostęp dostawcy i administratorów może być przechycony w niezabezpieczonej sieci.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Отдалечен достъп до управляващи системи чрез незащитени протоколи (Telnet, FTP или незашифрирани SSH) без многофакторна аутентификация позволяват простой прихващане на пароли и несанкциониран контрол над критичния процес.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Brak inwentaryzacji urządzeń OT — operator nie wie, jakie urządzenia SCADA są w sieci, jakie wersje firmware'u działają, ani które podatności istnieją.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Липса на цялостен инвентар на OT устройства и на съответстващите им версии на фърмуер прави невъзможна бързата идентификация на уязвимостите и съответния отговор при инцидент или обявена критична уязвимост.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Zdalny dostęp dostawcy bez logowania — pracownicy dostawcy sprzętu sieciowego lub firmware'u mogą się łączyć bez zapisywania, kto i kiedy miał dostęp do systemów krytycznych.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Отдалечения достъп на доставчици и оловни техници, които не са регистрирани с точно време на сесия, не се мониторират и не се ограничават времево, позволяват дълготрайни скрити достъпи и превознос на данни без аудит.
     </li>
   </ul>
 </div>
 
 <!-- TOOLS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Rekomendowane narzędzia dla tego sektora</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Препоръчани инструменти за този сектор</h2>
   <div style="display:grid;gap:1rem;">
     
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
@@ -232,25 +232,25 @@
 
 <!-- FAQ -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem;" itemscope itemtype="https://schema.org/FAQPage">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Często zadawane pytania</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Често задавани въпроси</h2>
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Czy nasza elektrownia o mocy poniżej 50 MW musi spełniać wymagania Załącznika I KSC/NIS2?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Кои SCADA протоколи са налични за употреба под NIS2?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Jeżeli elektrownia jest zanotowana jako operator infrastruktury krytycznej przez UKNF, wymogi obowiązują bez względu na moc. UKNF publikuje listę podmiotów kluczowych — sprawdzenie statusu jest pierwszym krokiem. Duże elektrownie przesyłowe prawie zawsze są klasyfikowane jako podmioty kluczowe.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Вече не могат да се използват незащитени версии на Modbus, DNP3 или Profibus над обществените мрежи или за отдалечени връзки. Трябва да превключите към защитени варианти като Modbus TCP с TLS, DNP3 with Secure Authentication, или стандартни VPN тунели с AES-256 криптирование. Всички нови инсталации трябва да поддържат криптирана комуникация от ден първи.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jakie konkretne protokoły dostępu zdalnego do SCADA są dozwolone pod KSC/NIS2?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Какъв е процесът за докладване на инцидент, който засяга мрежен отрез в няколко региона?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Wymagane są szyfrowane protokoły: SSH dla linii poleceń, HTTPS dla interfejsów webowych, TLS dla komunikacji przemysłowej (Modbus/TCP). Zabrania się Telnet, FTP, nieszyfrowanego HTTP i protokołów starszych niż 10 lat. Każde połączenie musi być poprzedzone wieloskładnikową autentykacją.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Трябва да докладвате на Министерството на електронното управление в срок от 72 часа с подробен отчет на техническия обхват, засегнатите системи, датата на откритие и реакцията. Ако инцидентът засяга друга държава членка на ЕС, трябва да уведомите и нейния орган за киберсигурност чрез механизма на ЕУ за сигнализиране. В докладът трябва да включите кратки выводи и план за предотвратяване в бъдеще; невинаги е задължително да докладвате на медиите, но трябва да предсказате потреблителите, ако е налице риск от прекъсване на доставката.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jakie są kary za niedotrzymanie deadline'm 18 października 2026?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Какви са наказанията за неспазване на NIS2 и кога вашите органи ще проверяват съответствието?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">UKNF może nałożyć kary pieniężne do 5 milionów złotych lub 5% rocznego przychodu (w zależności, która kwota jest większa) za każdą kategorię niezgodności. Dodatkowo, brak raportowania incydentów o zasięgu transgranicznym grozi karami do 10 milionów złotych. Od deadline'm zaczyna obowiązywać pełny reżim audytów compliance.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Наказанията варират до 10 млн. евро или до 4% от глобалния годишен оборот на компанията, в зависимост от това кой е по-голям. Проверките на съответствието вероятно ще започнат през 2025 г. и ще бъдат проведени от Министерството на електронното управление и от надзорните органи (НЕВР, БЕХ) в следващите години. Препоръчва се незабавното действие по инвентаризация на активите, сегментирането и внедряване на мониторинг, предвид очаквано събрана приоритизация на електроенергийния сектор.</p>
     </div>
   </div>
   </div>
@@ -259,30 +259,27 @@
 <!-- CTA -->
 <div style="background:var(--navy);padding:3rem 1.25rem;text-align:center;margin-top:2rem;">
   <div class="container--narrow">
-    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Sprawdź wymagania dla swojej organizacji</h2>
+    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Проверете изискванията за вашата организация</h2>
     <p style="color:rgba(255,255,255,.75);margin:0 0 1.5rem;font-size:.95rem;">
-      KSC/NIS2 · Polska · 2026
+      Закон за киберсигурност/NIS2 · България · 2026
     </p>
     <a href="../kalkulator.html" style="display:inline-block;background:#16a34a;color:#fff;padding:.85rem 2.25rem;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;">
-      Uruchom kalkulator →
+      Стартирайте калкулатора →
     </a>
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Powiązane sektory" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Powiązane sektory</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="fintech.html">KSC/NIS2 dla Fintech</a></li><li style="margin:0"><a href="food.html">KSC/NIS2 dla przetwórców żywności</a></li><li style="margin:0"><a href="hospitals.html">NIS2 dla szpitali w Polsce 2026</a></li><li style="margin:0"><a href="hr-payroll.html">KSC/NIS2 dla dostawców oprogramowania HR i usług płacowych w Polsce</a></li><li style="margin:0"><a href="index.html">Sektory objęte NIS2 w Polsce 2026</a></li><li style="margin:0"><a href="insurance.html">KSC/NIS2 dla ubezpieczycieli w Polsce</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
-      © 2026 NIS2-Narzedzia.pl · KSC/NIS2 · UKNF/CERT Polska
+      © 2026 NIS2-BG.eu · Закон за киберсигурност/NIS2 · Министър на електронното управление
       <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
-      <br><a href="../index.html" style="color:var(--gray-400);">Strona główna</a> ·
-      <a href="index.html" style="color:var(--gray-400);">Sektory</a> ·
-      <a href="../sravnenie.html" style="color:var(--gray-400);">Porównanie narzędzi</a>
+      <br><a href="../index.html" style="color:var(--gray-400);">Начало</a> ·
+      <a href="index.html" style="color:var(--gray-400);">Сектори</a> ·
+      <a href="../sravnenie.html" style="color:var(--gray-400);">Сравнение на инструменти</a>
     </p>
   </div>
 </footer>
 
-  <script src="/js/tg-cta.js" defer></script>
 </body>
 </html>

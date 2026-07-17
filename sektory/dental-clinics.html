@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="bg">
 <head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-32QHQRGVRH"></script>
@@ -11,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 dla klinik dentystycznych w Polsce — wymagania 2026</title>
-  <meta name="description" content="Przewodnik NIS2 dla sieci klinik dentystycznych. Dowiedz się o obowiązkach zabezpieczenia danych pacjentów, segmentacji sieci DICOM i raportowaniu incydentów do 2026 roku.">
+  <title>NIS2 за стоматологични клиники в България — изисквания 2026</title>
+  <meta name="description" content="Ръководство за NIS2 съответствие на стоматологични и специализирани клиники в България. Защита на пациентски данни, GDPR и киберсигурност до 2026.">
   <link rel="canonical" href="https://nis2-bg.eu/sektory/dental-clinics.html">
-  <meta property="og:title" content="NIS2 dla klinik dentystycznych w Polsce — wymagania 2026">
-  <meta property="og:description" content="Przewodnik NIS2 dla sieci klinik dentystycznych. Dowiedz się o obowiązkach zabezpieczenia danych pacjentów, segmentacji sieci DICOM i raportowaniu incydentów do 2026 roku.">
+  <meta property="og:title" content="NIS2 за стоматологични клиники в България — изисквания 2026">
+  <meta property="og:description" content="Ръководство за NIS2 съответствие на стоматологични и специализирани клиники в България. Защита на пациентски данни, GDPR и киберсигурност до 2026.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-bg.eu/sektory/dental-clinics.html">
-  <meta property="og:locale" content="pl_PL">
-  <meta property="og:site_name" content="NIS2-Narzedzia.pl">
+  <meta property="og:locale" content="bg_BG">
+  <meta property="og:site_name" content="NIS2-BG.eu">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 dla klinik dentystycznych w Polsce — wymagania 2026">
-  <meta name="twitter:description" content="Przewodnik NIS2 dla sieci klinik dentystycznych. Dowiedz się o obowiązkach zabezpieczenia danych pacjentów, segmentacji sieci DICOM i raportowaniu incydentów do 2026 roku.">
+  <meta name="twitter:title" content="NIS2 за стоматологични клиники в България — изисквания 2026">
+  <meta name="twitter:description" content="Ръководство за NIS2 съответствие на стоматологични и специализирани клиники в България. Защита на пациентски данни, GDPR и киберсигурност до 2026.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -34,19 +34,19 @@
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "Strona główna",
+      "name": "Начало",
       "item": "https://nis2-bg.eu/"
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Sektory",
+      "name": "Сектори",
       "item": "https://nis2-bg.eu/sektory/"
     },
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 dla sieci klinik dentystycznych i przychodni specjalistycznych w Polsce — wymagania 2026",
+      "name": "NIS2 Закон за киберсигурност — изисквания за стоматологични и специализирани клиники в България",
       "item": "https://nis2-bg.eu/sektory/dental-clinics.html"
     }
   ]
@@ -59,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Jeśli klinika ma poniżej 50 pracowników, ale posiada serwer DICOM, czy podlega wymogom NIS2?",
+      "name": "Кои точно стоматологични клиники трябва да съответстват на NIS2 в България?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tak, nawet przy mniejszej liczbie pracowników, posiadanie serwera DICOM lub systemu cyfrowego zarządzania pacjentami klasyfikuje klinkę jako podmiot ważny (Załącznik II). Należy Pani/Pan wdrożyć wszystkie wymogi KSC/NIS2 niezależnie od liczby zatrudnionych osób."
+        "text": "Всяка стоматологична или специализирана медицинска клиника със 50 или повече служители, която управлява цифрови системи за пациентски записи, рентгенови изображения или DICOM данни, е класифицирана като важен субект по Приложение II на NIS2. Независимо дали системите са локални или облачни, ако те съхраняват или обработват пациентски здравни данни, клиниката попада в обхвата на закона."
       }
     },
     {
       "@type": "Question",
-      "name": "Jaka jest dokładnie różnica między wymaganiami GDPR a wymaganiami NIS2 dla danych pacjentów?",
+      "name": "Какво трябва да включва нашата процедура за отчетност на инциденти?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "GDPR reguluje prawo pacjenta do dostępu, poprawy i usunięcia danych, podczas gdy NIS2 wymusza techniczne zabezpieczenia przed włamaniami i dostępność systemów. Obie regulacje obowiązują jednocześnie — muszą Pani/Pan szyfrować dane (NIS2), zgadzać się na dostęp (GDPR) i raportować naruszenia do obu organów (CERT Polska i UODO)."
+        "text": "Когато възникне инцидент на киберсигурност, който засяга системи за планиране на пациенти, рентгенови файлове или записи, трябва да отчетете към Министерството на електронното управление в срок от 72 часа. Докладът трябва да включва описанието на инцидента, броя засегнати пациенти, вид компрометирани данни, преминали стъпки и план за предотвратяване на повтарянето. Препоръчва се да издържите копие на разследването вътрешно за одит."
       }
     },
     {
       "@type": "Question",
-      "name": "Jakie kary grożą za brak wdrożenia wymogów NIS2 do 2026 roku?",
+      "name": "Какви са наказанията за неспазване на NIS2 до октомври 2026 г.?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Za niespełnienie wymogów NIS2 grożą kary do 10 milionów zł lub 2% globalnego przychodu rocznie (za mniejsze naruszenia) oraz kary administratora ochrony danych. Dodatkowo, brak raportowania incydentów do CERT Polska skutkuje karą do 2 milionów zł. Wdrożenie wymogów do 2026 roku jest obowiązkowe."
+        "text": "България може да наложи глоби от 50 000 до 500 000 BGN за критични клиники, които не спазват NIS2 до крайния срок от октомври 2026 г. Допълнително, нарушенията могат да доведат до административни действия, санкции на GDPR (до 20 млн. EUR или 4% от годишния оборот) и репутационни щети. Препоръчва се да стартирате съответствието незабавно, тъй като проверките вероятно ще се интензифицират през 2025 и 2026 г."
       }
     }
   ]
@@ -90,44 +90,44 @@
 <nav class="nav">
   <div class="container">
     <div class="nav__inner">
-      <a href="../index.html" class="nav__logo">NIS2<span>Bg</span>.eu</a>
+      <a href="../index.html" class="nav__logo">NIS2<span>BG</span>.eu</a>
       <ul class="nav__links">
-        <li><a href="../sravnenie.html">Porównanie narzędzi</a></li>
-        <li><a href="../kalkulator.html">Kalkulator KSC</a></li>
+        <li><a href="../sravnenie.html">Сравнение на инструменти</a></li>
+        <li><a href="../kalkulator.html">Калкулатор NIS2</a></li>
         <li><a href="../faq.html">FAQ</a></li>
       </ul>
-      <a href="../kalkulator.html" class="nav__cta">Sprawdź czy podlegasz →</a>
+      <a href="../kalkulator.html" class="nav__cta">Проверете дали сте задължени →</a>
     </div>
   </div>
 </nav>
 
 <div class="container" style="padding-top:1.5rem;">
   <div class="breadcrumb">
-    <a href="../index.html">Strona główna</a><span>›</span>
-    <a href="index.html">Sektory</a><span>›</span>
-    NIS2 dla sieci klinik dentystycznych i przychodni specjalistycznych w Polsce — wymagania 2026
+    <a href="../index.html">Начало</a><span>›</span>
+    <a href="index.html">Сектори</a><span>›</span>
+    NIS2 Закон за киберсигурност — изисквания за стоматологични и специализирани клиники в България
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Załącznik II — podmiot ważny</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 dla sieci klinik dentystycznych i przychodni specjalistycznych w Polsce — wymagania 2026</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ponad 50 pracowników, systemy cyfrowego zarządzania pacjentami lub serwery obrazowania DICOM? Poznaj konkretne obowiązki zabezpieczenia danych pacjentów i harmonogram wdrożenia wymagany przez przepisy KSC/NIS2.</p>
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Приложение II — важен субект</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 Закон за киберсигурност — изисквания за стоматологични и специализирани клиники в България</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Това ръководство е предназначено за управители и ИТ специалисти на стоматологични клиники и клиники със специализирана медицина с 50+ служители или цифрови системи за управление на пациенти. Разберете как да защитите пациентските записи, DICOM системи и да съответствате на дуалния режим на GDPR и NIS2 до крайния срок през октомври 2026 г.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Niniejszy przewodnik dotyczy sieci klinik dentystycznych i przychodni specjalistycznych zatrudniających 50 lub więcej pracowników, posiadających cyfrowe systemy zarządzania pacjentami lub serwery obrazowania DICOM (tomografia, radiografia cyfrowa). Zgodnie z rozporządzeniem KSC/NIS2, Pani/Pana organizacja jest klasyfikowana jako podmiot ważny i podlega obowiązkowym wymogom cyberbezpieczeństwa niezależnie od tego, czy jest dostawcą usług cyfrowych czy nie.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Стоматологични клиники и специализирани медицински клиники в България трябва да съответстват на NIS2, ако имат 50 или повече служители и управляват цифровите системи за пациентски записи, рентгенови или DICOM изображения. Включени са клиники със системи за управление на пациентски графици, които се свързват с интернет, и организации, които разчитат на облачни решения или външни доставчици за критична инфраструктура.</p>
   </div>
 </div>
 
 <!-- OBLIGATIONS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Kluczowe obowiązki NIS2 dla tego sektora</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Ключови задължения по NIS2 за този сектор</h2>
   <div style="border-top:1px solid var(--gray-100);">
     
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -135,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Zabezpieczenie systemów zarządzania pacjentami i segregacja sieci DICOM</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Oprogramowanie do zarządzania pacjentami i serwery obrazowania DICOM muszą być umieszczone w oddzielnych segmentach sieci z kontrolą dostępu opartą na rolach. Każdy użytkownik (recepcjonistka, dentysta, radiolog) musi posiadać indywidualny login zamiast wspólnych haseł. Segmentacja musi być weryfikowana w co najmniej rocznych audytach bezpieczeństwa przeprowadzonych przez niezależny podmiot.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Защита на DICOM сървъри и рентгенови системи</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Изолирайте всички DICOM сървъри, CT и рентгенови системи от главната клиника мрежа чрез отделни VLAN и firewalls. Внедрете криптиране на данните при предаване и съхранение, особено за рентгенови изображения на пациенти. Установете трайна система за верификация на резервни копия на всички рентгенови и диагностични данни поне всеки месец.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -144,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Podwójna zgodność GDPR oraz NIS2 dla danych zdrowotnych pacjentów</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Dane zdrowotne pacjentów podlegają zarówno wymogom ochrony danych osobowych (GDPR) jak i bezpieczeństwa sieci (NIS2). Muszą Pani/Pan wdrożyć szyfrowanie danych przesyłanych i przechowywanych, kontrolę dostępu oraz prowadzić rejestr przetwarzania. Polityka bezpieczeństwa musi opisywać procedury obsługi żądań pacjentów i mechanizmy usuwania danych po zakończeniu leczenia.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">GDPR + NIS2 дуална съответствост за пациентски данни</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Проведете оценка на въздействието върху защитата на данните (DPIA) както според GDPR, така и според изискванията за управление на рисковете на NIS2. Всяка система, съхраняваща здравни данни на пациенти, трябва да има документирана политика за обработка и класифицирането на данни на критични активи. Установете договори за обработка на данни със всички доставчици на софтуер за управление на клиники.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -153,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Raportowanie incydentów bezpieczeństwa do CERT Polska</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Każdy incydent wpływający na dostępność harmonogramu pacjentów, integralność rejestrów medycznych lub poufność danych zdrowotnych musi być zgłoszony do CERT Polska w ciągu 72 godzin od wykrycia. Obowiązkowe zgłoszenie dotyczy naruszeń dotyczących minimum 100 pacjentów lub danych wrażliwych. Klinika musi prowadzić wewnętrzny rejestr wszystkich zdarzeń bezpieczeństwa.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Отчетност на инциденти за нарушения</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Установете вътрешна процедура за докладване на всяко нарушение на киберсигурност, което засяга системите за планиране на пациенти или医科записи, към Министерството на електронното управление в срок от 72 часа. Документирайте всяко инцидентно разследване, включително брой засегнати пациенти, вид компрометирани данни и предприетите коригиращи действия.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -162,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Bezpieczeństwo łańcucha dostaw — zatwierdzenie dostawców oprogramowania</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Każdy dostawca oprogramowania do zarządzania kliniką lub przetwarzania obrazów DICOM musi zawierać umowę gwarantującą stosowanie standardów bezpieczeństwa (co najmniej ISO 27001 lub równoważne). Muszą Pani/Pan przeprowadzać roczne oceny bezpieczeństwa dostawców i weryfikować ich procedury przywracania usług w przypadku incydentów.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Киберсигурност на доставчиците и веригата на доставките</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Проверете киберсигурността на всички esterni dostavchici na sistem za upravlenie na kliniki, rentgenovi sistemi i облачни решения с включени договорни клаузули за NIS2 съответствост. Изисквайте от доставчиците годишни одити на сигурност и докладване на всяка уязвимост. Установете процедура за оценка на рисковете на доставчиците, включително техния план за непрекъснатост на дейността.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -171,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Weryfikacja i testowanie procedur backupu danych pacjentów</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Kopie zapasowe rejestrów pacjentów i obrazów DICOM muszą być testowane przynajmniej co kwartał poprzez faktyczne przywrócenie wybranych danych. Backup musi być przechowywany offline (niedostępny z sieci produkcyjnej) w co najmniej dwóch geograficznie oddalonych lokalizacjach. Muszą Pani/Pan dokumentować wyniki każdego testu przywracania.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Управление на достъпа и идентификация на служители</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Внедрете многофакторна идентификация (MFA) за всички служители, достъпващи системи за пациентски записи и DICOM данни. Забранете споделяне на потребителски акаунти между рецепциониста или медицински персонал. Уредбата е упълномощена да преиздаде достъпни права през 90 дни и документирайте всяко отстраняване на достъп за служител при уволнение.</p>
       </div>
     </div>
   </div>
@@ -180,27 +180,27 @@
 
 <!-- TYPICAL GAPS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Typowe luki compliance w tym sektorze</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Типични пропуски в съответствието в този сектор</h2>
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Serwery DICOM umieszczone w bezprzewodowej sieci kliniki bez dedykowanego segmentu sieciowego — konieczna jest natychmiastowa segregacja za pomocą VLANu i zapory aplikacyjnej.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>DICOM сървъри на клиника Wi-Fi без мрежова сегментация и прилежащ firewall, което позволява непреоразуван достъп от пациентски мобилни телефони.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Wspólne loginy recepcjonistek do systemu zarządzania pacjentami — każda osoba musi posiadać unikalny login rejestrowany w dzienniku audytu dla zgodności z wymogami GDPR i NIS2.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Системи за управление на пациенти със споделена рецепционна логин без индивидуално проследяване на кой служител достъпи или модифицира записи на пациенти.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Brak weryfikacji backupów czy fakt, że kopie są przechowywane na tym samym serwerze co dane produkcyjne — konieczne jest przetestowanie odtwarzania i przechowywanie poza siecią.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Отсъствие на периодична проверка на резервни копия на рентгенови системи и пациентски бази данни, което оставя клиники уязвими на невъзможност за възстановяване при инцидент или повреда.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Umowy z dostawcami oprogramowania nie zawierają klauzul dotyczących bezpieczeństwa ani procedur awaryjnych — muszą Pani/Pan renegocjować umowy do 2026 roku.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Отсъствие на договори за NIS2 съответствост със софтуерни доставчици на управление на клиники, оставяйки клиниката отговорна за нарушенията на третите страни.
     </li>
   </ul>
 </div>
 
 <!-- TOOLS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Rekomendowane narzędzia dla tego sektora</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Препоръчани инструменти за този сектор</h2>
   <div style="display:grid;gap:1rem;">
     
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
@@ -232,25 +232,25 @@
 
 <!-- FAQ -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem;" itemscope itemtype="https://schema.org/FAQPage">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Często zadawane pytania</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Често задавани въпроси</h2>
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jeśli klinika ma poniżej 50 pracowników, ale posiada serwer DICOM, czy podlega wymogom NIS2?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Кои точно стоматологични клиники трябва да съответстват на NIS2 в България?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Tak, nawet przy mniejszej liczbie pracowników, posiadanie serwera DICOM lub systemu cyfrowego zarządzania pacjentami klasyfikuje klinkę jako podmiot ważny (Załącznik II). Należy Pani/Pan wdrożyć wszystkie wymogi KSC/NIS2 niezależnie od liczby zatrudnionych osób.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Всяка стоматологична или специализирана медицинска клиника със 50 или повече служители, която управлява цифрови системи за пациентски записи, рентгенови изображения или DICOM данни, е класифицирана като важен субект по Приложение II на NIS2. Независимо дали системите са локални или облачни, ако те съхраняват или обработват пациентски здравни данни, клиниката попада в обхвата на закона.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jaka jest dokładnie różnica między wymaganiami GDPR a wymaganiami NIS2 dla danych pacjentów?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Какво трябва да включва нашата процедура за отчетност на инциденти?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">GDPR reguluje prawo pacjenta do dostępu, poprawy i usunięcia danych, podczas gdy NIS2 wymusza techniczne zabezpieczenia przed włamaniami i dostępność systemów. Obie regulacje obowiązują jednocześnie — muszą Pani/Pan szyfrować dane (NIS2), zgadzać się na dostęp (GDPR) i raportować naruszenia do obu organów (CERT Polska i UODO).</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Когато възникне инцидент на киберсигурност, който засяга системи за планиране на пациенти, рентгенови файлове или записи, трябва да отчетете към Министерството на електронното управление в срок от 72 часа. Докладът трябва да включва описанието на инцидента, броя засегнати пациенти, вид компрометирани данни, преминали стъпки и план за предотвратяване на повтарянето. Препоръчва се да издържите копие на разследването вътрешно за одит.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jakie kary grożą za brak wdrożenia wymogów NIS2 do 2026 roku?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Какви са наказанията за неспазване на NIS2 до октомври 2026 г.?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Za niespełnienie wymogów NIS2 grożą kary do 10 milionów zł lub 2% globalnego przychodu rocznie (za mniejsze naruszenia) oraz kary administratora ochrony danych. Dodatkowo, brak raportowania incydentów do CERT Polska skutkuje karą do 2 milionów zł. Wdrożenie wymogów do 2026 roku jest obowiązkowe.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">България може да наложи глоби от 50 000 до 500 000 BGN за критични клиники, които не спазват NIS2 до крайния срок от октомври 2026 г. Допълнително, нарушенията могат да доведат до административни действия, санкции на GDPR (до 20 млн. EUR или 4% от годишния оборот) и репутационни щети. Препоръчва се да стартирате съответствието незабавно, тъй като проверките вероятно ще се интензифицират през 2025 и 2026 г.</p>
     </div>
   </div>
   </div>
@@ -259,30 +259,27 @@
 <!-- CTA -->
 <div style="background:var(--navy);padding:3rem 1.25rem;text-align:center;margin-top:2rem;">
   <div class="container--narrow">
-    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Sprawdź wymagania dla swojej organizacji</h2>
+    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Проверете изискванията за вашата организация</h2>
     <p style="color:rgba(255,255,255,.75);margin:0 0 1.5rem;font-size:.95rem;">
-      KSC/NIS2 · Polska · 2026
+      Закон за киберсигурност/NIS2 · България · 2026
     </p>
     <a href="../kalkulator.html" style="display:inline-block;background:#16a34a;color:#fff;padding:.85rem 2.25rem;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;">
-      Uruchom kalkulator →
+      Стартирайте калкулатора →
     </a>
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Powiązane sektory" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Powiązane sektory</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="education.html">KSC/NIS2 dla uczelni i szkół w Polsce</a></li><li style="margin:0"><a href="energy.html">NIS2 dla operatorów energetyki, gazu i ciepła w Polsce</a></li><li style="margin:0"><a href="fintech.html">KSC/NIS2 dla Fintech</a></li><li style="margin:0"><a href="food.html">KSC/NIS2 dla przetwórców żywności</a></li><li style="margin:0"><a href="hospitals.html">NIS2 dla szpitali w Polsce 2026</a></li><li style="margin:0"><a href="hr-payroll.html">KSC/NIS2 dla dostawców oprogramowania HR i usług płacowych w Polsce</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
-      © 2026 NIS2-Narzedzia.pl · KSC/NIS2 · UKNF/CERT Polska
+      © 2026 NIS2-BG.eu · Закон за киберсигурност/NIS2 · Министър на електронното управление
       <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
-      <br><a href="../index.html" style="color:var(--gray-400);">Strona główna</a> ·
-      <a href="index.html" style="color:var(--gray-400);">Sektory</a> ·
-      <a href="../sravnenie.html" style="color:var(--gray-400);">Porównanie narzędzi</a>
+      <br><a href="../index.html" style="color:var(--gray-400);">Начало</a> ·
+      <a href="index.html" style="color:var(--gray-400);">Сектори</a> ·
+      <a href="../sravnenie.html" style="color:var(--gray-400);">Сравнение на инструменти</a>
     </p>
   </div>
 </footer>
 
-  <script src="/js/tg-cta.js" defer></script>
 </body>
 </html>

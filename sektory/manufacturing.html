@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="bg">
 <head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-32QHQRGVRH"></script>
@@ -11,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KSC/NIS2 dla producentów przemysłowych w Polsce — wymagania 2026</title>
-  <meta name="description" content="Kompleksowy przewodnik NIS2 dla producentów z liniami produkcyjnymi. Bezpieczeństwo OT/ICS, segmentacja sieci, raportowanie incydentów — termin: 17.10.2024.">
+  <title>NIS2 за индустриални производители в България — Изисквания 2026</title>
+  <meta name="description" content="Ръководство NIS2 за производители с Industry 4.0 инфраструктура. Вижте задълженията за киберсигурност на OT/ICS системи и крайния срок за съответствие през 2026.">
   <link rel="canonical" href="https://nis2-bg.eu/sektory/manufacturing.html">
-  <meta property="og:title" content="KSC/NIS2 dla producentów przemysłowych w Polsce — wymagania 2026">
-  <meta property="og:description" content="Kompleksowy przewodnik NIS2 dla producentów z liniami produkcyjnymi. Bezpieczeństwo OT/ICS, segmentacja sieci, raportowanie incydentów — termin: 17.10.2024.">
+  <meta property="og:title" content="NIS2 за индустриални производители в България — Изисквания 2026">
+  <meta property="og:description" content="Ръководство NIS2 за производители с Industry 4.0 инфраструктура. Вижте задълженията за киберсигурност на OT/ICS системи и крайния срок за съответствие през 2026.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-bg.eu/sektory/manufacturing.html">
-  <meta property="og:locale" content="pl_PL">
-  <meta property="og:site_name" content="NIS2-Narzedzia.pl">
+  <meta property="og:locale" content="bg_BG">
+  <meta property="og:site_name" content="NIS2-BG.eu">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="KSC/NIS2 dla producentów przemysłowych w Polsce — wymagania 2026">
-  <meta name="twitter:description" content="Kompleksowy przewodnik NIS2 dla producentów z liniami produkcyjnymi. Bezpieczeństwo OT/ICS, segmentacja sieci, raportowanie incydentów — termin: 17.10.2024.">
+  <meta name="twitter:title" content="NIS2 за индустриални производители в България — Изисквания 2026">
+  <meta name="twitter:description" content="Ръководство NIS2 за производители с Industry 4.0 инфраструктура. Вижте задълженията за киберсигурност на OT/ICS системи и крайния срок за съответствие през 2026.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -34,19 +34,19 @@
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "Strona główna",
+      "name": "Начало",
       "item": "https://nis2-bg.eu/"
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Sektory",
+      "name": "Сектори",
       "item": "https://nis2-bg.eu/sektory/"
     },
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "KSC/NIS2 dla producentów przemysłowych w Polsce — wymagania dla infrastruktury Industry 4.0",
+      "name": "NIS2 за индустриални производители в България — Изисквания за киберсигурност и производствени системи",
       "item": "https://nis2-bg.eu/sektory/manufacturing.html"
     }
   ]
@@ -59,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Czy musimy natychmiast odłączyć wszystkie nasze PLC i urządzenia IoT z sieci korporacyjnej?",
+      "name": "Как трябва да разделим производственото отделение (OT) от корпоративната мрежа (IT)?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nie musiecie to robić natychmiast, ale do 17 października 2024 r. musicie posiadać plan segmentacji oraz co najmniej wstępną implementację firewall'a lub bramy bezpieczeństwa pomiędzy sieciami IT i OT. Jeśli pełna segmentacja jest technicznie niemożliwa, musicie wdrożyć kontrole kompensacyjne, takie jak monitorowanie ruchu i restrykcje dostępu opartych na rolach."
+        "text": "Минимално разделение е логическо сегментиране чрез firewalls и контроли на достъпа, което ограничава комуникацията между IT и OT устройства до конкретни портове и услуги. По-силната опция е физическо разделение на мрежата с отделни комутатори, маршрутизатори и администраторски акаунти за OT системи, което затруднява разпространението на кибератаки."
       }
     },
     {
       "@type": "Question",
-      "name": "Jak powinniśmy postępować, jeśli dostawca firmware'u dla naszych PLC nie oferuje poprawek bezpieczeństwa?",
+      "name": "Кои обновления за PLC контролери трябва да прилагаме спешно при NIS2?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Musicie udokumentować tę sytuację i wdrożyć kontrole kompensacyjne: zwiększone monitorowanie sieci, ograniczenie dostępu do tego urządzenia, izolowanie go w osobnej podsieci. Równocześnie powinniście formułować zapotrzebowanie dostawcy o poprawki i rozważyć zmianę dostawcy w perspektywie długoterminowej — ta niedostateczność bezpieczeństwa musi być raportowana w zarządzaniu ryzykiem."
+        "text": "Критични сигурностни пачове, които преодолеват установени уязвимости в публични базиси данни като CVE, трябва да бъдат прилагани в рамките на 30 дни от освобождаването им. За това е необходимо редовно мониторинг на производителските сайтове и регистрирането в техните бюлетини за безопасност, като тестването на пачовете трябва да се извършва на тестовой среде преди въвеждане в производство."
       }
     },
     {
       "@type": "Question",
-      "name": "Jakie są sankcje, jeśli nie zgłosimy incydentu produkcyjnego do CERT Polska w ciągu 24 godzin?",
+      "name": "Какъв е наказанието за неспособност да се съответстви на NIS2 изискванията до 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nieprzestrzeganie wymogów raportowania może skutkować grzywnami do 50 mln PLN lub 10% obrotu rocznego (w zależności od tego, która kwota jest wyższa) oraz postępowaniem administracyjnym prowadzonym przez UKNF. Reputacyjne konsekwencje mogą być równie poważne — brak raportowania może świadczyć o niezadowalającym zarządzaniu bezpieczeństwem."
+        "text": "Производители, които не съответстват на NIS2 изискванията, могат да бъдат наложени административни наказания до 10 млн. евро или 2% от годишния глобален оборот за по-малко сериозни нарушения, и до 20 млн. евро или 4% от годишния глобален оборот за значителни нарушения като неуведомяване на инцидентите или липсваща сегментация на мрежата."
       }
     }
   ]
@@ -90,44 +90,44 @@
 <nav class="nav">
   <div class="container">
     <div class="nav__inner">
-      <a href="../index.html" class="nav__logo">NIS2<span>Bg</span>.eu</a>
+      <a href="../index.html" class="nav__logo">NIS2<span>BG</span>.eu</a>
       <ul class="nav__links">
-        <li><a href="../sravnenie.html">Porównanie narzędzi</a></li>
-        <li><a href="../kalkulator.html">Kalkulator KSC</a></li>
+        <li><a href="../sravnenie.html">Сравнение на инструменти</a></li>
+        <li><a href="../kalkulator.html">Калкулатор NIS2</a></li>
         <li><a href="../faq.html">FAQ</a></li>
       </ul>
-      <a href="../kalkulator.html" class="nav__cta">Sprawdź czy podlegasz →</a>
+      <a href="../kalkulator.html" class="nav__cta">Проверете дали сте задължени →</a>
     </div>
   </div>
 </nav>
 
 <div class="container" style="padding-top:1.5rem;">
   <div class="breadcrumb">
-    <a href="../index.html">Strona główna</a><span>›</span>
-    <a href="index.html">Sektory</a><span>›</span>
-    KSC/NIS2 dla producentów przemysłowych w Polsce — wymagania dla infrastruktury Industry 4.0
+    <a href="../index.html">Начало</a><span>›</span>
+    <a href="index.html">Сектори</a><span>›</span>
+    NIS2 за индустриални производители в България — Изисквания за киберсигурност и производствени системи
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Załącznik II — podmiot ważny</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">KSC/NIS2 dla producentów przemysłowych w Polsce — wymagania dla infrastruktury Industry 4.0</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Niniejszy przewodnik kieruje się do polskich producentów przemysłowych z podłączonymi liniami produkcyjnymi i systemami sterowania. Poznają Państwo konkretne wymogi segmentacji sieci, zarządzania zagrożeniami w łańcuchu dostaw oraz obowiązki raportowania incydentów z wpływem na produkcję.</p>
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Приложение II — Важен субект</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 за индустриални производители в България — Изисквания за киберсигурност и производствени системи</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Ръководство за производители с автоматизирани производствени линии, свързани PLC контролери и Industry 4.0 инфраструктура. Открийте конкретните задължения за защита на операционните технологии и дедлайните за съответствие през 2026 според Закона за киберсигурност.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Producenci przemysłowi z siedminą w Polsce, którzy zarządzają infrastrukturą produkcyjną zawierającą sterowniki logiki programowalnej (PLC), systemy SCADA lub urządzenia IoT klasy Industry 4.0, są klasyfikowani jako podmioty ważne. Dotyczy to także wyspecjalizowanych dostawców komponentów przemysłowych i oprogramowania firmware'u dla linii produkcyjnych.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Индустриални производители в България със свързани производствени линии, които генерират годишен оборот над 500 млн. евро или са критични за национална инфраструктура, попадат под Приложение II на NIS2. Включени са производители на автомобили, машини, химикали, хранителни продукти и всяка индустрия, която разчита на автоматизирани PLC системи и IoT устройства, свързани към корпоративната мрежа.</p>
   </div>
 </div>
 
 <!-- OBLIGATIONS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Kluczowe obowiązki NIS2 dla tego sektora</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Ключови задължения по NIS2 за този сектор</h2>
   <div style="border-top:1px solid var(--gray-100);">
     
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -135,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Bezpieczeństwo systemów OT/ICS i sterowania produkcją</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Muszą Państwo wdrożyć dedykowane kontrole bezpieczeństwa dla systemów operacyjnych (OT), w tym PLC, sterowników silników i urządzeń IoT na liniach produkcyjnych. Wymaga to oddzielnego planu zarządzania zagrożeniami dla infrastruktury OT, włącznie z monitorowaniem w czasie rzeczywistym oraz testowaniem podatności specyficznym dla protokołów przemysłowych (Modbus, Profibus, OPC UA).</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Сегментация на IT/OT мрежите и мониторинг</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Производителите трябва да разделят физически или логически своите OT мрежи (производствени линии, PLC контролери, SCADA системи) от IT мрежите за намаляване на риска от разпространение на кибератаки. Изискуемо е непрекъснато мониторинг на трафика между сегментите и незабавно оповестяване при подозрителни действия, което може да бъде автоматизирано чрез ISMS инструменти.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -144,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Segmentacja sieci IT/OT i kontrola dostępu</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Linie produkcyjne muszą być logicznie i fizycznie oddzielone od sieci korporacyjnej poprzez firewall'e oraz bramki bezpieczeństwa. Każdy dostęp między siecią IT a systemami OT wymaga walidacji i logowania; dostęp zdalny do PLC powinien być ograniczony do autoryzowanych techników ze zmultiplikowanym uwierzytelnianiem (MFA) i szyfrowaniem sesji.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Управление на пачове и вулнерабилности за OT системи</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Трябва да установите формален процес за прилагане на сигурностни обновления на всички PLC, промишлени контролери и firmware на IoT устройствата. За критични сигурностни дыры е необходимо прилагане на пачове в рамките на 30 дни, а за остатъка в рамките на 90 дни, с документиране на всяко обновление и тестване преди въвеждане в производство.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -153,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Zarządzanie zagrożeniami w łańcuchu dostaw dla komponentów i firmware'u</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Musicie Państwo przeprowadzić audyt wszystkich dostawców komponentów OT, oprogramowania sterującego i firmware'u przemysłowego. Każdy dostawca powinien posiadać certyfikat lub deklarację bezpieczeństwa oraz zobowiązanie do raportowania luk bezpieczeństwa w ciągu 72 godzin. Należy wdrożyć proces weryfikacji integrości oprogramowania przed jego wdrożeniem na liniach produkcyjnych.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Управление на веригата на доставяне за индустриални компоненти</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Производители трябва да преоценят всички доставчици на промишлена техника, firmware, PLC модули и интегратори. Договорите с доставчиците и производителите на оборудване трябва да съдържат задължения за сигурност по дизайн, уведомления за инциденти и поддържане на сигурностни обновления поне 5 години след доставката.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -162,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Zarządzanie poprawkami i aktualizacjami dla systemów OT</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Opracujcie formalny proces zarządzania poprawkami specyficzny dla systemów OT, uwzględniający testy kompatybilności i bezpieczeństwa przed wdrożeniem. Systemy OT nie mogą pozostawać bez poprawek bezpieczeństwa przez okres dłuższy niż 30 dni od ogłoszenia CVE; jeśli poprawka jest niedostępna, musicie wdrożyć dodatkowe kontrole kompensacyjne (np. filtrowanie ruchu sieciowego).</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Отчетност на инцидентите с значителен икономически въздействие</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">При кибератаки или техни опити, които причиняват спиране на производството за повече от 4 часа или икономически щета над 500 000 евро, производителят трябва да уведоми Министъра на електронното управление в рамките на 24 часа с подробна информация за атаката, засегнатите системи и предприетите защитни мерки.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -171,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Raportowanie incydentów związanych z przerwami produkcji</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Każdy incydent bezpieczeństwa powodujący przerwę w produkcji trwającą ponad 4 godziny lub mający znaczący wpływ ekonomiczny (>250 tys. PLN strat) musi być zgłoszony do CERT Polska w ciągu 24 godzin. Raport musi zawierać opis ataku, dotknięte systemy OT, czas przywrócenia oraz środki naprawcze; dokumentacja powinna być przechowywana przez 5 lat.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Дистанционен достъп и управление на достъпа до OT системи</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Всеки дистанционен достъп до производствени линии, PLC контролери или промишлени IoT устройства трябва да бъде криптиран, аутентифициран чрез многофакторна аутентификация и логиран. Забранени са остарели небезопасни протоколи като Telnet или незашифрирани SSH връзки за поддръжка и диагностика на оборудване.</p>
       </div>
     </div>
   </div>
@@ -180,27 +180,27 @@
 
 <!-- TYPICAL GAPS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Typowe luki compliance w tym sektorze</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Типични пропуски в съответствието в този сектор</h2>
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Sterowniki PLC i urządzenia IoT przemysłowe są podłączone bezpośrednio do korporacyjnej sieci Ethernet bez żadnej segmentacji, umożliwiając potencjalny lateral movement z zainfekowanego komputera biurowego do linii produkcyjnej.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>PLC контролери и промишлени контролни системи са свързани директно към корпоративната мрежа без физико или логическо разделяне, което позволява хоризонтално разпространение на кибератаки от ИТ към производствено отделение.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Brak sformalizowanego procesu zarządzania poprawkami dla systemów OT — aktualizacje są instalowane ad hoc, często z kilkumiesięcznym opóźnieniem, a czasami nigdy, ponieważ pracownicy działu produkcji obawiają się przestojów.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Липсва формален процес за управление на пачове за OT системи, при което производството се счита за забранено поле за обновления, оставляйки древни уязвимости незащитени.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Dostęp zdalny dla inżynierów serwisu realizowany poprzez niezabezpieczony VPN, Telnet lub RDP bez MFA, pozwalając dostawcy oprogramowania na nieograniczony dostęp do PLC bez jakichkolwiek dzienników audytu.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Дистанционната поддръжка от производители и интегратори использва незашифрирани протоколи или фиксирани учетни данни, което експозира производствени системи на прехващане и манипулация.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Brak inwentaryzacji zasobów OT — organizacja nie wie, ile dokładnie urządzeń IoT, czujników i sterowników działa na liniach produkcyjnych, co utrudnia zarządzanie zagrożeniami i wywiązanie się z obowiązku raportowania.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Инвентаризацията на индустриални IoT устройства е непълна или отсъстваща, което предотвратява ефективното управление на уязвимостите и кибер хигиена в OT окръжението.
     </li>
   </ul>
 </div>
 
 <!-- TOOLS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Rekomendowane narzędzia dla tego sektora</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Препоръчани инструменти за този сектор</h2>
   <div style="display:grid;gap:1rem;">
     
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
@@ -232,25 +232,25 @@
 
 <!-- FAQ -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem;" itemscope itemtype="https://schema.org/FAQPage">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Często zadawane pytania</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Често задавани въпроси</h2>
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Czy musimy natychmiast odłączyć wszystkie nasze PLC i urządzenia IoT z sieci korporacyjnej?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Как трябва да разделим производственото отделение (OT) от корпоративната мрежа (IT)?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Nie musiecie to robić natychmiast, ale do 17 października 2024 r. musicie posiadać plan segmentacji oraz co najmniej wstępną implementację firewall'a lub bramy bezpieczeństwa pomiędzy sieciami IT i OT. Jeśli pełna segmentacja jest technicznie niemożliwa, musicie wdrożyć kontrole kompensacyjne, takie jak monitorowanie ruchu i restrykcje dostępu opartych na rolach.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Минимално разделение е логическо сегментиране чрез firewalls и контроли на достъпа, което ограничава комуникацията между IT и OT устройства до конкретни портове и услуги. По-силната опция е физическо разделение на мрежата с отделни комутатори, маршрутизатори и администраторски акаунти за OT системи, което затруднява разпространението на кибератаки.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jak powinniśmy postępować, jeśli dostawca firmware'u dla naszych PLC nie oferuje poprawek bezpieczeństwa?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Кои обновления за PLC контролери трябва да прилагаме спешно при NIS2?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Musicie udokumentować tę sytuację i wdrożyć kontrole kompensacyjne: zwiększone monitorowanie sieci, ograniczenie dostępu do tego urządzenia, izolowanie go w osobnej podsieci. Równocześnie powinniście formułować zapotrzebowanie dostawcy o poprawki i rozważyć zmianę dostawcy w perspektywie długoterminowej — ta niedostateczność bezpieczeństwa musi być raportowana w zarządzaniu ryzykiem.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Критични сигурностни пачове, които преодолеват установени уязвимости в публични базиси данни като CVE, трябва да бъдат прилагани в рамките на 30 дни от освобождаването им. За това е необходимо редовно мониторинг на производителските сайтове и регистрирането в техните бюлетини за безопасност, като тестването на пачовете трябва да се извършва на тестовой среде преди въвеждане в производство.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jakie są sankcje, jeśli nie zgłosimy incydentu produkcyjnego do CERT Polska w ciągu 24 godzin?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Какъв е наказанието за неспособност да се съответстви на NIS2 изискванията до 2026?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Nieprzestrzeganie wymogów raportowania może skutkować grzywnami do 50 mln PLN lub 10% obrotu rocznego (w zależności od tego, która kwota jest wyższa) oraz postępowaniem administracyjnym prowadzonym przez UKNF. Reputacyjne konsekwencje mogą być równie poważne — brak raportowania może świadczyć o niezadowalającym zarządzaniu bezpieczeństwem.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Производители, които не съответстват на NIS2 изискванията, могат да бъдат наложени административни наказания до 10 млн. евро или 2% от годишния глобален оборот за по-малко сериозни нарушения, и до 20 млн. евро или 4% от годишния глобален оборот за значителни нарушения като неуведомяване на инцидентите или липсваща сегментация на мрежата.</p>
     </div>
   </div>
   </div>
@@ -259,30 +259,27 @@
 <!-- CTA -->
 <div style="background:var(--navy);padding:3rem 1.25rem;text-align:center;margin-top:2rem;">
   <div class="container--narrow">
-    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Sprawdź wymagania dla swojej organizacji</h2>
+    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Проверете изискванията за вашата организация</h2>
     <p style="color:rgba(255,255,255,.75);margin:0 0 1.5rem;font-size:.95rem;">
-      KSC/NIS2 · Polska · 2026
+      Закон за киберсигурност/NIS2 · България · 2026
     </p>
     <a href="../kalkulator.html" style="display:inline-block;background:#16a34a;color:#fff;padding:.85rem 2.25rem;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;">
-      Uruchom kalkulator →
+      Стартирайте калкулатора →
     </a>
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Powiązane sektory" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Powiązane sektory</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="medical-devices.html">NIS2 dla producentów urządzeń medycznych w Polsce 2026</a></li><li style="margin:0"><a href="pharmacies.html">KSC/NIS2 dla aptek i dystrybutorów farmaceutycznych w Polsce 2026</a></li><li style="margin:0"><a href="public-administration.html">NIS2 dla jednostek sektora publicznego w Polsce</a></li><li style="margin:0"><a href="real-estate.html">KSC/NIS2 dla agencji nieruchomości i platform proptech w Polsce 2026</a></li><li style="margin:0"><a href="retail.html">KSC/NIS2 dla sieci handlowych i e-commerce w Polsce 2026</a></li><li style="margin:0"><a href="sme-general.html">NIS2 dla średnich firm w Polsce</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
-      © 2026 NIS2-Narzedzia.pl · KSC/NIS2 · UKNF/CERT Polska
+      © 2026 NIS2-BG.eu · Закон за киберсигурност/NIS2 · Министър на електронното управление
       <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
-      <br><a href="../index.html" style="color:var(--gray-400);">Strona główna</a> ·
-      <a href="index.html" style="color:var(--gray-400);">Sektory</a> ·
-      <a href="../sravnenie.html" style="color:var(--gray-400);">Porównanie narzędzi</a>
+      <br><a href="../index.html" style="color:var(--gray-400);">Начало</a> ·
+      <a href="index.html" style="color:var(--gray-400);">Сектори</a> ·
+      <a href="../sravnenie.html" style="color:var(--gray-400);">Сравнение на инструменти</a>
     </p>
   </div>
 </footer>
 
-  <script src="/js/tg-cta.js" defer></script>
 </body>
 </html>

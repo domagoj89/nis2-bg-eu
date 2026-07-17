@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="bg">
 <head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-32QHQRGVRH"></script>
@@ -11,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 dla MSP i MSSP w Polsce — wymagania 2026</title>
-  <meta name="description" content="Przewodnik NIS2 dla dostawców usług zarządzanych. Poznaj obowiązki dotyczące dostępu zdalnego, raportowania incydentów i bezpieczeństwa podwykonawców. Wdrożenie do 2026.">
+  <title>NIS2 за доставчици на управлявани услуги в България 2026</title>
+  <meta name="description" content="Изисквания на Закона за киберсигурност за MSP и MSSP в България. Задължения, инструменти и краен срок октомври 2026.">
   <link rel="canonical" href="https://nis2-bg.eu/sektory/managed-services.html">
-  <meta property="og:title" content="NIS2 dla MSP i MSSP w Polsce — wymagania 2026">
-  <meta property="og:description" content="Przewodnik NIS2 dla dostawców usług zarządzanych. Poznaj obowiązki dotyczące dostępu zdalnego, raportowania incydentów i bezpieczeństwa podwykonawców. Wdrożenie do 2026.">
+  <meta property="og:title" content="NIS2 за доставчици на управлявани услуги в България 2026">
+  <meta property="og:description" content="Изисквания на Закона за киберсигурност за MSP и MSSP в България. Задължения, инструменти и краен срок октомври 2026.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-bg.eu/sektory/managed-services.html">
-  <meta property="og:locale" content="pl_PL">
-  <meta property="og:site_name" content="NIS2-Narzedzia.pl">
+  <meta property="og:locale" content="bg_BG">
+  <meta property="og:site_name" content="NIS2-BG.eu">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 dla MSP i MSSP w Polsce — wymagania 2026">
-  <meta name="twitter:description" content="Przewodnik NIS2 dla dostawców usług zarządzanych. Poznaj obowiązki dotyczące dostępu zdalnego, raportowania incydentów i bezpieczeństwa podwykonawców. Wdrożenie do 2026.">
+  <meta name="twitter:title" content="NIS2 за доставчици на управлявани услуги в България 2026">
+  <meta name="twitter:description" content="Изисквания на Закона за киберсигурност за MSP и MSSP в България. Задължения, инструменти и краен срок октомври 2026.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -34,19 +34,19 @@
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "Strona główna",
+      "name": "Начало",
       "item": "https://nis2-bg.eu/"
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Sektory",
+      "name": "Сектори",
       "item": "https://nis2-bg.eu/sektory/"
     },
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 dla dostawców usług zarządzanych (MSP/MSSP) w Polsce — obowiązki podmiotu kluczowego",
+      "name": "NIS2 за управлявани услуги в България — задължения на критичните доставчици 2026",
       "item": "https://nis2-bg.eu/sektory/managed-services.html"
     }
   ]
@@ -59,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Czy jako MSP muszę raportować incydent w moim systemie RMM do CERT Polska, jeśli dotyczył systemów moich klientów?",
+      "name": "Кога трябва да докладвам на булgarског регулатор инцидент, който е засегнал системите на мой клиент?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tak, bezwzględnie. Incydent w infrastrukturze MSP, który wpłynął na dostęp do systemów lub danych klienta, musi być raportowany CERT Polska w ciągu 72 godzin, niezależnie od tego, czy sam klient ma obowiązek raportowania NIS2. Jesteś odpowiedzialny za zbadanie wpływu i raportowanie, nawet jeśli klient jest małą firmą."
+        "text": "Ако инцидентът засегне критична организация (клиент на MSP), трябва да докладвате на Министър на електронното управление в срок до 72 часа след открийването на инцидента. Преди това уведомете клиента незабавно. Ако инцидентът засегне самата ваша MSP инфраструктура, който управлява критични системи, докладването е също задължително в същите 72 часа."
       }
     },
     {
       "@type": "Question",
-      "name": "Jakie minimum wymogi MFA powinienem wdrożyć w narzędziach RMM, aby być zgodnym z NIS2?",
+      "name": "Какви конкретни характеристики на RMM/поддръжката трябва да бъдат защитени според NIS2?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Minimum wymagane to co najmniej dwuskładnikowe uwierzytelnianie (np. hasło + aplikacja generująca kody, biometria, certyfikat SSH). Dla kont administratora i dostępu do narzędzi zarządzania infrastrukturą rekomenduje się pełną implementację zero-trust z certyfikatami, tokenami sprzętowymi lub Key Management Service (KMS). Hasła samodzielnie nie są akceptowane."
+        "text": "Всеки RMM инструмент трябва да име: многофакторна аутентификация (MFA) за всеки администратор, уникални учетни данни за всеки клиент (не споделени парола), пълна хронология на дейностите, шифроване в пътуване и в покой, и редовни проникващи тестове. Должни сте да ограничите администраторските права по принципа на минималния привилегий."
       }
     },
     {
       "@type": "Question",
-      "name": "Jakie są konsekwencje braku zgodności z NIS2 do 2026 roku?",
+      "name": "Какви са наказанията за неспазване на NIS2 задълженията и какъв е крайния срок?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "UKNF może nałożyć kary pieniężne do 20 milionów EUR lub 4% rocznego obrotu (zależnie od tego, która kwota jest wyższa) za naruszenie obowiązków bezpieczeństwa, plus nakazy natychmiastowego wdrożenia środków kontrolnych i audyty. Brak testów penetracyjnych, MFA i procedur raportowania incydentów uznawany jest za naruszenie o wysokim ryzyku karnym."
+        "text": "Крайния срок за пълна съответствие е 17 октомври 2026 г. Наказанията варират от административни глоби (от 1 до 5 милиона BGN за организации) до принудително преустройство на системите и запретване на управление на критична инфраструктура. Първите одити ще се проведат през 2026 и 2027 г."
       }
     }
   ]
@@ -90,44 +90,44 @@
 <nav class="nav">
   <div class="container">
     <div class="nav__inner">
-      <a href="../index.html" class="nav__logo">NIS2<span>Bg</span>.eu</a>
+      <a href="../index.html" class="nav__logo">NIS2<span>BG</span>.eu</a>
       <ul class="nav__links">
-        <li><a href="../sravnenie.html">Porównanie narzędzi</a></li>
-        <li><a href="../kalkulator.html">Kalkulator KSC</a></li>
+        <li><a href="../sravnenie.html">Сравнение на инструменти</a></li>
+        <li><a href="../kalkulator.html">Калкулатор NIS2</a></li>
         <li><a href="../faq.html">FAQ</a></li>
       </ul>
-      <a href="../kalkulator.html" class="nav__cta">Sprawdź czy podlegasz →</a>
+      <a href="../kalkulator.html" class="nav__cta">Проверете дали сте задължени →</a>
     </div>
   </div>
 </nav>
 
 <div class="container" style="padding-top:1.5rem;">
   <div class="breadcrumb">
-    <a href="../index.html">Strona główna</a><span>›</span>
-    <a href="index.html">Sektory</a><span>›</span>
-    NIS2 dla dostawców usług zarządzanych (MSP/MSSP) w Polsce — obowiązki podmiotu kluczowego
+    <a href="../index.html">Начало</a><span>›</span>
+    <a href="index.html">Сектори</a><span>›</span>
+    NIS2 за управлявани услуги в България — задължения на критичните доставчици 2026
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Załącznik I — podmiot kluczowy</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 dla dostawców usług zarządzanych (MSP/MSSP) w Polsce — obowiązki podmiotu kluczowego</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Jesteś dostawcą usług zarządzanych lub bezpieczeństwa obsługującym klientów biznesowych? Ta strona wyjaśnia konkretne wymagania NIS2/KSC, które obligują Ciebie i Twoich podwykonawców do 2026 roku.</p>
+    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Приложение I — критична организация</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 за управлявани услуги в България — задължения на критичните доставчици 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Тази страница е предназначена за MSP и MSSP компании, които управляват системи на клиенти в България. Научете се за конкретните задължения, включително защитата на отдалечения достъп, отчетността на инцидентите и договорните изисквания, които трябва да прилагате до октомври 2026 г.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Pod regulację NIS2/KSC jako podmiot kluczowy podlegają dostawcy usług zarządzanych (MSP) i dostawcy zarządzanych usług bezpieczeństwa (MSSP), którzy świadczą usługi na rzecz przedsiębiorstw i sektora publicznego w Polsce, niezależnie od liczby pracowników, jeśli mają dostęp do infrastruktury krytycznej swoich klientów lub zarządzają istotnymi systemami IT. Dotyczy to zarówno małych firm oferujących obsługę RMM, jak i dużych korporacji z globalnym zasięgiem.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">MSP и MSSP компании, които предоставят управление на ИТ системи, мониторинг на сигурността или поддръжка на отдалечения достъп за български предприятия, попадат в категорията на критични организации согласно Закона за киберсигурност. Това включва всички доставчици на управлявани услуги, които управляват критична инфраструктура, публични администрации или други критични обекти, независимо от тяхния размер.</p>
   </div>
 </div>
 
 <!-- OBLIGATIONS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Kluczowe obowiązki NIS2 dla tego sektora</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Ключови задължения по NIS2 за този сектор</h2>
   <div style="border-top:1px solid var(--gray-100);">
     
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -135,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Bezpieczeństwo narzędzi dostępu zdalnego i modelu zero-trust</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Musisz wdrożyć mechanizmy autentykacji wieloskładnikowej (MFA) na wszystkich platformach RMM i narzędziach wsparcia zdalnego, znieść współdzielone konta administratora między środowiskami klientów i zastosować model zero-trust do każdego połączenia. Każdy dostęp powinien być osłonięty szyfrowaniem end-to-end, logowany centralnie i poddawany regularnym audytom dostępu. Oznacza to, że jedno konto z hasłem nie jest akceptowalne — wymagane są certyfikaty, tokeny, lub uwierzytelnianie biometryczne w zależności od poziomu podatności.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Защита на инструментите за отдалечен достъп (RMM) и поддержка</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Всеки инструмент за управление на отдалечена система трябва да използва многофакторна аутентификация (MFA), уникални учетни данни за всеки клиент и средства за контрол на достъпа базирани на нулево доверие. Системите за отдалечена поддръжка трябва да се мониторят в реално време и да имат хронология на дейностите на администраторите. Конфигурациите на RMM трябва да бъдат редовно одитирани и да се подлагат на проникващо тестване поне веднъж годишно.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -144,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Raportowanie incydentów bezpieczeństwa dotyczących klientów</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Gdy w wyniku naruszenia bezpieczeństwa Twojej infrastruktury MSP/MSSP dojdzie do incydentu w systemach klienta, musisz powiadomić odpowiednich regulatorów (UKNF, CERT Polska) w ciągu 72 godzin, niezależnie od tego, czy sam klient spełnia progi raportowania NIS2. Musisz też posiadać procedury klasyfikacji incydentów, które wyjaśniają, które zdarzenia wpływają na klientów i wymagają eskalacji. Brak wyjaśnienia powiązania między incydentem w Twojej infrastrukturze a systemami klienta nie uwalnia Cię z obowiązku raportowania.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Отчетност на инцидентите при нарушение на клиентски системи</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ако нарушение на инфраструктурата на MSP/MSSP засегне системите на клиент, който е критична организация, трябва да докладвате инцидента на българския регулатор (Министър на електронното управление) в срок до 72 часа. Трябва също да уведомите засегнатия клиент незабавно и да предоставите технически детайли относно обхвата на инцидента и предприетите мерки за смекчаване.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -153,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Wymagania bezpieczeństwa przekazywane do klientów i podwykonawców</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Umowy serwisowe z klientami muszą zawierać konkretne zobowiązania dotyczące bezpieczeństwa (SLA bezpieczeństwa), w tym wymogi dotyczące testowania penetracyjnego, zarządzania łatkami, monitorowania zagrożeń i incydentów. Musisz również narzucić analogiczne wymagania swoim podwykonawcom i dostawcom oprogramowania poprzez klauzule umowne z wymaganymi testami bezpieczeństwa. Nie możesz delegować odpowiedzialności — jesteś odpowiedzialny za cały łańcuch dostaw.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Договорни изисквания за сигурност на клиенти и подизпълнители</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Всички договори с клиенти и подизпълнители (включително облачни доставчици) трябва да включват изрични изисквания за киберсигурност, включително задължения за поверителност на данни, протоколи за реакция при инциденти и право на MSP да проверява спазването. Договорите трябва да определят кой е отговорен за отчетността на инцидентите и да съдържат условия за прекратяване при нарушение на сигурността.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -162,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Regularne testy penetracyjne infrastruktury MSP i platform RMM</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Co roku musisz przeprowadzać zewnętrzne testy penetracyjne obejmujące platformy RMM, panele zarządzania, systemy autentykacji i sieci szkieletowe. Wyniki muszą być dokumentowane i udostępniane UKNF/CERT Polska na żądanie. Testy muszą obejmować symulacje ataków na system uprawnień, konta usługowe i łańcuch dostaw (supply chain attacks), a nie tylko czołowe aplikacje klienta.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Модел на достъп базиран на нулево доверие (Zero-Trust)</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Внедрете архитектура на нулево доверие за всеки отдалечен достъп: вярвайте на никого по подразбиране, требва постоянна проверка на идентичността и правата. Всеки администратор трябва да има най-малко привилегии за своята роля. Съчетайте MFA с микросегментация на мрежата и шифроване на данните при пътуване и в покой.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -171,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Zarządzanie podatnościami i program bug bounty</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Musisz posiadać formalny program zarządzania podatnościami, który obejmuje skanowanie kodu, audyty bezpieczeństwa i test odporności aplikacji. Rekomenduje się wdrożenie programu bug bounty dla narzędzi i usług obsługujących klientów. Każda podatność musi być monitorowana, posortowana i naprawiona w ustalonym terminie SLA, z dokumentacją przekazywaną do CERT Polska w przypadku podatności dotyczących infrastruktury krytycznej.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Редовно проникващо тестване и оценка на уязвимостите</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Проведете минимум едно проникващо тестване годишно на вашата MSP/MSSP инфраструктура, особено на интерфейсите за управление на RMM и портала за поддръжка. Всички обнаружени критични уязвимости трябва да бъдат коригирани в срок до 30 дни. Документирайте всички тестове и техните резултати, включително компенсиращите контроли, приложени към всяка идентифицирана уязвимост.</p>
       </div>
     </div>
   </div>
@@ -180,27 +180,27 @@
 
 <!-- TYPICAL GAPS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Typowe luki compliance w tym sektorze</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Типични пропуски в съответствието в този сектор</h2>
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Współdzielone konta administratora RMM dla wszystkich środowisk klientów — każdy klient wymaga oddzielnego konta z MFA i certyfikatem SSH, nie hasłami.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Използване на единични администраторски учетни данни за RMM, които се споделят между множество администратори или клиенти, отстранява способността за одит на отделните действия и нарушава принципите на нулево доверие.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Brak uwierzytelniania wieloskładnikowego na platformach wsparcia zdalnego i panelach zarządzania — należy natychmiast wdrożyć MFA dla wszystkich użytkowników, w tym pracowników i partnerów.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Отсъствие на многофакторна аутентификация на платформите за отдалечена поддръжка позволява неоторизиран достъп в случай на компрометиране на парола.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Niereklasyfikowanie incydentów w infrastrukturze MSP jako incydentów dotyczących klientów — musisz mieć procedurę oceny, czy naruszenie bezpieczeństwa u Ciebie wpłynęło na systemy klienta i czy wymaga raportowania do UKNF/CERT Polska.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Неправилна класификация на инцидентите на клиенти — немаркирането на клиентските инциденти като инциденти на MSP затрудняват отчетността и могат да нарушат сроковете за докладване до регулатора.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Brak formalnej listy kontrolnej bezpieczeństwa dla dostawców oprogramowania i składników RMM — opracuj szablon questionnaire (Asset Security Questionnaire) dla każdego dostawcy z obowiązkowym zatwierdzaniem przez zespół compliance.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Липса на официална анкета за сигурност при доставчици на софтуер и облачни услуги позволява критични пропуски в ланцига на доставка и създава неконтролирани рискове от трети страни.
     </li>
   </ul>
 </div>
 
 <!-- TOOLS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Rekomendowane narzędzia dla tego sektora</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Препоръчани инструменти за този сектор</h2>
   <div style="display:grid;gap:1rem;">
     
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
@@ -232,25 +232,25 @@
 
 <!-- FAQ -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem;" itemscope itemtype="https://schema.org/FAQPage">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Często zadawane pytania</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Често задавани въпроси</h2>
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Czy jako MSP muszę raportować incydent w moim systemie RMM do CERT Polska, jeśli dotyczył systemów moich klientów?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Кога трябва да докладвам на булgarског регулатор инцидент, който е засегнал системите на мой клиент?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Tak, bezwzględnie. Incydent w infrastrukturze MSP, który wpłynął na dostęp do systemów lub danych klienta, musi być raportowany CERT Polska w ciągu 72 godzin, niezależnie od tego, czy sam klient ma obowiązek raportowania NIS2. Jesteś odpowiedzialny za zbadanie wpływu i raportowanie, nawet jeśli klient jest małą firmą.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Ако инцидентът засегне критична организация (клиент на MSP), трябва да докладвате на Министър на електронното управление в срок до 72 часа след открийването на инцидента. Преди това уведомете клиента незабавно. Ако инцидентът засегне самата ваша MSP инфраструктура, който управлява критични системи, докладването е също задължително в същите 72 часа.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jakie minimum wymogi MFA powinienem wdrożyć w narzędziach RMM, aby być zgodnym z NIS2?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Какви конкретни характеристики на RMM/поддръжката трябва да бъдат защитени според NIS2?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Minimum wymagane to co najmniej dwuskładnikowe uwierzytelnianie (np. hasło + aplikacja generująca kody, biometria, certyfikat SSH). Dla kont administratora i dostępu do narzędzi zarządzania infrastrukturą rekomenduje się pełną implementację zero-trust z certyfikatami, tokenami sprzętowymi lub Key Management Service (KMS). Hasła samodzielnie nie są akceptowane.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Всеки RMM инструмент трябва да име: многофакторна аутентификация (MFA) за всеки администратор, уникални учетни данни за всеки клиент (не споделени парола), пълна хронология на дейностите, шифроване в пътуване и в покой, и редовни проникващи тестове. Должни сте да ограничите администраторските права по принципа на минималния привилегий.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jakie są konsekwencje braku zgodności z NIS2 do 2026 roku?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Какви са наказанията за неспазване на NIS2 задълженията и какъв е крайния срок?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">UKNF może nałożyć kary pieniężne do 20 milionów EUR lub 4% rocznego obrotu (zależnie od tego, która kwota jest wyższa) za naruszenie obowiązków bezpieczeństwa, plus nakazy natychmiastowego wdrożenia środków kontrolnych i audyty. Brak testów penetracyjnych, MFA i procedur raportowania incydentów uznawany jest za naruszenie o wysokim ryzyku karnym.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Крайния срок за пълна съответствие е 17 октомври 2026 г. Наказанията варират от административни глоби (от 1 до 5 милиона BGN за организации) до принудително преустройство на системите и запретване на управление на критична инфраструктура. Първите одити ще се проведат през 2026 и 2027 г.</p>
     </div>
   </div>
   </div>
@@ -259,30 +259,27 @@
 <!-- CTA -->
 <div style="background:var(--navy);padding:3rem 1.25rem;text-align:center;margin-top:2rem;">
   <div class="container--narrow">
-    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Sprawdź wymagania dla swojej organizacji</h2>
+    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Проверете изискванията за вашата организация</h2>
     <p style="color:rgba(255,255,255,.75);margin:0 0 1.5rem;font-size:.95rem;">
-      KSC/NIS2 · Polska · 2026
+      Закон за киберсигурност/NIS2 · България · 2026
     </p>
     <a href="../kalkulator.html" style="display:inline-block;background:#16a34a;color:#fff;padding:.85rem 2.25rem;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;">
-      Uruchom kalkulator →
+      Стартирайте калкулатора →
     </a>
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Powiązane sektory" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Powiązane sektory</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="manufacturing.html">KSC/NIS2 dla producentów przemysłowych w Polsce</a></li><li style="margin:0"><a href="medical-devices.html">NIS2 dla producentów urządzeń medycznych w Polsce 2026</a></li><li style="margin:0"><a href="pharmacies.html">KSC/NIS2 dla aptek i dystrybutorów farmaceutycznych w Polsce 2026</a></li><li style="margin:0"><a href="public-administration.html">NIS2 dla jednostek sektora publicznego w Polsce</a></li><li style="margin:0"><a href="real-estate.html">KSC/NIS2 dla agencji nieruchomości i platform proptech w Polsce 2026</a></li><li style="margin:0"><a href="retail.html">KSC/NIS2 dla sieci handlowych i e-commerce w Polsce 2026</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
-      © 2026 NIS2-Narzedzia.pl · KSC/NIS2 · UKNF/CERT Polska
+      © 2026 NIS2-BG.eu · Закон за киберсигурност/NIS2 · Министър на електронното управление
       <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
-      <br><a href="../index.html" style="color:var(--gray-400);">Strona główna</a> ·
-      <a href="index.html" style="color:var(--gray-400);">Sektory</a> ·
-      <a href="../sravnenie.html" style="color:var(--gray-400);">Porównanie narzędzi</a>
+      <br><a href="../index.html" style="color:var(--gray-400);">Начало</a> ·
+      <a href="index.html" style="color:var(--gray-400);">Сектори</a> ·
+      <a href="../sravnenie.html" style="color:var(--gray-400);">Сравнение на инструменти</a>
     </p>
   </div>
 </footer>
 
-  <script src="/js/tg-cta.js" defer></script>
 </body>
 </html>

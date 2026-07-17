@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="bg">
 <head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-32QHQRGVRH"></script>
@@ -11,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 dla dostawców cyberbezpieczeństwa w Polsce — wymagania 2026</title>
-  <meta name="description" content="Przewodnik NIS2 dla MSSP, SOC i firm penetration testingu w Polsce. Poznaj obowiązki raportowania incydentów, bezpieczeństwa infrastruktury i odpowiedzialnego ujawniania luk.">
+  <title>NIS2 за кибербезопасни доставчици в България 2026</title>
+  <meta name="description" content="NIS2 наръчник за MSSP, SOC и пенетрационни тестери в България. Задължения, репортиране на инциденти, защита на клиентски данни до 2026 г.">
   <link rel="canonical" href="https://nis2-bg.eu/sektory/cybersecurity-firms.html">
-  <meta property="og:title" content="NIS2 dla dostawców cyberbezpieczeństwa w Polsce — wymagania 2026">
-  <meta property="og:description" content="Przewodnik NIS2 dla MSSP, SOC i firm penetration testingu w Polsce. Poznaj obowiązki raportowania incydentów, bezpieczeństwa infrastruktury i odpowiedzialnego ujawniania luk.">
+  <meta property="og:title" content="NIS2 за кибербезопасни доставчици в България 2026">
+  <meta property="og:description" content="NIS2 наръчник за MSSP, SOC и пенетрационни тестери в България. Задължения, репортиране на инциденти, защита на клиентски данни до 2026 г.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-bg.eu/sektory/cybersecurity-firms.html">
-  <meta property="og:locale" content="pl_PL">
-  <meta property="og:site_name" content="NIS2-Narzedzia.pl">
+  <meta property="og:locale" content="bg_BG">
+  <meta property="og:site_name" content="NIS2-BG.eu">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 dla dostawców cyberbezpieczeństwa w Polsce — wymagania 2026">
-  <meta name="twitter:description" content="Przewodnik NIS2 dla MSSP, SOC i firm penetration testingu w Polsce. Poznaj obowiązki raportowania incydentów, bezpieczeństwa infrastruktury i odpowiedzialnego ujawniania luk.">
+  <meta name="twitter:title" content="NIS2 за кибербезопасни доставчици в България 2026">
+  <meta name="twitter:description" content="NIS2 наръчник за MSSP, SOC и пенетрационни тестери в България. Задължения, репортиране на инциденти, защита на клиентски данни до 2026 г.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -34,19 +34,19 @@
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "Strona główna",
+      "name": "Начало",
       "item": "https://nis2-bg.eu/"
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Sektory",
+      "name": "Сектори",
       "item": "https://nis2-bg.eu/sektory/"
     },
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 dla dostawców cyberbezpieczeństwa, MSSP i firm penetration testingu w Polsce — wymagania 2026",
+      "name": "NIS2 за доставчици на кибербезопасност и MSSP в България — изисквания 2026",
       "item": "https://nis2-bg.eu/sektory/cybersecurity-firms.html"
     }
   ]
@@ -59,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Czy moja mała firma MSSP o 5 pracownikach musi spełniać wymogi NIS2?",
+      "name": "Кои точно условия определят MSSP като важна единица по NIS2 в България?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tak, jeśli świadczysz usługi dla klientów z sektora krytycznego (banki, operatorzy energetyczni, szpitale), jesteś podmiotem ważnym niezależnie od wielkości. Próg NIS2 dla dostawców cyfrowych nie zależy od liczby pracowników, lecz od znaczenia usług dla bezpieczeństwa sektora. Musisz wdrożyć wszystkie obowiązki do września 2026 roku."
+        "text": "MSSP се счита за важна единица, ако обслужва повече от 10 съществени или важни единици в България или наглед засягат критични услуги (енергетика, здравеопазване, финанси). Миниастърът на електронното управление издава правилник, който посочва количествени праги по сектор. Ако вашата MSSP попада под този праг, вие сте задължени да се регистрирате и да отговарите на всички задължения, включително репортиране на инциденти в срок от 72 часа."
       }
     },
     {
       "@type": "Question",
-      "name": "Jak długo mogę przechowywać dane diagnostyczne klientów w moim SIEM?",
+      "name": "Какво точно трябва да включа в отчета за инцидент, ако вашата SOC платформа е компрометирана?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Brak uniwersalnego terminu w KSC/NIS2, ale musisz samodzielnie ustalić i udokumentować zasadę retencji opartą na ryzyku, celu przetwarzania i wymogach klientów (umowy SLA). Typowo dane diagnostyczne przechowuje się 3–12 miesięcy; termin krótszy zmniejsza ryzyko narażenia dużej ilości danych. Po upływie terminu dane muszą być automatycznie i bezpiecznie niszczone. Udokumentuj tę politykę i wykaż jej egzekucję audytorom."
+        "text": "Отчетът трябва да включва: (1) дата и час на откритието, (2) вектор на атака и TTPs, използвани от нападателя, (3) списък на засегнатите клиенти и видовете их данни, достъпни (дневници, метаданни, конфигурация), (4) ваше отношение — дали инцидентът позволяваше модификация на алерти или отчети, насочени към клиентите, и (5) всички коригиращи мерки, предприети незабавно (изолиране на системи, ротация на учетни данни, уведомяване на клиентите)."
       }
     },
     {
       "@type": "Question",
-      "name": "Jakie są kary za niezastosowanie się do wymogów NIS2 do września 2026?",
+      "name": "Какви наказания се налагат за неспазване на срока от 72 часа за репортиране на инциденти?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "UKNF może nałożyć kary pieniężne do 2% przychodu rocznego za nieprzestrzeganie wymagań NIS2 lub do 4% przychodu za nieprawidłowe raportowanie incydentów. Dodatkowo firma może stracić licencje, certyfikaty (ISO 27001) i zaufanie klientów. Regularne audyty wewnętrzne i wdrożenie narzędzi compliance do września 2026 znacznie obniżają ryzyko kar."
+        "text": "Министърът на електронното управление може да наложи административни наказания (глоби до 4% от годишния приход на организацията за NIS2 нарушения) и обществени предупреждения. При отказ да се отчета или явно скриване на информация, могат да бъдат налични и наказания по Закона за защита на личните данни. За фирми, отказващи се да сътрудничат при разследване на инцидент, Министърът може да отмени правоспособността им да предоставят услуги на важни единици в България."
       }
     }
   ]
@@ -90,44 +90,44 @@
 <nav class="nav">
   <div class="container">
     <div class="nav__inner">
-      <a href="../index.html" class="nav__logo">NIS2<span>Bg</span>.eu</a>
+      <a href="../index.html" class="nav__logo">NIS2<span>BG</span>.eu</a>
       <ul class="nav__links">
-        <li><a href="../sravnenie.html">Porównanie narzędzi</a></li>
-        <li><a href="../kalkulator.html">Kalkulator KSC</a></li>
+        <li><a href="../sravnenie.html">Сравнение на инструменти</a></li>
+        <li><a href="../kalkulator.html">Калкулатор NIS2</a></li>
         <li><a href="../faq.html">FAQ</a></li>
       </ul>
-      <a href="../kalkulator.html" class="nav__cta">Sprawdź czy podlegasz →</a>
+      <a href="../kalkulator.html" class="nav__cta">Проверете дали сте задължени →</a>
     </div>
   </div>
 </nav>
 
 <div class="container" style="padding-top:1.5rem;">
   <div class="breadcrumb">
-    <a href="../index.html">Strona główna</a><span>›</span>
-    <a href="index.html">Sektory</a><span>›</span>
-    NIS2 dla dostawców cyberbezpieczeństwa, MSSP i firm penetration testingu w Polsce — wymagania 2026
+    <a href="../index.html">Начало</a><span>›</span>
+    <a href="index.html">Сектори</a><span>›</span>
+    NIS2 за доставчици на кибербезопасност и MSSP в България — изисквания 2026
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Załącznik II — podmiot ważny</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 dla dostawców cyberbezpieczeństwa, MSSP i firm penetration testingu w Polsce — wymagania 2026</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Niniejszy przewodnik jest dedykowany dostawcom usług cyberbezpieczeństwa, operatorom SOC oraz firmom penetration testingu, które jako podmioty ważne muszą spełnić wymogi KSC/NIS2. Dowiesz się, jakie konkretne obowiązki ciążą na Twojej organizacji, gdzie najczęściej występują luki oraz jak wdrożyć skuteczne rozwiązania compliance do września 2026 roku.</p>
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Приложение II — важна единица</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 за доставчици на кибербезопасност и MSSP в България — изисквания 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Този наръчник е предназначен за управлявани доставчици на безопасност, SOC оператори и фирми за пенетрационно тестване, които трябва да отговорят на критерии на важна единица по Закона за киберсигурност. Научете конкретните задължения за защита на инфраструктура, отчетност при инциденти и управление на клиентски данни.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Wymogi NIS2 dotyczą dostawców usług cyberbezpieczeństwa, którzy świadczą usługi cyfrowe klientom w sektorach krytycznych lub są operatorami usług cyfrowych o znaczeniu dla bezpieczeństwa. W szczególności obejmuje to MSSP (Managed Security Service Providers) monitorujące sieci klientów, operatorów Security Operations Centers (SOC) przetwarzających dane diagnostyczne, oraz firmy specjalizujące się w testach penetracyjnych i ocenach bezpieczeństwa. Próg dotyczy głównie podmiotów obsługujących klientów z sektora finansowego, energetycznego, transportu i opieki zdrowotnej niezależnie od własnej wielkości.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">MSSP, SOC провайдъри и фирми за пенетрационно тестване, които предоставят критични цифрови услуги и обслужват повече от 10 съществени или важни единици, попадат под NIS2 като важни единици. Това включва всеки доставчик, чието прекъсване на услугата би повлияло на клиентската киберсигурност или операции. Засегнатите организации трябва да се регистрират при Министъра на електронното управление и да имплементират придружаващите технически и организационни мерки.</p>
   </div>
 </div>
 
 <!-- OBLIGATIONS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Kluczowe obowiązki NIS2 dla tego sektora</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Ключови задължения по NIS2 за този сектор</h2>
   <div style="border-top:1px solid var(--gray-100);">
     
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -135,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Bezpieczeństwo infrastruktury SOC i SIEM</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Jako operator SOC/MSSP musisz wdrożyć mechanizmy ochrony wszystkich danych diagnostycznych, logów i alertów klientów przechowywanych w systemie SIEM. Obejmuje to szyfrowanie danych w spoczynku i w tranzycie, kontrolę dostępu opartą na zasadzie najmniejszych uprawnień oraz auditowanie każdego dostępu pracowników do wrażliwych informacji klientów. Brak formalnych limitów retencji danych klientów w SIEM stanowi niedopuszczalne zagrożenie compliance.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Управление на киберсигурност в SOC инфраструктура</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Всеки MSSP и SOC провайдър трябва да приложи многостепенна аутентикация, криптиране на данни в трансит и в покой, както и сегментиране на мережата за SOC системи. Инфраструктурата, която процесира и съхранява клиентски данни за мониторинг, трябва да отговаря на международни стандарти (ISO/IEC 27001 или еквивалент) и да включва редовно одиториране от трета страна. Задължително е да се поддържа инвентар на всички системи, които съхраняват чувствителни дневници от клиентите, с ясни периоди на задържане и автоматизирано изтриване на остарели данни.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -144,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Raportowanie incydentów bezpieczeństwa wynikających z kompromitacji Twojej infrastruktury</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Jeśli Twoja infrastruktura zostanie skompromitowana w sposób wpływający na bezpieczeństwo danych lub usług klientów, obowiązujesz do raportowania tego incydentu UKNF i CERT Polska w ciągu 72 godzin. Klasyfikacja musi jasno wskazywać, że incydent dotyczy dostawcy usług cyfrowych i potencjalnie wpływa na łańcuch dostaw bezpieczeństwa klientów. Jednoczesne powiadomienie klientów jest obowiązkowe, aby mogli podjąć własne działania incydentowe.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Репортиране на инциденти, когато вашата компромис засяга клиентската сигурност</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ако вашата MSSP или SOC инфраструктура е компрометирана по начин, който позволява анализ на клиентските данни или манипулиране на алерти и отчети, трябва да уведомите засегнатите клиенти и регулаторите в България в срок от 72 часа. Трябва да включите характеризиране на инцидента, засегнатите системи, видовете клиентски данни, които могат да са露齢, и предприетите коригиращи мерки. При инциденти, засягащи повече от един важен или съществен клиент, е задължително уведомяване на Министъра на електронното управление и координирано уведомление към съответните органи на клиентите.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -153,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Bezpieczeństwo raportów penetration testingu i danych zawarte w raportach</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Raporty z testów penetracyjnych zawierają wrażliwe informacje o architekturze klientów i odkrytych lukach. Musisz przechowywać je z szyfrowaniem end-to-end, ograniczyć dostęp tylko do autoryzowanych pracowników, a także ustalić i egzekwować formalne procedury niszczenia raportu po umownym terminie przechowywania. Brak szyfrowania raportów lub ich dostępność w niezabezpieczonych systemach naraża Cię na odpowiedzialność zarówno wobec klientów, jak i regulator.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Защита на пенетрационни тестови отчети и уязвимости</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Отчетите от пенетрационни тестове, които съдържат уязвимости и детайли за архитектурата на клиентите, трябва да бъдат съхранявани с AES-256 криптиране и достъп на бази на принципа на най-малкия привилегий. Всяка пенетрационна фирма трябва да внедри контрол на достъпа към отчетите — само упълномощени членове на екипа трябва да могат да достъпят и изтеглят пълни отчети. Трябва да се поддържа логване на всички достъпи и изтегляния, както и да се установят процеси за безопасно изтриване на отчетите след изтичане на техния срок на съхранение (обикновено 3-5 години според договора с клиента).</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -162,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Odpowiedzialność za zarządzanie podatnościami w łańcuchu dostaw</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Jako dostawca bezpieczeństwa, jesteś zobowiązany monitorować i raportować zagrożenia w Twojej infrastrukturze, narzędziach i zależnościach (biblioteki, pluginy, usługi chmurowe). Odkryte podatności muszą być klasyfikowane według ryzyka i zamykane w zdefiniowanych terminach (SLA). Odpowiedzialny disclosure luk w narzędziach, których używasz, oraz koordynowana odpowiedź z producentami są częścią wymogu ochrony bezpieczeństwa klientów.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Процес на отговорна публикуване на уязвимости в своите продукти</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Всеки киберсигурност и MSSP провайдър, който разработва свои собствени инструменти или платформи, трябва да установи официална политика на отговорна публикуване. Когато се открие уязвимост в произведените от вас продукти, трябва да известите засегнатите клиенти в разумен период, преди да публикувате детайлите в открита среда. Трябва да осигурите своевременни пачове и да документирате процеса на координирана уязвимост с клиентите и потенциални изследователи, за да се намали времето за експлоатация.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -171,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Przygotowanie na incydenty i testowanie planów odzyskiwania</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Musisz posiadać udokumentowany plan incydentów dla Twojej infrastruktury SOC/MSSP i co najmniej rocznie testować go poprzez ćwiczenia symulacyjne lub rzeczywiste scenariusze. Plan musi zawierać kroki eskalacji, komunikację wewnętrzną i zewnętrzną (do klientów, regulatora), oraz procedury odzyskiwania i weryfikacji integralności danych. Dokumentacja testów musi być przechowywana i dostępna do wglądu dla audytorów i CERT Polska.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Управление на търсене на уязвимости и тестване на продуктите</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">MSSP и киберсигурност платформи трябва редовно да се подлагат на независимо пенетрационно тестване (минимум годишно) и управление на уязвимостите. Всеки доставчик трябва да установи процес за управление на уязвимостите със SLA за коригиране — критични уязвимости трябва да бъдат коригирани в срок от 30 дни, висок приоритет в 90 дни. Трябва да се поддържа публичен отчет за съответствието със стандартите (например CVSS оценки, исторически пачове), за да се демонстрира отговорност пред клиентите и регулаторите.</p>
       </div>
     </div>
   </div>
@@ -180,27 +180,27 @@
 
 <!-- TYPICAL GAPS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Typowe luki compliance w tym sektorze</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Типични пропуски в съответствието в този сектор</h2>
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>SIEM zawiera dane diagnostyczne klientów bez zdefiniowanego okresu retencji ani mechanizmu automatycznego usuwania; regulacja KSC/NIS2 wymaga ustanowienia i egzekwowania wyraźnej polityki przechowywania.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>SOC SIEM системи съхранават неограничени количества клиентски данни без формални периоди на задържане; внедрете автоматизирани политики за архивиране и изтриване с явни SLA и съответствие с договорите за обработка на данни.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Raporty penetration testów i dokumentacja luk przechowywane są w niezaszyfrowanych folderach sieciowych lub systemach zarządzania treścią dostępnych dla szerokiego grona pracowników; brak kontroli dostępu zasadzie minimalizacji uprawnień.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Отчетите от пенетрационни тестове се съхраняват в обикновен текст или слабо криптирани следи в общи съхранилища; незабавно прехвърлете всички отчети в криптирани хранилища с контрол на достъпа, логване на прехвърляне и редовна смяна на ключове.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Brak formalnej procedury klasyfikacji incydentów związanych z bezpieczeństwem infrastruktury dostawcy; organizacja nie rozróżnia, czy incydent wpływa na klientów, czy stanowi incydent podlegający raportowaniu regulatorowi.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Липсва формална класификация на инцидентите, свързани с веригата доставки (компромис на вашата платформа, повлияла на множество клиенти); установете инцидент klasифікаційну матрица, която различа компромис на един клиент от системна компромис, влияеща на всички клиенти на платформата.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Zależności od narzędzi trzecich (np. agenty monitorujące, biblioteki analityki) nie są systematycznie skanowane pod kątem podatności; brak procedury aktualizacji i patczowania w określonych terminach.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Няма документирана политика на отговорна публикуване на уязвимости; разработете и публикувайте официален процес на уязвимост, включително SLA за уведомяване на клиентите, сроки за пачове и механизми за координирана дискреция с изследователите.
     </li>
   </ul>
 </div>
 
 <!-- TOOLS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Rekomendowane narzędzia dla tego sektora</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Препоръчани инструменти за този сектор</h2>
   <div style="display:grid;gap:1rem;">
     
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
@@ -232,25 +232,25 @@
 
 <!-- FAQ -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem;" itemscope itemtype="https://schema.org/FAQPage">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Często zadawane pytania</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Често задавани въпроси</h2>
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Czy moja mała firma MSSP o 5 pracownikach musi spełniać wymogi NIS2?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Кои точно условия определят MSSP като важна единица по NIS2 в България?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Tak, jeśli świadczysz usługi dla klientów z sektora krytycznego (banki, operatorzy energetyczni, szpitale), jesteś podmiotem ważnym niezależnie od wielkości. Próg NIS2 dla dostawców cyfrowych nie zależy od liczby pracowników, lecz od znaczenia usług dla bezpieczeństwa sektora. Musisz wdrożyć wszystkie obowiązki do września 2026 roku.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">MSSP се счита за важна единица, ако обслужва повече от 10 съществени или важни единици в България или наглед засягат критични услуги (енергетика, здравеопазване, финанси). Миниастърът на електронното управление издава правилник, който посочва количествени праги по сектор. Ако вашата MSSP попада под този праг, вие сте задължени да се регистрирате и да отговарите на всички задължения, включително репортиране на инциденти в срок от 72 часа.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jak długo mogę przechowywać dane diagnostyczne klientów w moim SIEM?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Какво точно трябва да включа в отчета за инцидент, ако вашата SOC платформа е компрометирана?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Brak uniwersalnego terminu w KSC/NIS2, ale musisz samodzielnie ustalić i udokumentować zasadę retencji opartą na ryzyku, celu przetwarzania i wymogach klientów (umowy SLA). Typowo dane diagnostyczne przechowuje się 3–12 miesięcy; termin krótszy zmniejsza ryzyko narażenia dużej ilości danych. Po upływie terminu dane muszą być automatycznie i bezpiecznie niszczone. Udokumentuj tę politykę i wykaż jej egzekucję audytorom.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Отчетът трябва да включва: (1) дата и час на откритието, (2) вектор на атака и TTPs, използвани от нападателя, (3) списък на засегнатите клиенти и видовете их данни, достъпни (дневници, метаданни, конфигурация), (4) ваше отношение — дали инцидентът позволяваше модификация на алерти или отчети, насочени към клиентите, и (5) всички коригиращи мерки, предприети незабавно (изолиране на системи, ротация на учетни данни, уведомяване на клиентите).</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jakie są kary za niezastosowanie się do wymogów NIS2 do września 2026?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Какви наказания се налагат за неспазване на срока от 72 часа за репортиране на инциденти?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">UKNF może nałożyć kary pieniężne do 2% przychodu rocznego za nieprzestrzeganie wymagań NIS2 lub do 4% przychodu za nieprawidłowe raportowanie incydentów. Dodatkowo firma może stracić licencje, certyfikaty (ISO 27001) i zaufanie klientów. Regularne audyty wewnętrzne i wdrożenie narzędzi compliance do września 2026 znacznie obniżają ryzyko kar.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Министърът на електронното управление може да наложи административни наказания (глоби до 4% от годишния приход на организацията за NIS2 нарушения) и обществени предупреждения. При отказ да се отчета или явно скриване на информация, могат да бъдат налични и наказания по Закона за защита на личните данни. За фирми, отказващи се да сътрудничат при разследване на инцидент, Министърът може да отмени правоспособността им да предоставят услуги на важни единици в България.</p>
     </div>
   </div>
   </div>
@@ -259,30 +259,27 @@
 <!-- CTA -->
 <div style="background:var(--navy);padding:3rem 1.25rem;text-align:center;margin-top:2rem;">
   <div class="container--narrow">
-    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Sprawdź wymagania dla swojej organizacji</h2>
+    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Проверете изискванията за вашата организация</h2>
     <p style="color:rgba(255,255,255,.75);margin:0 0 1.5rem;font-size:.95rem;">
-      KSC/NIS2 · Polska · 2026
+      Закон за киберсигурност/NIS2 · България · 2026
     </p>
     <a href="../kalkulator.html" style="display:inline-block;background:#16a34a;color:#fff;padding:.85rem 2.25rem;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;">
-      Uruchom kalkulator →
+      Стартирайте калкулатора →
     </a>
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Powiązane sektory" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Powiązane sektory</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="dental-clinics.html">NIS2 dla klinik dentystycznych w Polsce</a></li><li style="margin:0"><a href="education.html">KSC/NIS2 dla uczelni i szkół w Polsce</a></li><li style="margin:0"><a href="energy.html">NIS2 dla operatorów energetyki, gazu i ciepła w Polsce</a></li><li style="margin:0"><a href="fintech.html">KSC/NIS2 dla Fintech</a></li><li style="margin:0"><a href="food.html">KSC/NIS2 dla przetwórców żywności</a></li><li style="margin:0"><a href="hospitals.html">NIS2 dla szpitali w Polsce 2026</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
-      © 2026 NIS2-Narzedzia.pl · KSC/NIS2 · UKNF/CERT Polska
+      © 2026 NIS2-BG.eu · Закон за киберсигурност/NIS2 · Министър на електронното управление
       <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
-      <br><a href="../index.html" style="color:var(--gray-400);">Strona główna</a> ·
-      <a href="index.html" style="color:var(--gray-400);">Sektory</a> ·
-      <a href="../sravnenie.html" style="color:var(--gray-400);">Porównanie narzędzi</a>
+      <br><a href="../index.html" style="color:var(--gray-400);">Начало</a> ·
+      <a href="index.html" style="color:var(--gray-400);">Сектори</a> ·
+      <a href="../sravnenie.html" style="color:var(--gray-400);">Сравнение на инструменти</a>
     </p>
   </div>
 </footer>
 
-  <script src="/js/tg-cta.js" defer></script>
 </body>
 </html>

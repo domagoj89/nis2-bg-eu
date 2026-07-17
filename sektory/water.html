@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="bg">
 <head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-32QHQRGVRH"></script>
@@ -11,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 dla operatorów wodociągów w Polsce — wymagania 2026</title>
-  <meta name="description" content="Przewodnik compliance NIS2 dla dostawców wody pitnej i operatorów ścieków. Poznaj obowiązki, harmonogram 2026 i narzędzia implementacji.">
+  <title>NIS2 за водоснабдяване и отвеждане на отпадни води в България 2026</title>
+  <meta name="description" content="Задължения по Закона за киберсигурност (NIS2) за доставчици на питейна вода и оператори на SCADA системи в България до 2026 г.">
   <link rel="canonical" href="https://nis2-bg.eu/sektory/water.html">
-  <meta property="og:title" content="NIS2 dla operatorów wodociągów w Polsce — wymagania 2026">
-  <meta property="og:description" content="Przewodnik compliance NIS2 dla dostawców wody pitnej i operatorów ścieków. Poznaj obowiązki, harmonogram 2026 i narzędzia implementacji.">
+  <meta property="og:title" content="NIS2 за водоснабдяване и отвеждане на отпадни води в България 2026">
+  <meta property="og:description" content="Задължения по Закона за киберсигурност (NIS2) за доставчици на питейна вода и оператори на SCADA системи в България до 2026 г.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-bg.eu/sektory/water.html">
-  <meta property="og:locale" content="pl_PL">
-  <meta property="og:site_name" content="NIS2-Narzedzia.pl">
+  <meta property="og:locale" content="bg_BG">
+  <meta property="og:site_name" content="NIS2-BG.eu">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 dla operatorów wodociągów w Polsce — wymagania 2026">
-  <meta name="twitter:description" content="Przewodnik compliance NIS2 dla dostawców wody pitnej i operatorów ścieków. Poznaj obowiązki, harmonogram 2026 i narzędzia implementacji.">
+  <meta name="twitter:title" content="NIS2 за водоснабдяване и отвеждане на отпадни води в България 2026">
+  <meta name="twitter:description" content="Задължения по Закона за киберсигурност (NIS2) за доставчици на питейна вода и оператори на SCADA системи в България до 2026 г.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -34,19 +34,19 @@
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "Strona główna",
+      "name": "Начало",
       "item": "https://nis2-bg.eu/"
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Sektory",
+      "name": "Сектори",
       "item": "https://nis2-bg.eu/sektory/"
     },
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 dla dostawców wody i operatorów wodociągów w Polsce — wymagania podmiotu kluczowego",
+      "name": "NIS2 за доставчици на питейна вода и оператори на отпадни води в България — задължения до 2026",
       "item": "https://nis2-bg.eu/sektory/water.html"
     }
   ]
@@ -59,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Czy Pani/Pan musi segmentować całą sieć SCADA od sieci IT w wodociągu?",
+      "name": "Кои водоснабдяващи дружества в България трябва да спазват NIS2 до октомври 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tak, segmentacja jest obowiązkowa dla wszystkich podmiotów klasyfikowanych jako kluczowe. Minimalna konfiguracja to zapora sieciowa (firewall) pomiędzy siecią korporacyjną a siecią sterowania SCADA, z dozwolonym tylko ruchem niezbędnym do monitorowania i komendy operacyjnej. Rekomendujemy architekturę DMZ ze stacją dyspozytorską jako pośrednikiem."
+        "text": "Критично важни субекти в сектора на водоснабдяването са всички публични и частни оператори, обслужващи над 30 000 еквивалентни жители или със съответна техническа критеријалност. За България това включва всички крупни регионални водоснабдителни системи и общинските оператори на отпадни води."
       }
     },
     {
       "@type": "Question",
-      "name": "Jaki jest termin compliance z wymogami NIS2 dla wodociągów w Polsce?",
+      "name": "Какъв е точният график за прилагане на NIS2 в сектора на водоснабдяването?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Termin transpozycji KSC/NIS2 w Polsce upływa 30 września 2025 r., co oznacza, że all wymogi muszą być wdrożone do 30 września 2026 r. Po tej dacie UKNF/CERT Polska może przeprowadzać audyty zgodności i nakładać kary za niestosowanie się do wymagań zabezpieczeń (art. 28 KSC/NIS2)."
+        "text": "Окончателният крайний срок е 17 октомври 2026 г. До този момент водоснабдяващите оператори трябва да внедрят всички технически и организационни мерки за киберсигурност. Препоръчителна фаза 1 е до февруари 2025 г. за оценка на риска и фаза 2 е до май 2025 г. за внедряване на критичните контроли."
       }
     },
     {
       "@type": "Question",
-      "name": "Jakie są kary za niedostosowanie się do wymogów NIS2 dla operatorów wodociągów?",
+      "name": "Какви наказания грозят водоснабдяващи дружества за неспазване на NIS2?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Grzywny mogą sięgać do 5,4 milionów euro lub 1% globalnego obrotu rocznego (za niezastosowanie wymagań zarządzania ryzykiem) oraz do 10,8 milionów euro lub 2% obrotu (za brak raportowania incydentów w terminie 24 godzin). Dla większości polskich wodociągów oznacza to kary od 100 000 do kilku milionów złotych za poważne naruszenia."
+        "text": "Българското законодателство по NIS2 предвижда админстративни наказания до 10 млн. лв. или до 2% от световния оборот на операторите. В случай на неспазване, органите могат да издадат приказ за спиране на критичните операции докато не се отстранят нарушенията."
       }
     }
   ]
@@ -90,44 +90,44 @@
 <nav class="nav">
   <div class="container">
     <div class="nav__inner">
-      <a href="../index.html" class="nav__logo">NIS2<span>Bg</span>.eu</a>
+      <a href="../index.html" class="nav__logo">NIS2<span>BG</span>.eu</a>
       <ul class="nav__links">
-        <li><a href="../sravnenie.html">Porównanie narzędzi</a></li>
-        <li><a href="../kalkulator.html">Kalkulator KSC</a></li>
+        <li><a href="../sravnenie.html">Сравнение на инструменти</a></li>
+        <li><a href="../kalkulator.html">Калкулатор NIS2</a></li>
         <li><a href="../faq.html">FAQ</a></li>
       </ul>
-      <a href="../kalkulator.html" class="nav__cta">Sprawdź czy podlegasz →</a>
+      <a href="../kalkulator.html" class="nav__cta">Проверете дали сте задължени →</a>
     </div>
   </div>
 </nav>
 
 <div class="container" style="padding-top:1.5rem;">
   <div class="breadcrumb">
-    <a href="../index.html">Strona główna</a><span>›</span>
-    <a href="index.html">Sektory</a><span>›</span>
-    NIS2 dla dostawców wody i operatorów wodociągów w Polsce — wymagania podmiotu kluczowego
+    <a href="../index.html">Начало</a><span>›</span>
+    <a href="index.html">Сектори</a><span>›</span>
+    NIS2 за доставчици на питейна вода и оператори на отпадни води в България — задължения до 2026
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Załącznik I — podmiot kluczowy</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 dla dostawców wody i operatorów wodociągów w Polsce — wymagania podmiotu kluczowego</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Przewodnik dla kierowników bezpieczeństwa IT i operacyjnego w wodociągach oraz oczyszczalniach ścieków. Dowiesz się, które systemy SCADA wymagają ochrony, jak zabezpieczyć systemy dozowania chemicznego i jakie są terminy raportowania incydentów.</p>
+    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Приложение I — Критично важен субект</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 за доставчици на питейна вода и оператори на отпадни води в България — задължения до 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Раководства по киберсигурност, специфични за операторите на системи за водоснабдяване и третиране на отпадни води. Научете се как да защитите критичната инфраструктура SCADA, да преотчетете инцидентите и да отговорите на задължателния преход до октомври 2026 г.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Obowiązek dotyczy dostawców wody pitnej i operatorów sieci wodociągowych obsługujących ponad 30 000 mieszkańców, operatorów oczyszczalni ścieków obsługujących ponad 100 000 osób, oraz operatorów sieci dystrybucyjnych wody w Unii Europejskiej bez względu na wielkość, jeśli przerwy w dostawie mogą wpłynąć na znaczną populację. Zasada de minimis nie obowiązuje dla tego sektora.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Операторите на системи за водоснабдяване, третиране и отвеждане на отпадни води, които обслужват над 30 000 еквивалентни жители или със съответни технически критерии, попадат под обхвата на NIS2. Това включва публични и частни водоснабдителни дружества, комунални оператори и системи за разпределение на питейна вода на територията на България.</p>
   </div>
 </div>
 
 <!-- OBLIGATIONS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Kluczowe obowiązki NIS2 dla tego sektora</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Ключови задължения по NIS2 за този сектор</h2>
   <div style="border-top:1px solid var(--gray-100);">
     
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -135,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Bezpieczeństwo systemów SCADA i ICS w uzdatnianiu i dystrybucji wody</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Pani/Pan musi zapewnić segmentację sieci między systemami kontrolnymi (SCADA/ICS) a siecią korporacyjną przy użyciu zapór sieciowych z logowaniem dostępu. Wszystkie sterowniki PLC, RTU i HMI muszą być chronione przed nieuprawnionym dostępem przez uwierzytelnianie wieloskładnikowe. Systemy sterowania pompowniami i stacjami uzdatniania wody wymagają monitorowania w czasie rzeczywistym z alertami o anomaliach.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Защита на SCADA и ICS системи за третиране и разпределение</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Всички SCADA контролери, PLC устройства и операционни мрежи на системи за третиране на вода и разпределение трябва да имат интегрирана киберсигурност. Это включва физическа сегментация на промишлените управляващи мрежи от интернет, мониторинг на аномальни команди и незабавно отключване при неоторизирани достъпи. Задължително е регулярно тестване на отказоустойчивостта на SCADA чрез симулирани атаки.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -144,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Ochrona systemów dozowania chemicznego przed manipulacją</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Systemy dozowania chloru, siarczanu aluminium i fluorowania muszą mieć zmienione domyślne hasła administracyjne i włączoną kontrolę dostępu opartą na rolach. Pani/Pan jest zobowiązany do wdrożenia fizycznego zabezpieczenia (CCTV, dostęp kartkowy) oraz cyfrowego monitorowania wszelkich zmian konfiguracji dawkowania. Każda próba modyfikacji parametrów chemicznych musi być rejestrowana z czasem i identyfikacją użytkownika.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Защита на системи за химическо дозиране от тамперирането</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Дозиращите системи за хлор, озониране и други химикали трябва да имат криптирани комуникационни канали и многофакторна аутентификация. По-специално е задължително заместване на всички предварително определени пароли, внедряване на логване на всяка команда за промяна на дозата и автоматично изключване на системата при необичайни инструкции. Ежегодно преглеждане на софтуерните издания и пропускане на известни уязвимости.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -153,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Raportowanie incydentów bezpieczeństwa wpływających na dostawę wody</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Incydenty cybernetyczne lub fizyczne mogące zakłócić dostawę wody pitnej dla znacznej liczby odbiorców muszą być zgłoszone CERT Polska w ciągu 24 godzin od ich wykrycia. Pani/Pan musi utrzymywać procedurę eskalacji incydentów zawierającą definicje poważnych zakłóceń (np. wyłączenie zaworów bezpieczeństwa, zmiana parametrów chemicznych, utrata dostępu do systemu dyspozytorskiego). Raport musi zawierać rodzaj incydentu, czas załączenia, liczbę dotykanych osób i zastosowane środki zaradcze.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Докладване на инциденти, влияещи на водоснабдяването</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Всеки инцидент със киберсигурност, който пряко нарушава подаването на питейна вода към значителни групи от население (над 50 000 жители), трябва да бъде докладван на Министърството на електронното управление в рамките на 24 часа от откритието. Необходимо е документиране на времевата линия на инцидента, засегнатите системи и предприетите технически мерки.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -162,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Integracja fizycznego i cybernetycznego bezpieczeństwa stacji pompowych</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Wszystkie stacje pompowe i uzdatniania muszą być wyposażone w detektory ruchu, monitorowanie dostępu (RFID, biometria) i kamer IP z certyfikatem TLS do transmisji wideo. Pani/Pan jest zobowiązany do przeprowadzenia oceny ryzyka dla każdej lokalizacji krytycznej uwzględniającej zarówno zagrożenia cybernetyczne, jak i fizyczne (wandalizm, sabotaż, kradzież urządzeń). Dostęp do pomieszczeń maszyn powinien być ograniczony i rejestrowany.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Интеграция на физическа и киберсигурност на насосни станции</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Критичните насосни станции и релейни центрове трябва да имат комбинирана физическа охрана (ограничен достъп, видеонаблюдение) и киберсигурност (сегментирана мрежа, мониторинг в реално време). Необходимо е логване на всеки физически достъп и кореспондентният журнал на попитки за всяка команда SCADA, синхронизирани по време.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -171,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Zarządzanie lukami w zabezpieczeniach i zarządzanie podatnościami</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Pani/Pan musi przeprowadzać testy penetracyjne i skanowanie podatności systemów SCADA co najmniej raz w roku, z wyłączeniami dla systemów o krytycznym znaczeniu (planowanie poza godzinami szczytu). Wszystkie zidentyfikowane podatności muszą być załatane w ciągu 30 dni dla systemów niekrytycznych i 90 dni dla systemów produkcyjnych. Zalecane jest utrzymywanie rejestru podatności i statusu remedacji dostępnego dla audytorów.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Сегментация на мрежата между корпоративната и операционната среда</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Администраторските мрежи (офис IT) трябва да бъдат физически или логически отделени от операционните технологии (OT) мрежи, управляващи третирането и разпределението на вода. Това включва внедряване на промишлени firewalls, DMZ зони и правила за контролиран достъп. Всяка комуникация между мрежите трябва да премине чрез контролирани точки с одит и криптиране.</p>
       </div>
     </div>
   </div>
@@ -180,27 +180,27 @@
 
 <!-- TYPICAL GAPS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Typowe luki compliance w tym sektorze</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Типични пропуски в съответствието в този сектор</h2>
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Systemy SCADA połączone z Internetem bez zapory sieciowej lub segmentacji — zagrożenie bezpośredniego dostępu atakującego do sterowników pompowni i uzdatniania.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>SCADA системи са свързани директно в интернет или корпоративния LAN без отделна firewalling и мониторинг на входящия трафик.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Domyślne hasła w kontrolerach dozowania chemicznego (admin/admin, 12345) — umożliwia zmianę parametrów dawkowania bez śladu audytu.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Контролери на химическо дозиране работят с производствени пароли и без логване на команди; смяната на доза не е одитирана или е одитирана само ръчно.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Brak segmentacji sieci między systemami IT a OT — kompromitacja stacji roboczych biurowych daje dostęp do sieci kontrolnej.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Липсва сегментация между офис мрежата и операционната мрежа; един служител може да достъпи както електронната поща, така и PLC устройствата от един компютър.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Brak monitorowania zmian konfiguracji SCADA i braku alertów o anomaliach w realtime — incydenty sabotażu wykrywane dopiero po skutkach.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Няма план за реакция на инциденти специфичен за водоснабдяващи системи; времето за докладване и восстановяване е неопределено.
     </li>
   </ul>
 </div>
 
 <!-- TOOLS -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Rekomendowane narzędzia dla tego sektora</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Препоръчани инструменти за този сектор</h2>
   <div style="display:grid;gap:1rem;">
     
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
@@ -232,25 +232,25 @@
 
 <!-- FAQ -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem;" itemscope itemtype="https://schema.org/FAQPage">
-  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Często zadawane pytania</h2>
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Често задавани въпроси</h2>
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Czy Pani/Pan musi segmentować całą sieć SCADA od sieci IT w wodociągu?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Кои водоснабдяващи дружества в България трябва да спазват NIS2 до октомври 2026?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Tak, segmentacja jest obowiązkowa dla wszystkich podmiotów klasyfikowanych jako kluczowe. Minimalna konfiguracja to zapora sieciowa (firewall) pomiędzy siecią korporacyjną a siecią sterowania SCADA, z dozwolonym tylko ruchem niezbędnym do monitorowania i komendy operacyjnej. Rekomendujemy architekturę DMZ ze stacją dyspozytorską jako pośrednikiem.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Критично важни субекти в сектора на водоснабдяването са всички публични и частни оператори, обслужващи над 30 000 еквивалентни жители или със съответна техническа критеријалност. За България това включва всички крупни регионални водоснабдителни системи и общинските оператори на отпадни води.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jaki jest termin compliance z wymogami NIS2 dla wodociągów w Polsce?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Какъв е точният график за прилагане на NIS2 в сектора на водоснабдяването?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Termin transpozycji KSC/NIS2 w Polsce upływa 30 września 2025 r., co oznacza, że all wymogi muszą być wdrożone do 30 września 2026 r. Po tej dacie UKNF/CERT Polska może przeprowadzać audyty zgodności i nakładać kary za niestosowanie się do wymagań zabezpieczeń (art. 28 KSC/NIS2).</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Окончателният крайний срок е 17 октомври 2026 г. До този момент водоснабдяващите оператори трябва да внедрят всички технически и организационни мерки за киберсигурност. Препоръчителна фаза 1 е до февруари 2025 г. за оценка на риска и фаза 2 е до май 2025 г. за внедряване на критичните контроли.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jakie są kary za niedostosowanie się do wymogów NIS2 dla operatorów wodociągów?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Какви наказания грозят водоснабдяващи дружества за неспазване на NIS2?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Grzywny mogą sięgać do 5,4 milionów euro lub 1% globalnego obrotu rocznego (za niezastosowanie wymagań zarządzania ryzykiem) oraz do 10,8 milionów euro lub 2% obrotu (za brak raportowania incydentów w terminie 24 godzin). Dla większości polskich wodociągów oznacza to kary od 100 000 do kilku milionów złotych za poważne naruszenia.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Българското законодателство по NIS2 предвижда админстративни наказания до 10 млн. лв. или до 2% от световния оборот на операторите. В случай на неспазване, органите могат да издадат приказ за спиране на критичните операции докато не се отстранят нарушенията.</p>
     </div>
   </div>
   </div>
@@ -259,30 +259,27 @@
 <!-- CTA -->
 <div style="background:var(--navy);padding:3rem 1.25rem;text-align:center;margin-top:2rem;">
   <div class="container--narrow">
-    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Sprawdź wymagania dla swojej organizacji</h2>
+    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Проверете изискванията за вашата организация</h2>
     <p style="color:rgba(255,255,255,.75);margin:0 0 1.5rem;font-size:.95rem;">
-      KSC/NIS2 · Polska · 2026
+      Закон за киберсигурност/NIS2 · България · 2026
     </p>
     <a href="../kalkulator.html" style="display:inline-block;background:#16a34a;color:#fff;padding:.85rem 2.25rem;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;">
-      Uruchom kalkulator →
+      Стартирайте калкулатора →
     </a>
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Powiązane sektory" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Powiązane sektory</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="accountants.html">KSC/NIS2 dla biur rachunkowych i audytorów w Polsce 2026</a></li><li style="margin:0"><a href="banks.html">NIS2 dla banków w Polsce</a></li><li style="margin:0"><a href="cloud-providers.html">NIS2 dla dostawców usług chmury w Polsce</a></li><li style="margin:0"><a href="construction.html">KSC/NIS2 dla dużych firm budowlanych w Polsce</a></li><li style="margin:0"><a href="cybersecurity-firms.html">NIS2 dla dostawców cyberbezpieczeństwa w Polsce</a></li><li style="margin:0"><a href="dental-clinics.html">NIS2 dla klinik dentystycznych w Polsce</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
-      © 2026 NIS2-Narzedzia.pl · KSC/NIS2 · UKNF/CERT Polska
+      © 2026 NIS2-BG.eu · Закон за киберсигурност/NIS2 · Министър на електронното управление
       <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
-      <br><a href="../index.html" style="color:var(--gray-400);">Strona główna</a> ·
-      <a href="index.html" style="color:var(--gray-400);">Sektory</a> ·
-      <a href="../sravnenie.html" style="color:var(--gray-400);">Porównanie narzędzi</a>
+      <br><a href="../index.html" style="color:var(--gray-400);">Начало</a> ·
+      <a href="index.html" style="color:var(--gray-400);">Сектори</a> ·
+      <a href="../sravnenie.html" style="color:var(--gray-400);">Сравнение на инструменти</a>
     </p>
   </div>
 </footer>
 
-  <script src="/js/tg-cta.js" defer></script>
 </body>
 </html>

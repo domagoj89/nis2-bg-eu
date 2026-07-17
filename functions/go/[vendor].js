@@ -2,7 +2,7 @@
 // /go/<vendor>: approved -> affiliate URL + per-site SubID; pending -> vendor site; unknown -> home.
 // Every hit is also logged server-side to GA4 (event go_click, params vendor/site/monetized)
 // so the weekly money digest can count clicks without relying on vendor dashboards.
-const SITE = "nis2-narzedzia-pl";
+const SITE = "nis2-bg-eu";
 const MAP = {
   "nordlayer": {
     "url": "",
@@ -75,7 +75,7 @@ const MAP = {
     "subid_param": "subid"
   },
   "equalizedigital": {
-    "url": "https://equalizedigital.com/accessibility-checker/?ref=partnerships@nis2-bg.eu",
+    "url": "https://equalizedigital.com/accessibility-checker/?ref=partnerships@nis2-narzedzia.pl",
     "direct": "https://equalizedigital.com/",
     "subid_param": "subid"
   },
@@ -85,7 +85,7 @@ const MAP = {
     "subid_param": "gsxid"
   }
 };
-const GA = {"mid": "G-Y52ZG8JW71", "secret": "zRUrT4nyS4iOIAbRq5_gcQ"};
+const GA = null;
 
 export async function onRequestGet(context) {
   const { params, request } = context;
