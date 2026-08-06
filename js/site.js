@@ -3,7 +3,7 @@
 
   // ── Config ────────────────────────────────────────────────────────────────
   var FORM_ENDPOINT = "/subscribe"; // Cloudflare Pages Function — functions/subscribe.js
-  var DEADLINE = new Date("2026-10-03T00:00:00");
+  var DEADLINE = new Date("2026-12-31T00:00:00");
 
   // ── GA4 helper ───────────────────────────────────────────────────────────
   function track(event, params) {

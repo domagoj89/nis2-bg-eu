@@ -3,11 +3,11 @@
   <title>nis2-bg.eu</title>
   <link>https://nis2-bg.eu/</link>
   <description>nis2-bg.eu — latest pages</description>
-  <lastBuildDate>Fri, 17 Jul 2026 14:03:29 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 04 Aug 2026 10:43:07 +0000</lastBuildDate>
     <item>
       <title>Сравнение на инструменти за EU AI Act 2026</title>
-      <link>https://nis2-bg.eu/ai-act-narzedzia.html</link>
-      <guid>https://nis2-bg.eu/ai-act-narzedzia.html</guid>
+      <link>https://nis2-bg.eu/ai-act-instrumenti.html</link>
+      <guid>https://nis2-bg.eu/ai-act-instrumenti.html</guid>
     </item>
     <item>
       <title>Сигурност на веригата за доставки NIS2 Чл. 21(2)(д) – България</title>
@@ -21,8 +21,8 @@
     </item>
     <item>
       <title>Сравнение на инструменти за DORA 2026</title>
-      <link>https://nis2-bg.eu/dora-narzedzia.html</link>
-      <guid>https://nis2-bg.eu/dora-narzedzia.html</guid>
+      <link>https://nis2-bg.eu/dora-instrumenti.html</link>
+      <guid>https://nis2-bg.eu/dora-instrumenti.html</guid>
     </item>
     <item>
       <title>FAQ NIS2 България 2026 — най-често задавани въпроси за NIS2 | NIS2-BG.eu</title>
@@ -110,9 +110,14 @@
       <guid>https://nis2-bg.eu/instrumenti/vanta.html</guid>
     </item>
     <item>
+      <title>Сравнение на инструменти EAA цифрова достъпност 2026</title>
+      <link>https://nis2-bg.eu/instrumenti-dostupnost-eaa.html</link>
+      <guid>https://nis2-bg.eu/instrumenti-dostupnost-eaa.html</guid>
+    </item>
+    <item>
       <title>Сравнение на софтуер за ISO 27001 2026</title>
-      <link>https://nis2-bg.eu/iso-27001-narzedzia.html</link>
-      <guid>https://nis2-bg.eu/iso-27001-narzedzia.html</guid>
+      <link>https://nis2-bg.eu/iso-27001-instrumenti.html</link>
+      <guid>https://nis2-bg.eu/iso-27001-instrumenti.html</guid>
     </item>
     <item>
       <title>Калкулатор на санкции NIS2 — какъв риск носи вашата фирма? | NIS2-BG.eu</title>
@@ -121,8 +126,8 @@
     </item>
     <item>
       <title>Калкулатор на разходите за NIS2 – преценете бюджет за съответствие</title>
-      <link>https://nis2-bg.eu/kalkulator-kosztow-nis2.html</link>
-      <guid>https://nis2-bg.eu/kalkulator-kosztow-nis2.html</guid>
+      <link>https://nis2-bg.eu/kalkulator-razhodi-nis2.html</link>
+      <guid>https://nis2-bg.eu/kalkulator-razhodi-nis2.html</guid>
     </item>
     <item>
       <title>Калкулатор NIS2 2026 — моята фирма подлежи ли на NIS2? | NIS2-BG.eu</title>
@@ -135,23 +140,18 @@
       <guid>https://nis2-bg.eu/metodologiya.html</guid>
     </item>
     <item>
-      <title>Сравнение на инструменти EAA цифрова достъпност 2026</title>
-      <link>https://nis2-bg.eu/narzedzia-dostepnosci-eaa.html</link>
-      <guid>https://nis2-bg.eu/narzedzia-dostepnosci-eaa.html</guid>
-    </item>
-    <item>
       <title>NIS2 Starter Pack, редактируеми шаблони за съответствие</title>
       <link>https://nis2-bg.eu/pakiet-startowy-nis2.html</link>
       <guid>https://nis2-bg.eu/pakiet-startowy-nis2.html</guid>
     </item>
     <item>
       <title>Регистрация в национален компетентен орган – Ръководство NIS2 за фирми</title>
-      <link>https://nis2-bg.eu/rejestracja-ksc.html</link>
-      <guid>https://nis2-bg.eu/rejestracja-ksc.html</guid>
+      <link>https://nis2-bg.eu/registraciya.html</link>
+      <guid>https://nis2-bg.eu/registraciya.html</guid>
     </item>
     <item>
-      <title>Колко безопасни са най-големите фирми? Изследване 2026</title>
-      <link>https://nis2-bg.eu/report-cyberbezpieczenstwo-firm-pl.html</link>
-      <guid>https://nis2-bg.eu/report-cyberbezpieczenstwo-firm-pl.html</guid>
+      <title>Реалната цена на съответствие с NIS2 в България 2026: бюджети, разходи и риск от несъответствие | nis2-bg.eu</title>
+      <link>https://nis2-bg.eu/report-koszty-nis2.html</link>
+      <guid>https://nis2-bg.eu/report-koszty-nis2.html</guid>
     </item>
 </channel></rss>

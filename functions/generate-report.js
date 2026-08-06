@@ -73,7 +73,7 @@ function toolLinks(lang) {
     secfix:      "https://secfix.com",
     isms_online: "https://isms.online",
     knowbe4:     "https://knowbe4.com",
-    hiscox:      "https://hiscox.pl",
+    hiscox:      "https://hiscox.com",
     onepassword: "https://1password.com",
     nordlayer:   "https://nordlayer.com",
     cobalt:      "https://cobalt.io",

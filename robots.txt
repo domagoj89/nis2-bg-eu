@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nis2-narzedzia.pl/sitemap.xml
+Sitemap: https://nis2-bg.eu/sitemap.xml
 
 # --- AI answer engines (GEO): allowed ---
 User-agent: GPTBot

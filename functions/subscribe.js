@@ -57,7 +57,7 @@ export async function onRequestPost({ request, env }) {
           email,
           reactivate_existing: true,
           send_welcome_email: false,
-          utm_source: "nis2-narzedzia.pl",
+          utm_source: "nis2-bg.eu",
           utm_medium: "email-gate",
           utm_campaign: body.source || "inline",
           tags: [...tags, "seq_started"],
@@ -118,13 +118,68 @@ function buildTags(body) {
 
 // Immediate sequence email — sent the moment someone subscribes
 async function sendSequenceEmail0(email, tier, env) {
-  const EMAILS = {"A": {"subject": "Вашият план за действие по NIS2 — 3 дни, 3 стъпки", "html": "<p style=\"font-family:sans-serif;font-size:15px;line-height:1.6;color:#111;\">Току-що завършихте теста по NIS2 — резултатът ви показва, че има още какво да се направи преди крайния срок.<br><br><strong>Добрата новина:</strong> Компании в подобна ситуация постигат съответствие за 60–90 дни, ако започнат с правилните стъпки.</p><h3 style=\"font-family:sans-serif;color:#1e3a5f;\">Вашият 3-дневен стартов план:</h3><p style=\"font-family:sans-serif;font-size:15px;line-height:1.7;color:#111;\"><strong>Ден 1 (30 мин) — Проверете дали попадате под NIS2:</strong><br><a href=\"https://nis2-bg.eu/kalkulator.html\" style=\"color:#1e3a5f;\">Проверете дали вашата фирма е задължена по NIS2 →</a><br><br><strong>Ден 2 (20 мин) — Стартирайте безплатна ISMS система:</strong><br><a href=\"https://nis2-bg.eu/instrumenti/isms-online.html\" style=\"color:#1e3a5f;\">ISMS.online — безплатен план до 25 служители →</a><br><br><strong>Ден 3 (30 мин) — Обучете ръководството:</strong><br><a href=\"https://www.knowbe4.com/\" style=\"color:#1e3a5f;\">KnowBe4 — 14-дневен пробен период →</a><br><br><a href=\"https://nis2-bg.eu/#tracker-section\" style=\"color:#1e3a5f;\">Следете напредъка си в NIS2 тракера →</a></p>"}, "B": {"subject": "Вашият резултат по NIS2: добро начало — ето как да стигнете до 100%", "html": "<p style=\"font-family:sans-serif;font-size:15px;line-height:1.6;color:#111;\">Вече имате основите на NIS2 — добър знак. Липсват ви 2–3 елемента, които се проверяват най-често от надзорния орган.</p><p style=\"font-family:sans-serif;font-size:15px;line-height:1.7;color:#111;\"><strong>Тестове за проникване (чл. 21(2)(f)):</strong><br><a href=\"https://nis2-bg.eu/testy-penetracyjne.html\" style=\"color:#1e3a5f;\">Ръководство за тестове за проникване →</a><br><br><strong>MFA за привилегировани акаунти (чл. 21(2)(i)):</strong><br><a href=\"https://nis2-bg.eu/instrumenti/1password.html\" style=\"color:#1e3a5f;\">1Password Business — MFA + мениджър на пароли →</a><br><br><strong>Сигурност на веригата на доставки (чл. 21(2)(d)):</strong><br><a href=\"https://nis2-bg.eu/bezpieczenstwo-lancucha-dostaw.html\" style=\"color:#1e3a5f;\">Ръководство за сигурност на доставчиците →</a><br><br><a href=\"https://nis2-bg.eu/#tracker-section\" style=\"color:#1e3a5f;\">Отбележете напредъка си в NIS2 тракера →</a></p>"}, "C": {"subject": "Отличен резултат по NIS2 — ето вашата последна стъпка", "html": "<p style=\"font-family:sans-serif;font-size:15px;line-height:1.6;color:#111;\">Висока степен на готовност по NIS2 — наистина добър резултат. Остава един неприключен въпрос: формална външна валидация.</p><p style=\"font-family:sans-serif;font-size:15px;line-height:1.7;color:#111;\"><strong>Тест за проникване</strong> — доказателство за ефективност на защитите (чл. 21(2)(f)):<br><a href=\"https://cobalt.io/\" style=\"color:#1e3a5f;\">Cobalt.io →</a><br><br><strong>Сертификация ISO 27001</strong> — външна валидация на цялата ISMS система:<br><a href=\"https://nis2-bg.eu/certyfikacja-iso-27001.html\" style=\"color:#1e3a5f;\">Ръководство за ISO 27001 →</a><br><br><a href=\"https://nis2-bg.eu/#tracker-section\" style=\"color:#1e3a5f;\">Проверете последните контролни точки →</a></p>"}};
+  const EMAILS = {
+    A: {
+      subject: "Twój plan działania NIS2 — 3 dni, 3 kroki",
+      html: `<p style="font-family:sans-serif;font-size:15px;line-height:1.6;color:#111;">
+Właśnie ukończyłeś quiz NIS2 — Twój wynik wskazuje, że masz jeszcze dużo do zrobienia przed terminem.
+<br><br>
+<strong>Dobra wiadomość:</strong> Firmy w podobnej sytuacji osiągają zgodność w 60–90 dni, jeśli zaczną od właściwych kroków.
+</p>
+<h3 style="font-family:sans-serif;color:#1e3a5f;">Twój 3-dniowy plan startowy:</h3>
+<p style="font-family:sans-serif;font-size:15px;line-height:1.7;color:#111;">
+<strong>Dzień 1 (30 min) — Sprawdź status KSC:</strong><br>
+<a href="https://nis2-bg.eu/kalkulator.html" style="color:#1e3a5f;">Zweryfikuj czy Twoja firma podlega KSC →</a>
+<br><br>
+<strong>Dzień 2 (20 min) — Uruchom darmowy ISMS:</strong><br>
+<a href="https://isms.online/" style="color:#1e3a5f;">ISMS.online — bezpłatny plan do 25 pracowników →</a>
+<br><br>
+<strong>Dzień 3 (30 min) — Przeszkol zarząd:</strong><br>
+<a href="https://www.knowbe4.com/" style="color:#1e3a5f;">KnowBe4 — 14-dniowy trial →</a>
+<br><br>
+<a href="https://nis2-bg.eu/#tracker-section" style="color:#1e3a5f;">Śledź swój postęp w trackerze NIS2 →</a>
+</p>`,
+    },
+    B: {
+      subject: "Twój wynik NIS2: dobry start — oto co dobić do 100%",
+      html: `<p style="font-family:sans-serif;font-size:15px;line-height:1.6;color:#111;">
+Masz już podstawy NIS2 — to dobry znak. Brakuje Ci 2–3 elementów najczęściej sprawdzanych przez organ nadzoru.
+</p>
+<p style="font-family:sans-serif;font-size:15px;line-height:1.7;color:#111;">
+<strong>Testy penetracyjne (Art. 21(2)(f)):</strong><br>
+<a href="https://cobalt.io/" style="color:#1e3a5f;">Cobalt.io — testy na żądanie →</a>
+<br><br>
+<strong>MFA dla kont uprzywilejowanych (Art. 21(2)(i)):</strong><br>
+<a href="https://1password.com/" style="color:#1e3a5f;">1Password Business — MFA + menedżer haseł →</a>
+<br><br>
+<strong>Bezpieczeństwo łańcucha dostaw (Art. 21(2)(d)):</strong><br>
+<a href="https://nis2-bg.eu/bezpieczenstwo-lancucha-dostaw.html" style="color:#1e3a5f;">Przewodnik bezpieczeństwa dostawców →</a>
+<br><br>
+<a href="https://nis2-bg.eu/#tracker-section" style="color:#1e3a5f;">Zaznacz postęp w trackerze NIS2 →</a>
+</p>`,
+    },
+    C: {
+      subject: "Świetny wynik NIS2 — oto Twój ostatni krok",
+      html: `<p style="font-family:sans-serif;font-size:15px;line-height:1.6;color:#111;">
+Wysoki poziom gotowości NIS2 — naprawdę dobry wynik. Jeden niezałatwiony punkt: formalna walidacja zewnętrzna.
+</p>
+<p style="font-family:sans-serif;font-size:15px;line-height:1.7;color:#111;">
+<strong>Test penetracyjny</strong> — dowód skuteczności zabezpieczeń (Art. 21(2)(f)):<br>
+<a href="https://cobalt.io/" style="color:#1e3a5f;">Cobalt.io →</a>
+<br><br>
+<strong>Certyfikacja ISO 27001</strong> — zewnętrzna walidacja całego ISMS:<br>
+<a href="https://nis2-bg.eu/certyfikacja-iso-27001.html" style="color:#1e3a5f;">Przewodnik ISO 27001 →</a>
+<br><br>
+<a href="https://nis2-bg.eu/#tracker-section" style="color:#1e3a5f;">Sprawdź ostatnie checkboxy →</a>
+</p>`,
+    },
+  };
 
   const msg = EMAILS[tier] || EMAILS["B"];
   const footer = `<hr style="margin:2rem 0;border:none;border-top:1px solid #e5e7eb;">
 <p style="font-family:sans-serif;font-size:12px;color:#9ca3af;">
-  nis2-bg.eu &nbsp;|&nbsp;
-  <a href="https://nis2-narzedzia.pl/unsubscribe?email=${encodeURIComponent(email)}" style="color:#9ca3af;">Wypisz się</a>
+  NIS2-Narzedzia.pl &nbsp;|&nbsp;
+  <a href="https://nis2-bg.eu/unsubscribe?email=${encodeURIComponent(email)}" style="color:#9ca3af;">Wypisz się</a>
 </p>`;
 
   await fetch("https://api.resend.com/emails", {

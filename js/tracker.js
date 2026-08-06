@@ -28,7 +28,7 @@
     {
       id:       "registration",
       art:      "Rejestracja",
-      title:    "Rejestracja w rejestrze podmiotów KSC",
+      title:    "Регистрация в националния регистър",
       detail:   "Obowiązek rejestracji w rejestrze podmiotów kluczowych i ważnych prowadzonym przez CERT Polska. Termin: 3 październik 2026.",
       tool:     "Instrukcja rejestracji krok po kroku",
       tool_url: "rejestracja-ksc.html",
