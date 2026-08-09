@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="bg">
 <head>
-<meta name="robots" content="noindex,nofollow">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-32QHQRGVRH"></script>
   <script>
@@ -12,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 за телекомуникационни оператори България 2026 — изисквания</title>
-  <meta name="description" content="NIS2 изисквания за телеком оператори в България. Защита на мрежова инфраструктура, докладване на инциденти и верижна сигурност до 2026 година.">
+  <title>NIS2 за телекомуникационни оператори в България — 2026</title>
+  <meta name="description" content="Задължения на интернет доставчици и мобилни оператори по Закона за киберсигурност. Крайни срокове, санкции и практически мерки за съответствие.">
   <link rel="canonical" href="https://nis2-bg.eu/sektory/telecoms.html">
-  <meta property="og:title" content="NIS2 за телекомуникационни оператори България 2026 — изисквания">
-  <meta property="og:description" content="NIS2 изисквания за телеком оператори в България. Защита на мрежова инфраструктура, докладване на инциденти и верижна сигурност до 2026 година.">
+  <meta property="og:title" content="NIS2 за телекомуникационни оператори в България — 2026">
+  <meta property="og:description" content="Задължения на интернет доставчици и мобилни оператори по Закона за киберсигурност. Крайни срокове, санкции и практически мерки за съответствие.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-bg.eu/sektory/telecoms.html">
   <meta property="og:locale" content="bg_BG">
   <meta property="og:site_name" content="NIS2-BG.eu">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 за телекомуникационни оператори България 2026 — изисквания">
-  <meta name="twitter:description" content="NIS2 изисквания за телеком оператори в България. Защита на мрежова инфраструктура, докладване на инциденти и верижна сигурност до 2026 година.">
+  <meta name="twitter:title" content="NIS2 за телекомуникационни оператори в България — 2026">
+  <meta name="twitter:description" content="Задължения на интернет доставчици и мобилни оператори по Закона за киберсигурност. Крайни срокове, санкции и практически мерки за съответствие.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -47,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 за телекомуникационни оператори в България — изисквания и задължения 2026",
+      "name": "NIS2 за телекомуникационни оператори, ISP и CDN доставчици в България — Изисквания 2026",
       "item": "https://nis2-bg.eu/sektory/telecoms.html"
     }
   ]
@@ -60,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Кога точно трябва да докладам инцидент на Министерството на електронното управление?",
+      "name": "Кой трябва да се регистрира като ключов субект в България?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "При инцидент, който засяга над 30 000 абонати или повече от 4% от всички ваши абонати в България, или при технологичен отказ, който прекъсва критичните услуги за повече от 4 часа, трябва да подадете докладване в срок от 24 часа от момента на открытието на инцидента. Докладването се подава чрез портала на Министерството с техническо описание, засегнати услуги и очаквано време за възстановяване."
+        "text": "Телекомуникационните оператори, ISP доставчици, мобилни мрежови оператори и CDN доставчици ще бъдат идентифицирани от Министерството на електронното управление въз основа на тяхната критичност за инфраструктурата и броя на абонатите или корпоративните клиенти. Методология ще бъде одобрена в рамките на 6 месеца от влизането на силата на закона (февруари 2026), а официално обозначаване ще се проведе през 2027 г. Независимо от размера, ако сте назначени, трябва да спазвате всички задължения за съответствие."
       }
     },
     {
       "@type": "Question",
-      "name": "Какво трябва да включам в политиката за верижна сигурност при избор на доставчик на маршрутизатори?",
+      "name": "Кой е отговорен за управление на BGP маршрутизирането и защитата от прихващане?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Политиката трябва да включва: технически преглед на безопасност (наличие на SBOM), проверка на статуса на киберсигурност от производителя, период на поддържане от производителя (минимум 5 години), процедура за известяване при открытие на CVE уязвимости, и план за миграция при край на поддержката. За всеки критичен доставчик трябва да сключите договор с клаузули за временност на патчове и уведомяване при отказ от поддържане."
+        "text": "Отговорността пада на мрежата и инженерите по инфраструктура на оператора. BGP филтриране, RPKI валидация и мониторинг на маршрутните аномалии трябва да бъдат внедрени на пограничните маршрутизатори. Отговорни управители трябва да наблюдават внедряването и редовно да преглеждат дневниците за подозрителни действия; тази отговорност трябва да бъде документирана в политиката на организацията за управление на мрежата."
       }
     },
     {
       "@type": "Question",
-      "name": "Какви санкции грозят ако не се подчиня на задълженията по Закона за киберсигурност до 31 декември 2026?",
+      "name": "Какви са санкциите при неспазване на NIS2 до февруари 2026 г.?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Министерството на електронното управление може да издаде предписание за привеждане в съответствие с наложен срок. При неспазване, телекомуникационният оператор може да бъде наложена имуществена санкция до 10 000 000 лева или 2% от годишния приход (в зависимост от размера), както и административни наказания за физически лица. През периода на преход (до края на 2026 г.) органите провеждат инспекции и издават препоръки, но активното прилагане на санкции е вероятно след прощка периода."
+        "text": "Ключовите субекти, които не спазят задълженията по Закона за киберсигурност, могат да получат наказания до 10 млн. евро или 2% от глобалния годишен оборот, което е по-високата сума. Отговорните управители могат да бъдат подложени на лични наказания от €500 до €5,000. Допълнително, регулаторите могат да наложат оперативни ограничения до отстранението на липсите. Ранното съответствие намалява риска от санкции и демонстрира добра воля при всяка проверка."
       }
     }
   ]
@@ -106,23 +105,23 @@
   <div class="breadcrumb">
     <a href="../index.html">Начало</a><span>›</span>
     <a href="index.html">Сектори</a><span>›</span>
-    NIS2 за телекомуникационни оператори в България — изисквания и задължения 2026
+    NIS2 за телекомуникационни оператори, ISP и CDN доставчици в България — Изисквания 2026
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Приложение I — Esistенциален субект</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 за телекомуникационни оператори в България — изисквания и задължения 2026</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Страницата е предназначена за ръководители на киберсигурност, оперативни мениджъри и екипи по съответствие в телекомуникационни оператори, интернет доставчици и CDN провайдъри в България. Научете конкретните задължения по Закона за киберсигурност и как да подготвите организацията си за проверката на Министерството на електронното управление.</p>
+    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Приложение I — Ключова субект</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 за телекомуникационни оператори, ISP и CDN доставчици в България — Изисквания 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Този курс е предназначен за началници на киберсигурност, инженери по инфраструктура и отговорни управители на телекомуникационни предприятия и интернет доставчици в България. Ще научите как да внедрите задължителните мерки за сигурност на мрежовата инфраструктура, да докладвате инциденти и да управлявате рискове на веригата доставки до февруари 2026 г.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Телекомуникационни оператори с повече от 10 000 активни абонати, интернет услугодатели (ISP) с критична роля в национална инфраструктура, оператори на мобилни мрежи (2G, 3G, 4G, 5G) и доставчици на услуги за доставка на съдържание (CDN), които предоставят услуги на потребители в България, се квалифицират като Esistенциални субекти по Приложение I на Закона за киберсигурност и трябва да спазват всички задължения до 31 декември 2026 година.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Телекомуникационни оператори, интернет доставчици (ISP), мобилни мрежови оператори и CDN доставчици, които предоставят критични услуги на значителна част от българските потребители или корпоративни клиенти, са класифицирани като ключови субекти по Закона за киберсигурност. Организациите, посочени от Министерството на електронното управление в националния регистър (очаквано през 2027 г.), трябва да спазват всички задължения, независимо от размера.</p>
   </div>
 </div>
 
@@ -136,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Защита на мрежовата инфраструктура и BGP маршрутизиране</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Телекомуникационните оператори трябва да внедрят мерки за защита на критичните компоненти на мрежата — основни маршрутизатори, коммутатори и DNS разрешители. Конкретно, изисква се внедряване на BGP маршрутизиране с филтриране срещу манипулация на маршрути (BGP hijacking), криптографско удостоверяване на маршрути (RPKI/ROA) и непрекъснато наблюдение на ненормални колебания в маршрутния трафик. Всички критични устройства трябва да имат включена верификация на автентичността на софтуера и управление на версиите.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Сигурност на мрежовата инфраструктура и маршрутизирането</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Телекомуникационните оператори трябва да внедрят мерки за защита на критичната мрежова инфраструктура, включително маршрутизатори, BGP маршрутизиране и DNS резолюция. Това включва филтриране на BGP маршрути за предотвратяване на похищения, криптографска валидация на маршрутизирането (RPKI) и мониторинг на аномалиите в сърцевината на мрежата. Всички критични компоненти трябва да имат активна поддръжка от производителя и редовни актуализации за сигурност.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -145,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Докладване на инциденти с влияние върху голямо население от абонати</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">При възникване на инцидент с киберсигурност или технологичен отказ, който засяга над 30 000 активни абонати или более 4% от всички абонати в България, операторът трябва да докладва на Министерството на електронното управление в срок от 24 часа. Докладването включва техническо описание на инцидента, засегнати услуги, время на възникване и очаквано време за възстановяване. Операторът трябва да поддържа процес за документиране и анализ на всички инциденти със степен на критичност 'висока' или 'критична'.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Докладване на инциденти при прекъсване на услугите</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Операторите трябва да докладват на Министерството на електронното управление за инциденти, които влияят върху способността на голяма част от абонатите (критични абонати, региони или услуги) да получат достъп до интернет или мобилни комуникации. Докладът трябва да бъде предоставен в предварително определения период (пот. 24 часа) с детайли за причината, продължителността и прилетите мерки. Систематичното докладване помогва на регулаторите да идентифицират системни рискове.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -154,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Верижна сигурност при доставка на мрежово оборудване</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Телекомуникационните оператори трябва да установят политика за оценка и управление на риска от доставчици на мрежово оборудване (маршрутизатори, коммутатори, базови станции, оптични модули). Всеки нов доставчик трябва да бъде одобрен чрез процес на технически преглед, проверка на статута на кибербезопасност и съответствие с международни стандарти за безопасност. За всеки критичен компонент трябва да се събира информация за уязвимости, периода на поддържането от производителя и плана за миграция при край на поддержката.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Управление на риска на веригата доставки за мрежево оборудване</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Телекомуникационните оператори трябва да оцენят и управляват кибер рискове, произтичащи от доставчиците на мрежово оборудване (маршрутизатори, комутатори, базови станции, оптични кабели). Това включва проверка на дистанционни достъпни услуги от производителите, шифриране на управленския канал, верификация на цялостността на микрокода и договорни задължения за своевременно издаване на исправки. Операторите трябва да поддържат централен инвентар на всички критични компоненти и техния статус на поддръжка.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -163,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Законно отваряне (Lawful Interception) с киберсигурност контроли</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Операторите трябва да предоставят възможност за законно отваряне на комуникации при указание на съответните органи, но със строги контроли на достъпа и крайпътна защита. Достъпът до системите за законно отваряне трябва да бъде ограничен до лицензирани администратори, обучени в процедурите на защита на данни. Всички действия на администратор (включително преглед на логове) трябва да бъдат записани и подложени на периодичен одит с участието на независимо лице.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Сигурност на системите за законно преслушване и достъп до управление</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Телекомуникационните оператори, които предоставляват законно преслушване, трябва да защитят достъпа до тези системи с мултифакторна аутентификация, криптография и строга регистрация на достъпа. Всяка трансакция (добавяне на целева точка, изтегляне на данни) трябва да бъде регистрирана с идентификацията на служителя и причината. Администраторските акаунти трябва да имат разделени привилегии, а системите за преслушване трябва да бъдат физически изолирани от основната мрежова инфраструктура.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -172,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Непрекъснато наблюдение на мрежовите аномалии и инциденти</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Телекомуникационните оператори трябва да разполагат със система за мониторинг в реално време (SIEM), която следи дейностите в ядрото на мрежата, хакерски опити за достъп и необичайни колебания в трафика. Системата трябва да е оборудвана с правила за открытие на атаки от тип DDoS, IP spoofing, неоторизиран достъп и манипулация на DNS. Екипът по реакция на инциденти трябва да бъде достъпен 24/7 с утвърдени процедури за есколиране и обращение към национални органи при необходимост.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Организационни мерки: отговорни управители и документирани политики</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Организацията трябва да определи и назначи отговорни управители със съответни компетенции в областта на киберсигурността. Трябва да се разработят и поддържат писмени политики за управление на инцидентите, извършване на проверки на уязвимостите, управление на достъпа и обучение на персонала. Документирането трябва да бъде достъпно за органите за надзор и редовно актуализирано при промени в инфраструктурата или застрашеностите.</p>
       </div>
     </div>
   </div>
@@ -185,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>BGP маршрутизирането не е защитено с RPKI филтриране и верификация на маршрути, което позволява на нарушители да пренасочват трафик към своите сървъри без забележка.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>BGP филтриране и RPKI валидация не са внедрени; мрежата е уязвима на маршрутни похищения и префиксни прихващания, които прекъсват услугата за голяма част от абонатите.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Мрежовото оборудване (маршрутизатори, коммутатори, базови станции) работи със фърмуер отвъд периода на производителската поддържка, което е оставя уязвимо на известни CVE-та без възможност за патч.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Оборудването на мрежата работи с микрокод и операционни системи на производителя, които вече не получават поддръжка; критичните уязвимости не се закърпят, оставляйки мрежата експонирана.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Недостатъчното наблюдение на критичните компоненти на мрежата — няма SIEM система за открытие на аномалии в маршрутизирането, DDoS атаки и неоторизиран достъп до управленските интерфейсии.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Мониторингът на аномалиите в сърцевината на мрежата липсва; необичайни обеми от BGP обновления, DDoS атаки или конфигурационни промени не се открива в реално време.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Отсъствието на процес за оценка на риска при доставчици на оборудване и липса на договорни условия за киберсигурност в договорите с производители.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Процесите за управление на веригата доставки липсват документирани проверки на дистанционния достъп на производителите, криптографската верификация на микрокода или договорните задължения за издаване на исправки; операторите нямат видимост върху риска от производителя.
     </li>
   </ul>
 </div>
@@ -210,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">vanta.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../instrumenti/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Проверете инструмента →</a>
+      <a href="../instrumenti/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -218,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../instrumenti/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Проверете инструмента →</a>
+      <a href="../instrumenti/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -226,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">isms.online</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../instrumenti/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Проверете инструмента →</a>
+      <a href="../instrumenti/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -237,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Кога точно трябва да докладам инцидент на Министерството на електронното управление?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Кой трябва да се регистрира като ключов субект в България?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">При инцидент, който засяга над 30 000 абонати или повече от 4% от всички ваши абонати в България, или при технологичен отказ, който прекъсва критичните услуги за повече от 4 часа, трябва да подадете докладване в срок от 24 часа от момента на открытието на инцидента. Докладването се подава чрез портала на Министерството с техническо описание, засегнати услуги и очаквано време за възстановяване.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Телекомуникационните оператори, ISP доставчици, мобилни мрежови оператори и CDN доставчици ще бъдат идентифицирани от Министерството на електронното управление въз основа на тяхната критичност за инфраструктурата и броя на абонатите или корпоративните клиенти. Методология ще бъде одобрена в рамките на 6 месеца от влизането на силата на закона (февруари 2026), а официално обозначаване ще се проведе през 2027 г. Независимо от размера, ако сте назначени, трябва да спазвате всички задължения за съответствие.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Какво трябва да включам в политиката за верижна сигурност при избор на доставчик на маршрутизатори?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Кой е отговорен за управление на BGP маршрутизирането и защитата от прихващане?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Политиката трябва да включва: технически преглед на безопасност (наличие на SBOM), проверка на статуса на киберсигурност от производителя, период на поддържане от производителя (минимум 5 години), процедура за известяване при открытие на CVE уязвимости, и план за миграция при край на поддержката. За всеки критичен доставчик трябва да сключите договор с клаузули за временност на патчове и уведомяване при отказ от поддържане.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Отговорността пада на мрежата и инженерите по инфраструктура на оператора. BGP филтриране, RPKI валидация и мониторинг на маршрутните аномалии трябва да бъдат внедрени на пограничните маршрутизатори. Отговорни управители трябва да наблюдават внедряването и редовно да преглеждат дневниците за подозрителни действия; тази отговорност трябва да бъде документирана в политиката на организацията за управление на мрежата.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Какви санкции грозят ако не се подчиня на задълженията по Закона за киберсигурност до 31 декември 2026?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Какви са санкциите при неспазване на NIS2 до февруари 2026 г.?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Министерството на електронното управление може да издаде предписание за привеждане в съответствие с наложен срок. При неспазване, телекомуникационният оператор може да бъде наложена имуществена санкция до 10 000 000 лева или 2% от годишния приход (в зависимост от размера), както и административни наказания за физически лица. През периода на преход (до края на 2026 г.) органите провеждат инспекции и издават препоръки, но активното прилагане на санкции е вероятно след прощка периода.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Ключовите субекти, които не спазят задълженията по Закона за киберсигурност, могат да получат наказания до 10 млн. евро или 2% от глобалния годишен оборот, което е по-високата сума. Отговорните управители могат да бъдат подложени на лични наказания от €500 до €5,000. Допълнително, регулаторите могат да наложат оперативни ограничения до отстранението на липсите. Ранното съответствие намалява риска от санкции и демонстрира добра воля при всяка проверка.</p>
     </div>
   </div>
   </div>
@@ -270,11 +269,13 @@
   </div>
 </div>
 
+
+<nav class="related-sectors" aria-label="Related sectors" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Related sectors</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="telemedicine.html">NIS2 за телемедицински платформи в България</a></li><li style="margin:0"><a href="transport.html">NIS2 за транспорт в България</a></li><li style="margin:0"><a href="waste-management.html">NIS2 за събирачи на отпадъци в България</a></li><li style="margin:0"><a href="water.html">NIS2 за доставчици питейна вода в България 2026</a></li><li style="margin:0"><a href="accountants.html">NIS2 за счетоводни фирми България 2026</a></li><li style="margin:0"><a href="banks.html">NIS2 за лицензирани банки в България</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
       © 2026 NIS2-BG.eu · Закон за киберсигурност/NIS2 · Министър на електронното управление
-      <br>Информацията е с образователен характер и не представлява правен съвет.
+      <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
       <br><a href="../index.html" style="color:var(--gray-400);">Начало</a> ·
       <a href="index.html" style="color:var(--gray-400);">Сектори</a> ·
       <a href="../sravnenie.html" style="color:var(--gray-400);">Сравнение на инструменти</a>

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="bg">
 <head>
-<meta name="robots" content="noindex,nofollow">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-32QHQRGVRH"></script>
   <script>
@@ -12,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 за HR софтуер и платежни системи в България 2026</title>
-  <meta name="description" content="Изисквания за киберсигурност на доставчици на HR софтуер и платежни услуги в България по NIS2. Крайни срокове и задължения 2026.">
+  <title>NIS2 за доставчици на HR софтуер в България — изисквания 2026</title>
+  <meta name="description" content="Ръководство за изпълнение на NIS2 за доставчици на HR и payroll софтуер в България. Крайни срокове, задължения и инструменти за съответствие до февруари 2026.">
   <link rel="canonical" href="https://nis2-bg.eu/sektory/hr-payroll.html">
-  <meta property="og:title" content="NIS2 за HR софтуер и платежни системи в България 2026">
-  <meta property="og:description" content="Изисквания за киберсигурност на доставчици на HR софтуер и платежни услуги в България по NIS2. Крайни срокове и задължения 2026.">
+  <meta property="og:title" content="NIS2 за доставчици на HR софтуер в България — изисквания 2026">
+  <meta property="og:description" content="Ръководство за изпълнение на NIS2 за доставчици на HR и payroll софтуер в България. Крайни срокове, задължения и инструменти за съответствие до февруари 2026.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-bg.eu/sektory/hr-payroll.html">
   <meta property="og:locale" content="bg_BG">
   <meta property="og:site_name" content="NIS2-BG.eu">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 за HR софтуер и платежни системи в България 2026">
-  <meta name="twitter:description" content="Изисквания за киберсигурност на доставчици на HR софтуер и платежни услуги в България по NIS2. Крайни срокове и задължения 2026.">
+  <meta name="twitter:title" content="NIS2 за доставчици на HR софтуер в България — изисквания 2026">
+  <meta name="twitter:description" content="Ръководство за изпълнение на NIS2 за доставчици на HR и payroll софтуер в България. Крайни срокове, задължения и инструменти за съответствие до февруари 2026.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -47,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 за доставчици на HR софтуер и платежни услуги в България — Требования за важни субекти",
+      "name": "NIS2 за доставчици на HR софтуер и payroll услуги в България — задължения на важни субекти",
       "item": "https://nis2-bg.eu/sektory/hr-payroll.html"
     }
   ]
@@ -60,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Кой е отговорен за докладване на инцидент при нарушаване на данни на служители — ние като доставчик или нашия клиент?",
+      "name": "Кога точно трябва да бъдем регистрирани като важен субект и какво се случва ако не съответстваме в рамките на крайния срок?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Вие като доставчик сте отговорни да уведомите Министъра на електронното управление в България, когато инцидент засяга данни, които обработвате за множество клиенти едновременно. Клиентите трябва да бъдат уведомени незабавно, но официалното докладване на регулаторни органи е ваша отговорност."
+        "text": "Министерството на електронното управление ще издаде методология за идентификация на важни субекти до юни 2026 г. и ще завершит официално назначение до ноември 2026 г. Преди февруари 2026 г. трябва вече да имате поне основните мерки на място. Ако към края на периода на преходност не съответствате, можете да бъдете наложени санкции до 7 милиона евро или 1,4% от годишния оборот, както и наказания за отговорни лица от 500 до 5000 евро."
       }
     },
     {
       "@type": "Question",
-      "name": "Какво означава 'изолация на данни' в практика за платежна система с един сървър и множество клиенти?",
+      "name": "Какво е минимално изисквано за защита на администраторския достъп в payroll системата?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Изолацията означава, че данни за служител на Компания А трябва да бъдат недостъпни за администратор на Компания Б дори ако имат SQL достъп до един и същи сървър. Това изисква криптография на ниво запис, ролебазирани контроли в кода или отделни шифровани дялове на база данни за всеки клиент."
+        "text": "Всеки администратор трябва да бъде защитен чрез хардуерно MFA устройство (FIDO2 ключ или подобно), не само софтуерен код. Паролата трябва да бъде комбинирана с MFA. Всяко действие администратора трябва да се логира с точна отметка на време, включително IP адреса. Логовете трябва да се съхранять минимум 90 дни в защитена среда, недостъпна за самите администраторите. Редовни одити на логовете трябва да се провеждат всеки месец."
       }
     },
     {
       "@type": "Question",
-      "name": "Какви са наказанията за неспазване на NIS2 требования в България до 2026 година?",
+      "name": "Какво трябва да направим ако открием киберинцидент, който е разкрил данни на служители на няколко наши клиенти?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Наказанията могат да включват глоби до 10 милиона евро или до 2% от годишния глобален оборот за незначителни нарушения, и до 20 милиона евро или 4% от глобалния оборот за сериозни нарушения. Дейностите трябва да покажат пълно съответствие до 17 октомври 2026 г., с преходен период до 17 октомври 2024 г. за оценка на рисковете."
+        "text": "Трябва да докладвате на Министерството на електронното управление в рамките на 72 часа от откритието на инцидента. Едновременно трябва да уведомите всички засегнати клиенти писмено. Всеки клиент трябва да получи информация как инцидента ще бъде разрешен. След две седмици трябва да представите пълен анализ на причината и коригиращите мерки. Неспазване на този срок може да доведе до санкции до 7 милиона евро."
       }
     }
   ]
@@ -106,23 +105,23 @@
   <div class="breadcrumb">
     <a href="../index.html">Начало</a><span>›</span>
     <a href="index.html">Сектори</a><span>›</span>
-    NIS2 за доставчици на HR софтуер и платежни услуги в България — Требования за важни субекти
+    NIS2 за доставчици на HR софтуер и payroll услуги в България — задължения на важни субекти
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Приложение II — Важен субект</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 за доставчици на HR софтуер и платежни услуги в България — Требования за важни субекти</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Страницата е насочена към доставчици на софтуер за управление на човешки ресурси и услуги по обработка на заплати, които управляват личните данни на служители за множество организации. Научете се на конкретните задължения за киберсигурност, изолация на данни и инцидентно докладване по NIS2 в България.</p>
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Приложение II — важен субект</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 за доставчици на HR софтуер и payroll услуги в България — задължения на важни субекти</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Това ръководство е предназначено за софтуерни компании и услужни доставчици, които управляват данни на служители за множество организации в България. Ще научите конкретните задължения по киберсигурност, които трябва да изпълните преди февруари 2026 г., и как да подготвите инфраструктурата си за национално регистриране.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Доставчици на SaaS платформи за управление на HR и платежни системи, които предоставят услуги на повече от две българские организации или обработват личните данни на 1000+ служители едновременно, квалифицират като важни субекти по NIS2. Включени са облачни платформи за управление на бази данни на служители, платежни обработки и системи за управление на възвратния персонал, независимо от брой на служители в компанията доставчик.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Квалифицирането като важен субект е задължително за доставчици на HR софтуер и payroll услуги, които обслужват множество клиентски организации в България и обработват лични данни на служители в национален или трансграничен мащаб. Независимо от брой служители, всички такива доставчици на критична цифрова услуга попадат в обхвата на Приложение II на Закона за киберсигурност. Министерството на електронното управление ще издаде методология за идентификация до юни 2026 г. и ще завършит официално назначение до ноември 2026 г.</p>
   </div>
 </div>
 
@@ -136,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Защита на данни за заплати и личните данни на служители</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Трябва да внедрите криптографска защита на данни в покой и по време на предаване, както и строги контроли на достъпа за всеки служител с достъп до системи с данни за заплати. NIS2 изисква специална внимание към защитата на чувствителни данни, които обработвате за множество клиенти, включително номера на социално осигуряване, банкови реквизити и история на доходите.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Управление на достъпа администраторите и съхранение на логовете за всички действия</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Всички администратори на payroll системите трябва да бъдат защитени чрез хардуерни MFA устройства (например FIDO2 ключ), не само софтуерни кодове. Всяко действие на администратор — добавяне, редактиране или изтриване на данни на служители — трябва да се логира с отметка на време и да се съхранява минимум 90 дни. Логовете трябва да показват кой администратор е извършил действието, кога и какво точно е променено. Редовни одити на логовете на администраторския достъп трябва да се провеждат всеки месец за wykrycie на необичайни дейности.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -145,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Докладване на инциденти при нарушаване на данни</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">При кибератака или неавторизиран достъп до данни, които засягат повече от два клиента, трябва да уведомите Министъра на електронното управление в България в срок от 24 часа. Докладът трябва да съдържа детайли за видa на атаката, засегнатите данни и предприетите смекчаващи мерки, независимо дали е засегнат един или множество клиенти.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Изолация на клиентските данни в многостанческите SaaS платформи</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Във вашата многостанческа архитектура данните на всеки клиент трябва да бъдат логично и физически отделени, така че бреш на един клиент да не разкрива информация на друг. Технически, това означава отделени бази данни или строго разделени редове в таблиците с ефективни контроли за защита. Тестване на изолацията трябва да се извършва преди всяка нова версия и редовно като част от вашия цикъл на разработка. Удостоверяват се тестове да доказват, че администратор на един клиент не може да види или да модифицира данни на друг клиент, дори когато има техническия достъп до сървърите.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -154,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Изолация на данни на клиенти в многоклиентски системи</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Логическата и физическата изолация на данни между различни клиенти-организации е задължение, а не опция. Трябва да докажете, че служител на един клиент не може да видя данни на друг клиент дори при компрометиране на учетната запис, включително на администратори. Регулярни тестове на пробиви трябва да валидират силата на изолацията.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Защита на данните на служителите при прекратяване на договор с клиент</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">При прекратяване на договор с клиентска организация трябва да имате формален процес за безопасно изтриване или връщане на всички данни на служителите, включително архивни копия и временни файлове. Процесът трябва да включва писмено потвърждение на окончателното изтриване в определен срок (обикновено 30 дни след прекратяване). Документ трябва да доказва, че изтриването е било завършено криптографски безопасно и че данните са невъзстановими. Уговорът с клиента трябва да определя ясно правата на достъп на клиента до своите данни във всеки момент и процедурата за их экспортиране в отворен формат преди прекратяване.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -163,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Контроли на достъп и одит за администратори на системи</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Всички действия на администраторите на платежни системи трябва да бъдат записани в одит логове, включително който се логва, кога и кои данни са достъпени. Достъп до администраторски функции трябва да бъде защитен с хардуерна многофакторна аутентификация (напр. физически USB ключ), не само софтуерна MFA.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Докладване на нарушения на данните, засягащи множество клиенти</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ако киберинцидент в вашата платформа разкрива личните данни на служители на един или повече клиенти, трябва да докладвате на Министерството на електронното управление в рамките на 72 часа от откритието на инцидента. Едновременно трябва да уведомите всички засегнати клиенти и техните служители съобразно Закона за защита на личните данни. Докладване към органите на каза трябва да се извьрши дори ако числото на засегнатите лица е малко, понеже компрометирането засяга критична цифрова услуга. Анализ на инцидента и коригиращи мерки трябва да бъдат документирани и представени на органите в рамките на две седмици след докладване.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -172,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Процедури за изтриване на данни при прекратяване на договор</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">При прекратяване на договор с клиент трябва да имате формален процес за безопасно изтриване на всички данни на този клиент в рамките на определен период, обикновено 30 дни. Изтриването трябва да бъде верифицирано чрез сертификати и одит следи, а резервни копия съдържащи данни на клиента трябва да бъдат надлежно унищожени.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Управление на веригата на доставки и отговорност на подизпълнители</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Всички ваши подизпълнители (облачни доставчици, поддържане на оборудване, резервни копия) трябва да отговарят на същите стандарти на киберсигурност както вашата компания. Трябва да имате договори с условия за киберсигурност, които включват задължения за докладване на инциденти, редовни одити и правото да проверявате техния сигурностен статус. Поне веднъж годишно трябва да провеждате оценка на риска на подизпълнители, които имат достъп до данни на служители. Ako подизпълнител не отговаря на изискванията, трябва да имате план за преместване или замяна в определен срок.</p>
       </div>
     </div>
   </div>
@@ -185,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Многоклиентски SaaS платформи, които не разделят данни на клиентите на ниво база данни или таблица, позволявайки изтичане на данни при SQL injection атаки или кодови уязвимости.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Недостатъчна техническа изолация на данни в многостанческите платформи: администраторите на един клиент могат всъщност да видят или модифицира данни на други клиенти чрез SQL заявки или API отговори, което е критично нарушение на сигурността.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Администраторски достъп защитен само със софтуерна двуфакторна аутентификация (SMS кодове, приложения) вместо хардуерна MFA (USB ключове), което позволява фишинг компрометиране.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Администраторските достъпни точки защитени само с парола и софтуерни OTP кодове вместо хардуерни MFA устройства, което не отговаря на NIS2 изисквания за силна аутентификация на критични системи.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Отсъствие на формален процес за изтриване на данни на клиентите след прекратяване на договор, което води до дълготрайно съхраняване на неправомерни данни.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Отсъствие на формален процес за сигурно изтриване на клиентски данни при прекратяване на договор, което оставя исторически данни в архивите или резервните копия за неограничено време.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Недостатъчно одитване на конфигурационни промени в платежни системи и отсъствие на анализ на логове в реално време за откривване на неавторизиран достъп.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Липса на документирани одити и мониторинг на администраторските действия в payroll системите, което затруднява разследване на инциденти и намиране на причини за нарушения.
     </li>
   </ul>
 </div>
@@ -210,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">sprinto.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../instrumenti/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Проверете инструмента →</a>
+      <a href="../instrumenti/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -218,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../instrumenti/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Проверете инструмента →</a>
+      <a href="../instrumenti/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -226,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">drata.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../instrumenti/drata.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Проверете инструмента →</a>
+      <a href="../instrumenti/drata.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -237,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Кой е отговорен за докладване на инцидент при нарушаване на данни на служители — ние като доставчик или нашия клиент?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Кога точно трябва да бъдем регистрирани като важен субект и какво се случва ако не съответстваме в рамките на крайния срок?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Вие като доставчик сте отговорни да уведомите Министъра на електронното управление в България, когато инцидент засяга данни, които обработвате за множество клиенти едновременно. Клиентите трябва да бъдат уведомени незабавно, но официалното докладване на регулаторни органи е ваша отговорност.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Министерството на електронното управление ще издаде методология за идентификация на важни субекти до юни 2026 г. и ще завершит официално назначение до ноември 2026 г. Преди февруари 2026 г. трябва вече да имате поне основните мерки на място. Ако към края на периода на преходност не съответствате, можете да бъдете наложени санкции до 7 милиона евро или 1,4% от годишния оборот, както и наказания за отговорни лица от 500 до 5000 евро.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Какво означава 'изолация на данни' в практика за платежна система с един сървър и множество клиенти?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Какво е минимално изисквано за защита на администраторския достъп в payroll системата?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Изолацията означава, че данни за служител на Компания А трябва да бъдат недостъпни за администратор на Компания Б дори ако имат SQL достъп до един и същи сървър. Това изисква криптография на ниво запис, ролебазирани контроли в кода или отделни шифровани дялове на база данни за всеки клиент.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Всеки администратор трябва да бъде защитен чрез хардуерно MFA устройство (FIDO2 ключ или подобно), не само софтуерен код. Паролата трябва да бъде комбинирана с MFA. Всяко действие администратора трябва да се логира с точна отметка на време, включително IP адреса. Логовете трябва да се съхранять минимум 90 дни в защитена среда, недостъпна за самите администраторите. Редовни одити на логовете трябва да се провеждат всеки месец.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Какви са наказанията за неспазване на NIS2 требования в България до 2026 година?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Какво трябва да направим ако открием киберинцидент, който е разкрил данни на служители на няколко наши клиенти?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Наказанията могат да включват глоби до 10 милиона евро или до 2% от годишния глобален оборот за незначителни нарушения, и до 20 милиона евро или 4% от глобалния оборот за сериозни нарушения. Дейностите трябва да покажат пълно съответствие до 17 октомври 2026 г., с преходен период до 17 октомври 2024 г. за оценка на рисковете.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Трябва да докладвате на Министерството на електронното управление в рамките на 72 часа от откритието на инцидента. Едновременно трябва да уведомите всички засегнати клиенти писмено. Всеки клиент трябва да получи информация как инцидента ще бъде разрешен. След две седмици трябва да представите пълен анализ на причината и коригиращите мерки. Неспазване на този срок може да доведе до санкции до 7 милиона евро.</p>
     </div>
   </div>
   </div>
@@ -270,11 +269,13 @@
   </div>
 </div>
 
+
+<nav class="related-sectors" aria-label="Related sectors" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Related sectors</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="index.html">Сектори, обхванати от NIS2 в България 2026</a></li><li style="margin:0"><a href="insurance.html">NIS2 за застраховки, брокери и презастраховки в България 2026</a></li><li style="margin:0"><a href="it-outsourcing.html">NIS2 за IT аутсорсинг и системни интегратори в България 2026</a></li><li style="margin:0"><a href="law-firms.html">NIS2 за адвокатски кантори в България</a></li><li style="margin:0"><a href="logistics.html">NIS2 за товарни превозвачи и логистични оператори България 2026</a></li><li style="margin:0"><a href="managed-services.html">NIS2 за доставчици на управлявани услуги в България 2026</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
       © 2026 NIS2-BG.eu · Закон за киберсигурност/NIS2 · Министър на електронното управление
-      <br>Информацията е с образователен характер и не представлява правен съвет.
+      <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
       <br><a href="../index.html" style="color:var(--gray-400);">Начало</a> ·
       <a href="index.html" style="color:var(--gray-400);">Сектори</a> ·
       <a href="../sravnenie.html" style="color:var(--gray-400);">Сравнение на инструменти</a>
