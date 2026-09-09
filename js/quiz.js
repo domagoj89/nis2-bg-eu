@@ -12,7 +12,7 @@
     secfix:       { name: "Secfix",       url: "https://secfix.com",          review: "instrumenti/secfix.html" },
     isms_online:  { name: "ISMS.online",  url: "https://isms.online",         review: "instrumenti/isms-online.html" },
     knowbe4:      { name: "KnowBe4",      url: "https://knowbe4.com",         review: "szkolenia-nis2.html" },
-    hiscox:       { name: "Hiscox Cyber", url: "https://hiscox.com",          review: "ubezpieczenie-cyber.html" },
+    hiscox:       { name: "Hiscox Cyber", url: "https://hiscox.com",          review: "kiber-zastrahovka" },
     onepassword:  { name: "1Password",    url: "https://1password.com",       review: "instrumenti/1password.html" },
     nordlayer:    { name: "NordLayer",    url: "https://nordlayer.com",       review: "instrumenti/nordlayer.html" },
     cobalt:       { name: "Cobalt.io",    url: "https://cobalt.io",           review: "testy-penetracyjne.html" },
